@@ -1,0 +1,14 @@
+
+.navbar{
+height: 3em;
+}
+
+.wrapper {
+height: auto !important;
+height: 100%;
+margin-bottom:-4em;
+}
+
+.footer, .push {
+height: 4em;
+}
