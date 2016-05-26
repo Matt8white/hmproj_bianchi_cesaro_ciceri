@@ -7,6 +7,6 @@
 
     $lang = array();
 
-    $lang['PAGE_TITLE'] = "ExLab | L'innovazione a portata di mano";
+    $lang['PAGE_TITLE'] = "TIM e Telecom in un unico portale  | TIM";
 
 ?>

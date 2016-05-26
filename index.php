@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- FAVICON  -->
-    <link rel="icon" href="assets/images/favicon/favicon.ico">
+    <link rel="icon" href="https://img.tim.it/sdr/icone/icon-ios.png">
 
     <!-- =========================
        STYLESHEETS
@@ -71,6 +71,7 @@
         ======================================================= -->
         <footer class="footer dark-bg" id="footer">
             <div class="container">
+                <div>CIAONE</div>
             </div><!-- /End Container -->
         </footer>
 

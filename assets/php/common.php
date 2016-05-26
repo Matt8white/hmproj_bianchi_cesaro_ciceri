@@ -29,12 +29,12 @@
         case 'ita':
         $lang_file = 'lang.ita.php';
         break;
-            
+
         default:
         $lang_file = 'lang.ita.php';
 
     }
 
-    include_once /*$_SERVER['DOCUMENT_ROOT'].*/'/Users/mattwhite/sites/assets/languages/'.$lang_file;
+    include_once $_SERVER['DOCUMENT_ROOT'].'/assets/languages/'.$lang_file;
 
 ?>
