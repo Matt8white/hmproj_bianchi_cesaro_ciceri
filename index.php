@@ -3,7 +3,6 @@
 ?>
 
 <!doctype html>
-<html lang="en">
 <head>
     <meta charset="utf-8">
 
@@ -23,7 +22,7 @@
     ============================== -->
 
     <!-- BOOTSTRAP CSS -->
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.css">
 
     <!-- FONT ICONS -->
     <link rel="stylesheet" href="assets/css/icons/icons.min.css">
@@ -38,11 +37,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- RESPONSIVE FIXES -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+<!--<link rel="stylesheet" href="assets/css/responsive.css"> -->
 
     <!-- COLOR STYLESHEET -->
     <!-- Change here the Main Color of the Site: Choose your favorite predefined color from assets/css/colors.css -->
-    <link rel="stylesheet" href="assets/css/colors/red.css" title="red">
+<!--<link rel="stylesheet" href="assets/css/colors/red.css" title="red"> -->
 
 
     <!--[if lt IE 9]>
@@ -55,12 +54,52 @@
 <body>
     <div class="main-wrapper">
 
-
-
         <!-- =========================
              HEADER
         ============================== -->
-        <header class="header type" id="top" data-stellar-background-ratio="0.5">
+        <header class="header" id="top">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="row">
+                        <a href="#">
+                            <div class="navbar-homebtn col-md-3">
+                                <div class="col-xs-6 col-md-12">
+                                    <img class="logo" src="https://img.tim.it:443/img/logo_tim_2016.png">
+                                    <div class="button-home">Home</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="navbar-button col-md-2">
+                                Promotions
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="navbar-button col-md-2">
+                                Promotions
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="navbar-button col-md-2">
+                                Promotions
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="navbar-button col-md-2">
+                                Promotions
+                            </div>
+                        </a>
+                        <div class="navbar-lang col-md-1">
+                            <a href="?lang=ita">
+                                <img src="assets/images/ita.png">
+                            </a>
+                            <a href="?lang=en">
+                                <img src="assets/images/en.png">
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </nav>
         </header>
         <!-- =========================
              /END HEADER
@@ -92,4 +131,3 @@
 
 
 </body>
-</html>

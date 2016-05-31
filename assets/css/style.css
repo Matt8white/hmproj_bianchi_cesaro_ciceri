@@ -1,19 +1,64 @@
-
-.navbar{
-height: 3em;
+.navbar-homebtn {
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.navbar-homebtn:hover {
+    background-color: #badaff;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.active > .navbar-homebtn {
+    background-color: #6999cf;
+    border-radius: 3px;
+    color: #d9e3ee;
+}
+.active > .navbar-homebtn:hover{
+    background-color: #9ec1f0;
+    border-radius: 3px;
+    color: #014591;
+    text-decoration: none;
 }
 
-.button {
-    background-color: #005CA4; /* Tim blue */
-    border: none;
-	border-radius: 10px;
-    color: white;
-    padding: 15px 32px;
+.navbar-button {
     text-align: center;
+    background-color: #e6e7e8;
+    color: #014591;
+    border-radius: 3px;
+    margin-left: 1px;
+    padding: 15px 10px;
+}
+.navbar-button:hover {
+    background-color: #badaff;
+}
+.active  > .navbar-button {
+    background-color: #6999cf;
+    color: #d9e3ee;
+}
+.active > .navbar-button:hover{
+    background-color: #9ec1f0;
+    border-radius: 3px;
+    color: #014591;
     text-decoration: none;
+}
+
+.navbar-lang {
+    text-align: right;
+    margin-left: -4px;
+}
+.navbar-lang:hover > a {
+    text-decoration: none;
+}
+
+.button-home {
+    color: #014591;
+    border: none;
+    padding: 15px 10px;
+    text-align: center;
     display: inline-block;
-    font-size: 16px;
-	font-family: arial;
+    font-size: 14px;
+    margin: 0;
 }
 
 .wrapper {
