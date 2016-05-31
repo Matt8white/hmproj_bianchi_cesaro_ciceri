@@ -63,10 +63,8 @@
                     <div class="row">
                         <a href="#">
                             <div class="navbar-homebtn col-md-3">
-                                <div class="col-xs-6 col-md-12">
-                                    <img class="logo" src="https://img.tim.it:443/img/logo_tim_2016.png">
-                                    <div class="button-home">Home</div>
-                                </div>
+                                <img class="logo" src="https://img.tim.it:443/img/logo_tim_2016.png">
+                                <div class="button-home">Home</div>
                             </div>
                         </a>
                         <a href="#">
