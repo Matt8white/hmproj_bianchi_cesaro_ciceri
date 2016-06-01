@@ -6,26 +6,21 @@
 }
 .navbar-homebtn:hover {
     background-color: #badaff;
-    border-radius: 3px;
     text-decoration: none;
 }
 .active > .navbar-homebtn {
     background-color: #6999cf;
-    border-radius: 3px;
     color: #d9e3ee;
 }
 .active > .navbar-homebtn:hover{
     background-color: #9ec1f0;
-    border-radius: 3px;
     color: #014591;
     text-decoration: none;
 }
 
 .navbar-button {
     text-align: center;
-    background-color: #e6e7e8;
     color: #014591;
-    border-radius: 3px;
     margin-left: 1px;
     padding: 15px 10px;
 }
@@ -61,12 +56,10 @@
     margin: 0;
 }
 
-.wrapper {
-height: auto !important;
-height: 100%;
-margin-bottom:-4em;
-}
-
-.footer, .push {
-height: 4em;
+.critem {
+    height: 340px;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size:cover;
+    background-size: cover;
 }
