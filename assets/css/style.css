@@ -66,12 +66,10 @@
 
 .carousel-container {
 	position: absolute;
-	bottom: 0;
-	height:90%;
-	width: 80%;
+	top: 10%;
+	left: 20%;
     display: inline-block;
 }
 .carousel-content {
     width: 100%;
-	text-align: center;
 }
