@@ -2,21 +2,28 @@
 	<div class="footer-filler clear-fix">
 		<div class="footer-wrapper clear-fix">
 			<div class="footer-spacing">
-				<b> <?php echo $lang['USEFUL_INFO']; ?> </b>
+				<img src ='/assets/images/timId_footer.png' vspace = "5" />
+				
 				<p>
-					<a href="#"> <?php echo $lang['FOOTER_LEFT']; ?> </a>
+					<a href="#"> <?php echo $lang['DIGITAL_ID']; ?> </a> <br> <br> <br>
+					<a href="#"> <?php echo $lang['THE_GROUP_FOOTER']; ?> </a>
+					
+					
 				</p>
+				
+				
 			</div>
-			<div class="footer-left">
+			<div class="footer-left" >
+				
 				<b> <?php echo $lang['USEFUL_INFO']; ?> </b>
 				<p>
-					<a href="#"> <?php echo $lang['FOOTER_LEFT']; ?> </a>
+					<a href="#"> <?php echo $lang['FOOTER_LEFT']; ?> </a> 
 				</p>
 			</div>
 			<div class="footer-center">
 				<b> <?php echo $lang['QUICK_ACCESS']; ?> </b>
 				<p>
-					<a href="#"> <?php echo $lang['FOOTER_CENTER']; ?></a>
+					<a href="#"> <?php echo $lang['FOOTER_CENTER']; ?></a> 
 				</p>
 			</div>
 			<div class="footer-right">

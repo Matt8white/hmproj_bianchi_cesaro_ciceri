@@ -25,10 +25,25 @@
     $lang['CAROUSEL_BTN3'] = "Scopri l'offerta";
 	
 	
-	$lang['FOOTER_LEFT'] = "Scopri l'offerta";
-	$lang['FOOTER_CENTER'] = "Scopri l'offerta";
+	$lang['FOOTER_LEFT'] = "Come pagare il conto <br> 
+							Trasloco <br> 
+							Trasparenza tariffaria <br>
+							Phishing <br>
+							Carta dei Servizi <br>
+							119 SMS <br>
+							ViviTIM <br>
+							News - Comunicazioni Importanti";
+	$lang['FOOTER_CENTER'] = "Ricarica Online <br>
+							  Accedi alla Mail <br>
+							  Apri una segnalazione <br>
+							  Verifica Copertura <br>
+							  Trova Negozio <br>
+							  Trova Telefono Pubblico <br>
+							  Brochure <br>
+							  Aiutaci a migliorare";
 	$lang['FOOTER_SOCIAL'] = "Scopri l'offerta";
-	$lang['USEFUL_INFO'] = "Scopri l'offerta";
-	$lang['QUICK_ACCESS'] = "Scopri l'offerta";
-
+	$lang['USEFUL_INFO'] = "INFORMAZIONI UTILI";
+	$lang['QUICK_ACCESS'] = "STRUMENTI VELOCI";
+	$lang['DIGITAL_ID'] = "Identità digitale";
+	$lang['THE_GROUP_FOOTER'] = "Gruppo Telecom Italia";
 ?>
