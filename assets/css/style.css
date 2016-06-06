@@ -63,13 +63,15 @@
     -moz-background-size:cover;
     background-size: cover;
 }
-
-.carousel-container {
+.carousel-content {
 	position: absolute;
-	top: 10%;
-	left: 20%;
+	top: 20%;
+	left: 15%;
     display: inline-block;
 }
-.carousel-content {
-    width: 100%;
+
+.btn-primary {
+    text-transform: uppercase;
+    font-weight: bold;
+    min-width: 201px;
 }

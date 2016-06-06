@@ -14,4 +14,14 @@
     $lang['NAV_3'] = "Smart Life";
     $lang['NAV_4'] = "Assistenza";
 
+    $lang['CAROUSEL_HEADER1'] = "TIM SMART CASA";
+    $lang['CAROUSEL_DESC1'] = "Internet fino a 20 Mega e chiamate illimitate. <br> Smart Modem Wi-Fi incluso";
+    $lang['CAROUSEL_BTN1'] = "Scopri l'offerta";
+    $lang['CAROUSEL_HEADER2'] = "TIM SMART CASA";
+    $lang['CAROUSEL_DESC2'] = "Internet fino a 20 Mega e chiamate illimitate. <br> Smart Modem Wi-Fi incluso";
+    $lang['CAROUSEL_BTN2'] = "Scopri l'offerta";
+    $lang['CAROUSEL_HEADER3'] = "TIM SMART CASA";
+    $lang['CAROUSEL_DESC3'] = "Internet fino a 20 Mega e chiamate illimitate. <br> Smart Modem Wi-Fi incluso";
+    $lang['CAROUSEL_BTN3'] = "Scopri l'offerta";
+
 ?>

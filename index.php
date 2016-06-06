@@ -117,20 +117,27 @@
             <div class="carousel-inner" role="listbox">
 
                 <div class="item critem active" style="background: url('/assets/images/banner1.jpg') no-repeat center top;">
-                    <div class="carousel-container">
-                        <div class="carousel-content">
-                            <h1>ciao</h1>
-                            <p>ciao2</p>
-                        </div>
+                    <div class="carousel-content">
+                        <h1 style="color: white"><font size="20"><?php echo $lang['CAROUSEL_HEADER1']; ?></font></h1>
+                        <p  style="color: white"><font size="5"><?php echo $lang['CAROUSEL_DESC1']; ?></font></p>
+                        <span class="btn btn-primary"><?php echo $lang['CAROUSEL_BTN1']; ?></span>
                     </div>
                 </div>
 
                 <div class="item critem" style="background: url('/assets/images/banner2.jpg') no-repeat center top;">
-
+                    <div class="carousel-content">
+                        <h1 style="color: white"><font size="20"><?php echo $lang['CAROUSEL_HEADER2']; ?></font></h1>
+                        <p  style="color: white"><font size="5"><?php echo $lang['CAROUSEL_DESC2']; ?></font></p>
+                        <span class="btn btn-primary"><?php echo $lang['CAROUSEL_BTN2']; ?></span>
+                    </div>
                 </div>
 
                 <div class="item critem" style="background: url('/assets/images/banner3.jpg') no-repeat center top;">
-
+                    <div class="carousel-content">
+                        <h1 style="color: white"><font size="20"><?php echo $lang['CAROUSEL_HEADER3']; ?></font></h1>
+                        <p  style="color: white"><font size="5"><?php echo $lang['CAROUSEL_DESC3']; ?></font></p>
+                        <span class="btn btn-primary"><?php echo $lang['CAROUSEL_BTN3']; ?></span>
+                    </div>
                 </div>
 
             </div>
