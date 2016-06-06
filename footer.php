@@ -43,7 +43,9 @@
 
 			</div>
 		</div>
-		<div class="footer-bottom"> HEY</div>
+		<div class="footer-bottom"> 
+			<a href="#"> <?php echo $lang['FOOTER_BOTTOM']; ?> </a>
+		</div>
 
 	</div>
 </footer>

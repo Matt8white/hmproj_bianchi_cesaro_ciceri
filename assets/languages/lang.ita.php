@@ -41,6 +41,14 @@
 							  Trova Telefono Pubblico <br>
 							  Brochure <br>
 							  Aiutaci a migliorare";
+	$lang['FOOTER_BOTTOM'] = "Privacy &nbsp &nbsp
+							  Note legali &nbsp&nbsp
+							  Website &nbsp&nbsp
+							  Info Contatti &nbsp&nbsp
+							  Per i Consumatori  &nbsp&nbsp
+							  Tutela Minori &nbsp&nbsp
+							  Lavora con noi  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							  Telecom Italia 2012 - P.IVA 00488410010";
 	$lang['FOOTER_SOCIAL'] = "Scopri l'offerta";
 	$lang['USEFUL_INFO'] = "INFORMAZIONI UTILI";
 	$lang['QUICK_ACCESS'] = "STRUMENTI VELOCI";
