@@ -1,0 +1,39 @@
+.footer {
+
+}
+.footer-filler{
+	background-color: #F0F0F0;
+	height: 100%;
+}
+.footer-wrapper {
+	margin-right: 13%;
+	margin-left: 13%;
+}
+.footer-left {
+	float: left;
+	width: 33.3%;
+	background-color: #CCF;
+}
+.footer-center{
+	float: left;
+	width: 33.3%;
+	background-color: #ABC;
+}
+.footer-right {
+	float: right;
+	width: 33.4%;
+	background-color: #FFA;
+}
+.footer-right > p > a:hover {
+	text-decoration: none;
+}
+.footer-bottom {
+	background-color: #F0F0F0;
+	text-align: center;
+}
+
+.clear-fix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

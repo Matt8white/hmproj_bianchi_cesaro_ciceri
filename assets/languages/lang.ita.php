@@ -23,5 +23,12 @@
     $lang['CAROUSEL_HEADER3'] = "TIM SMART CASA";
     $lang['CAROUSEL_DESC3'] = "Internet fino a 20 Mega e chiamate illimitate. <br> Smart Modem Wi-Fi incluso";
     $lang['CAROUSEL_BTN3'] = "Scopri l'offerta";
+	
+	
+	$lang['FOOTER_LEFT'] = "Scopri l'offerta";
+	$lang['FOOTER_CENTER'] = "Scopri l'offerta";
+	$lang['FOOTER_SOCIAL'] = "Scopri l'offerta";
+	$lang['USEFUL_INFO'] = "Scopri l'offerta";
+	$lang['QUICK_ACCESS'] = "Scopri l'offerta";
 
 ?>
