@@ -76,3 +76,44 @@
     min-width: 201px;
     padding: 9px 12px;
 }
+
+.footer-filler{
+	background-color: #F0F0F0;
+	height: 100%;
+}
+.footer-wrapper {
+	position: relative;
+	top: 20px;
+	margin-right: 13%;
+	margin-left: 13%;
+}
+.footer-spacing{
+	float: left;
+	width: 25%;
+}
+.footer-left {
+	float: left;
+	width: 25%;
+}
+.footer-center{
+	float: left;
+	width: 25%;
+}
+.footer-right {
+	float: right;
+	width: 25%;
+}
+.footer-right > p > a:hover {
+	text-decoration: none;
+}
+.footer-bottom {
+	background-color: #014591;
+	text-align: center;
+	position: relative;
+	top: 20px;
+}
+.clear-fix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

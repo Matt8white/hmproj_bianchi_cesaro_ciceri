@@ -158,11 +158,7 @@
         <!-- ==================================================
             FOOTER
         ======================================================= -->
-        <footer class="footer dark-bg" id="footer">
-            <div class="container">
-                <div>CIAONE</div>
-            </div><!-- /End Container -->
-        </footer>
+        <?php include 'footer.php' ?>
 
     </div><!-- /End Main Wrapper -->
 
