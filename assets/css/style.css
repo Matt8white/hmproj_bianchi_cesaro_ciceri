@@ -63,3 +63,10 @@
     -moz-background-size:cover;
     background-size: cover;
 }
+
+.carousel-container {
+    display: inline-block;
+}
+.carousel-content {
+    width: 100%;
+}

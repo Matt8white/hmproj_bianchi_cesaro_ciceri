@@ -117,7 +117,12 @@
             <div class="carousel-inner" role="listbox">
 
                 <div class="item critem active" style="background: url('/assets/images/banner1.jpg') no-repeat center top;">
-
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h1>ciao</h1>
+                            <p>ciao2</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="item critem" style="background: url('/assets/images/banner2.jpg') no-repeat center top;">
