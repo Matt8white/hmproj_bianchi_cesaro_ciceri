@@ -3,6 +3,12 @@
 <footer class="footer">
 	<div class="footer-filler clear-fix">
 		<div class="footer-wrapper clear-fix">	
+			<div class="footer-spacing"> 
+				<b> <?php echo $lang['USEFUL_INFO']; ?> </b>
+				<p>
+					<a href="#"> <?php echo $lang['FOOTER_LEFT']; ?> </a>
+				</p>
+			</div>
 			<div class="footer-left"> 
 				<b> <?php echo $lang['USEFUL_INFO']; ?> </b>
 				<p>

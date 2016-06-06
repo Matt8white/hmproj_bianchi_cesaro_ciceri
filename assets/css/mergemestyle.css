@@ -6,23 +6,26 @@
 	height: 100%;
 }
 .footer-wrapper {
+	position: relative;
+	top: 20px;
 	margin-right: 13%;
 	margin-left: 13%;
 }
+.footer-spacing{
+	float: left;
+	width: 25%;
+}
 .footer-left {
 	float: left;
-	width: 33.3%;
-	background-color: #CCF;
+	width: 25%;
 }
 .footer-center{
 	float: left;
-	width: 33.3%;
-	background-color: #ABC;
+	width: 25%;
 }
 .footer-right {
 	float: right;
-	width: 33.4%;
-	background-color: #FFA;
+	width: 25%;
 }
 .footer-right > p > a:hover {
 	text-decoration: none;
@@ -30,8 +33,9 @@
 .footer-bottom {
 	background-color: #F0F0F0;
 	text-align: center;
+	position: relative;
+	top: 20px;
 }
-
 .clear-fix:after {
   content: "";
   display: table;
