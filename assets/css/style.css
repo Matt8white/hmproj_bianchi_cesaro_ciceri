@@ -65,8 +65,13 @@
 }
 
 .carousel-container {
+	position: absolute;
+	bottom: 0;
+	height:90%;
+	width: 80%;
     display: inline-block;
 }
 .carousel-content {
     width: 100%;
+	text-align: center;
 }
