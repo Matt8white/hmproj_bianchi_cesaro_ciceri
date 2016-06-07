@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.vertical-tabs.css">
 
+
     <!-- CUSTOM STYLESHEET -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -161,10 +162,17 @@
             <div class="col-xs-3 topup-cont">
                 <div class="col-xs-12 topup">
                     <h4 style="color: red"><font size="4"><?php echo $lang['RECHARGE_HEAD']; ?></font></h1>
+					<select style="width: 70%; height: 24%; margin-top: 2%; margin-bottom:10%">
+						<option>5 €</option>
+						<option>10 €</option>
+						<option>20 €</option>
+					</select>
                     <span class="btn btn-primary"><?php echo $lang['RECHARGE_BTN']; ?></span>
                 </div>
                 <div class="col-xs-12 topup" style="margin-top: -1px">
-                    <h1 style="color: black"><font size="4"><?php echo $lang['NEWCUST_HEAD']; ?></font></h1>
+					<img src="https://img.tim.it:443/sdr/icone/icona_wcb_schede_offerta.png" class="img-tab" style="margin-top: 7.5%; margin-left: 18%">
+                    <h1 style="color: black; text-align: left; margin-left: 10%"><font size="4"><?php echo $lang['NEWCUST_HEAD']; ?></font></h1>
+					<p  style="color: black; text-align: left; margin-left: 12%"><font size="3"><?php echo $lang['SHOW_DEV_DESC']; ?></font></p>
                     <span class="btn btn-primary"><?php echo $lang['NEWCUST_BTN']; ?></span>
                 </div>
             </div>

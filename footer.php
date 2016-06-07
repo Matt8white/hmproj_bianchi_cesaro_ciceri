@@ -1,16 +1,9 @@
 <footer class="footer">
 	<div class="footer-filler clear-fix">
 		<div class="footer-wrapper clear-fix">
-			<div class="footer-spacing">
-				<img src ='/assets/images/timId_footer.png' vspace = "5" />
-				
-				<p>
-					<a href="#"> <?php echo $lang['DIGITAL_ID']; ?> </a> <br> <br> <br>
-					<a href="#"> <?php echo $lang['THE_GROUP_FOOTER']; ?> </a>
-					
-					
-				</p>
-				
+			<div class="footer-spacing" style="height:190px">
+				<span class="btn footer-button"><?php echo $lang['CAROUSEL_BTN2']; ?></span>
+				<span class="btn footer-button"><?php echo $lang['CAROUSEL_BTN2']; ?></span>
 				
 			</div>
 			<div class="footer-left" >
