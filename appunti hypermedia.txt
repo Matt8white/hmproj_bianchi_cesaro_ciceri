@@ -1,0 +1,3 @@
+togliere home da breadcrumbs
+link promotions->device by category è sbagliato
+search non c'è nei mockup
