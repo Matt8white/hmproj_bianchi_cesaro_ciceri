@@ -23,10 +23,30 @@
     $lang['CAROUSEL_HEADER3'] = "TIM SMART CASA";
     $lang['CAROUSEL_DESC3'] = "Internet fino a 20 Mega e chiamate illimitate. <br> Smart Modem Wi-Fi incluso";
     $lang['CAROUSEL_BTN3'] = "Scopri l'offerta";
-	
-	
-	$lang['FOOTER_LEFT'] = "Come pagare il conto <br> 
-							Trasloco <br> 
+
+
+    $lang['SHOW_PROMOTION'] = "Scopri l'offerta";
+    $lang['SHOW_DEVICE'] = "Scopri l'offerta";
+    $lang['SHOW_SL'] = "Scopri l'offerta";
+
+    $lang['SHOW_PROM_HEAD'] = "Scopri l'offerta";
+    $lang['SHOW_PROM_DESC'] = "Scopri l'offerta";
+    $lang['SHOW_PROM_BTN'] = "Scopri l'offerta";
+    $lang['SHOW_DEV_HEAD'] = "Scopri l'offerta";
+    $lang['SHOW_DEV_DESC'] = "Scopri l'offerta";
+    $lang['SHOW_DEV_BTN'] = "Scopri l'offerta";
+    $lang['SHOW_SL_HEAD'] = "Scopri l'offerta";
+    $lang['SHOW_SL_DESC'] = "Scopri l'offerta";
+    $lang['SHOW_SL_BTN'] = "Scopri l'offerta";
+
+    $lang['RECHARGE_HEAD'] = "Ricarica";
+    $lang['RECHARGE_BTN'] = "Ricarica subito";
+    $lang['NEWCUST_HEAD'] = "Entra in TIM";
+    $lang['NEWCUST_BTN'] = "Ti richiamiamo gratis";
+
+
+	$lang['FOOTER_LEFT'] = "Come pagare il conto <br>
+							Trasloco <br>
 							Trasparenza tariffaria <br>
 							Phishing <br>
 							Carta dei Servizi <br>

@@ -32,6 +32,7 @@
 
     <!-- PLUGINS STYLESHEET -->
     <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.vertical-tabs.css">
 
     <!-- CUSTOM STYLESHEET -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -53,59 +54,17 @@
 
 <body>
     <div class="main-wrapper">
-
         <!-- =========================
              HEADER
         ============================== -->
-        <header class="header" id="top">
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="row">
-                        <a href="#">
-                            <div class="navbar-homebtn col-md-3">
-                                <img class="logo" src="https://img.tim.it:443/img/logo_tim_2016.png">
-                                <div class="button-home">Home</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="navbar-button col-md-2">
-                                <?php echo $lang['NAV_1']; ?>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="navbar-button col-md-2">
-                                <?php echo $lang['NAV_2']; ?>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="navbar-button col-md-2">
-                                <?php echo $lang['NAV_3']; ?>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="navbar-button col-md-2">
-                                <?php echo $lang['NAV_4']; ?>
-                            </div>
-                        </a>
-                        <div class="navbar-lang col-md-1">
-                            <a href="?lang=ita">
-                                <img src="assets/images/ita.png">
-                            </a>
-                            <a href="?lang=en">
-                                <img src="assets/images/en.png">
-                            </a>
-                        </div>
-                    </div>
-                </div><!-- /.container-fluid -->
-            </nav>
-        </header>
+        <?php include 'header.php' ?>
         <!-- =========================
              /END HEADER
         ============================== -->
         <!-- =========================
              CAROUSEL
         ============================== -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div id="myCarousel" class="carousel slide" style="margin-bottom: 20px;" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -154,6 +113,64 @@
         </div>
         <!-- =========================
              /END CAROUSEL
+        ============================== -->
+        <!-- =========================
+             PAGE CONTENT
+        ============================== -->
+        <div class="show-highlights clear-fix" style="margin-bottom: 20px;">
+            <div class="col-xs-2"> <!-- required for floating -->
+        <!-- Nav tabs -->
+                <ul class="nav nav-tabs tabs-left">
+                    <li class="active"><a href="#promotion" data-toggle="tab"><?php echo $lang['SHOW_PROMOTION']; ?></a></li>
+                    <li><a href="#device" data-toggle="tab"><?php echo $lang['SHOW_DEVICE']; ?></a></li>
+                    <li><a href="#sl" data-toggle="tab"><?php echo $lang['SHOW_SL']; ?></a></li>
+                    <li style="padding: 72px 0px;">&nbsp;</li>
+
+                </ul>
+            </div>
+
+            <div class="col-xs-7">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="promotion">
+                        <img src="/assets/images/prom-home.jpg" class="img-tab">
+                        <div class="show-content">
+                            <h1 style="color: black"><font size="7"><?php echo $lang['SHOW_DEV_HEAD']; ?></font></h1>
+                            <p  style="color: black"><font size="3"><?php echo $lang['SHOW_DEV_DESC']; ?></font></p>
+                            <span class="btn btn-primary"><?php echo $lang['SHOW_DEV_BTN']; ?></span>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="device">
+                        <img src="/assets/images/device-home.jpg" class="img-tab">
+                        <div class="show-content">
+                            <h1 style="color: black"><font size="7"><?php echo $lang['SHOW_DEV_HEAD']; ?></font></h1>
+                            <p  style="color: black"><font size="3"><?php echo $lang['SHOW_DEV_DESC']; ?></font></p>
+                            <span class="btn btn-primary"><?php echo $lang['SHOW_DEV_BTN']; ?></span>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="sl">
+                        <img src="/assets/images/sl-home.jpg" class="img-tab">
+                        <div class="show-content">
+                            <h1 style="color: black"><font size="7"><?php echo $lang['SHOW_DEV_HEAD']; ?></font></h1>
+                            <p  style="color: black"><font size="3"><?php echo $lang['SHOW_DEV_DESC']; ?></font></p>
+                            <span class="btn btn-primary"><?php echo $lang['SHOW_DEV_BTN']; ?></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3 topup-cont">
+                <div class="col-xs-12 topup">
+                    <h4 style="color: red"><font size="4"><?php echo $lang['RECHARGE_HEAD']; ?></font></h1>
+                    <span class="btn btn-primary"><?php echo $lang['RECHARGE_BTN']; ?></span>
+                </div>
+                <div class="col-xs-12 topup" style="margin-top: -1px">
+                    <h1 style="color: black"><font size="4"><?php echo $lang['NEWCUST_HEAD']; ?></font></h1>
+                    <span class="btn btn-primary"><?php echo $lang['NEWCUST_BTN']; ?></span>
+                </div>
+            </div>
+        </div>
+        <!-- =========================
+             /END PAGE CONTENT
         ============================== -->
         <!-- ==================================================
             FOOTER
