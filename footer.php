@@ -2,8 +2,8 @@
 	<div class="footer-filler clear-fix">
 		<div class="footer-wrapper clear-fix">
 			<div class="footer-spacing" style="height:190px">
-				<span class="btn footer-button"><?php echo $lang['CAROUSEL_BTN2']; ?></span>
-				<span class="btn footer-button"><?php echo $lang['CAROUSEL_BTN2']; ?></span>
+				<span class="btn footer-button"><?php echo $lang['FOOTER_BTN1']; ?></span>
+				<span class="btn footer-button"><?php echo $lang['FOOTER_BTN2']; ?></span>
 				
 			</div>
 			<div class="footer-left" >
