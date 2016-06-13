@@ -7,6 +7,7 @@
 
     $lang = array();
 
+    /*HOMEPAGE*/
     $lang['PAGE_TITLE'] = "TIM e Telecom in un unico portale  | TIM";
 
     $lang['NAV_1'] = "Promozioni";
@@ -77,4 +78,7 @@
 	$lang['QUICK_ACCESS'] = "STRUMENTI VELOCI";
 	$lang['DIGITAL_ID'] = "Identità digitale";
 	$lang['THE_GROUP_FOOTER'] = "Gruppo Telecom Italia";
+
+    /*DEVICE*/
+    $lang['DEVICE_PAGE_TITLE'] = "Device | TIM";
 ?>
