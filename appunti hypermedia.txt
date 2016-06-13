@@ -1,3 +1,29 @@
 togliere home da breadcrumbs
 link promotions->device by category è sbagliato
 search non c'è nei mockup
+
+
+DATABASE
+
+DEVICE:	
+	-id
+	-categoria
+	-marca
+	-modello
+	-prezzo
+	-in promozione (si/no)
+	-prezzo scontato*
+	-immagine
+	-presentazione
+	-descrizione
+	-specifiche
+
+SL SERVICES
+	-id
+	-categoria
+	-nome
+
+ASSISTANCE
+	-id
+	-categoria
+	-nome
