@@ -78,24 +78,24 @@
 
                 <div class="item critem active" style="background: url('/assets/images/banner1.jpg') no-repeat center top;">
                     <div class="carousel-content">
-                        <h1 style="color: white"><font size="20"><?php echo $lang['CAROUSEL_HEADER1']; ?></font></h1>
-                        <p  style="color: white"><font size="5"><?php echo $lang['CAROUSEL_DESC1']; ?></font></p>
+                        <h1 style="color: white"><font size="6vw"><?php echo $lang['CAROUSEL_HEADER1']; ?></font></h1>
+                        <p  style="color: white"><font size="4vw"><?php echo $lang['CAROUSEL_DESC1']; ?></font></p>
                         <span class="btn btn-primary"><?php echo $lang['CAROUSEL_BTN1']; ?></span>
                     </div>
                 </div>
 
                 <div class="item critem" style="background: url('/assets/images/banner2.jpg') no-repeat center top;">
                     <div class="carousel-content">
-                        <h1 style="color: white"><font size="20"><?php echo $lang['CAROUSEL_HEADER2']; ?></font></h1>
-                        <p  style="color: white"><font size="5"><?php echo $lang['CAROUSEL_DESC2']; ?></font></p>
+                        <h1 style="color: white"><font size="6vw"><?php echo $lang['CAROUSEL_HEADER2']; ?></font></h1>
+                        <p  style="color: white"><font size="4vw"><?php echo $lang['CAROUSEL_DESC2']; ?></font></p>
                         <span class="btn btn-primary"><?php echo $lang['CAROUSEL_BTN2']; ?></span>
                     </div>
                 </div>
 
                 <div class="item critem" style="background: url('/assets/images/banner3.jpg') no-repeat center top;">
                     <div class="carousel-content">
-                        <h1 style="color: white"><font size="20"><?php echo $lang['CAROUSEL_HEADER3']; ?></font></h1>
-                        <p  style="color: white"><font size="5"><?php echo $lang['CAROUSEL_DESC3']; ?></font></p>
+                        <h1 style="color: white"><font size="6vw"><?php echo $lang['CAROUSEL_HEADER3']; ?></font></h1>
+                        <p  style="color: white"><font size="4vw"><?php echo $lang['CAROUSEL_DESC3']; ?></font></p>
                         <span class="btn btn-primary"><?php echo $lang['CAROUSEL_BTN3']; ?></span>
                     </div>
                 </div>
@@ -119,47 +119,43 @@
              PAGE CONTENT
         ============================== -->
         <div class="show-highlights clear-fix" style="margin-bottom: 20px;">
-            <div class="col-xs-2"> <!-- required for floating -->
+            <div class="col-xs-12 col-md-9"> <!-- required for floating -->
         <!-- Nav tabs -->
-                <ul class="nav nav-tabs tabs-left">
+                <ul class="nav nav-tabs nav-justified">
                     <li class="active"><a href="#promotion" data-toggle="tab"><?php echo $lang['SHOW_PROMOTION']; ?></a></li>
                     <li><a href="#device" data-toggle="tab"><?php echo $lang['SHOW_DEVICE']; ?></a></li>
                     <li><a href="#sl" data-toggle="tab"><?php echo $lang['SHOW_SL']; ?></a></li>
-                    <li style="padding: 72px 0px;">&nbsp;</li>
 
                 </ul>
             </div>
 
-            <div class="col-xs-7">
+            <div class="col-xs-12 col-md-9">
                 <!-- Tab panes -->
-                <div class="tab-content">
-                    <div class="tab-pane active" id="promotion">
-                        <img src="/assets/images/prom-home.jpg" class="img-tab">
+                <div class="tab-content" style="height:360px;">
+                    <div class="tab-pane active" id="promotion" style="background: url('/assets/images/prom-home.jpg') no-repeat right top;">
                         <div class="show-content">
-                            <h1 style="color: black"><font size="7"><?php echo $lang['SHOW_PROM_HEAD']; ?></font></h1>
-                            <p  style="color: black"><font size="3"><?php echo $lang['SHOW_PROM_DESC']; ?></font></p>
+                            <h1 style="color: black"><font size="6vw"><?php echo $lang['SHOW_PROM_HEAD']; ?></font></h1>
+                            <p  style="color: black"><font size="4vw"><?php echo $lang['SHOW_PROM_DESC']; ?></font></p>
                             <span class="btn btn-primary"><?php echo $lang['SHOW_PROM_BTN']; ?></span>
                         </div>
                     </div>
-                    <div class="tab-pane" id="device">
-                        <img src="/assets/images/device-home.jpg" class="img-tab">
+                    <div class="tab-pane" id="device" style="background: url('/assets/images/device-home.jpg') no-repeat right top;">
                         <div class="show-content">
-                            <h1 style="color: black"><font size="7"><?php echo $lang['SHOW_DEV_HEAD']; ?></font></h1>
-                            <p  style="color: black"><font size="3"><?php echo $lang['SHOW_DEV_DESC']; ?></font></p>
+                            <h1 style="color: black"><font size="6vw"><?php echo $lang['SHOW_DEV_HEAD']; ?></font></h1>
+                            <p  style="color: black"><font size="4vw"><?php echo $lang['SHOW_DEV_DESC']; ?></font></p>
                             <span class="btn btn-primary"><?php echo $lang['SHOW_DEV_BTN']; ?></span>
                         </div>
                     </div>
-                    <div class="tab-pane" id="sl">
-                        <img src="/assets/images/sl-home.jpg" class="img-tab">
+                    <div class="tab-pane" id="sl" style="background: url('/assets/images/sl-home.jpg') no-repeat right top;">
                         <div class="show-content">
-                            <h1 style="color: black"><font size="7"><?php echo $lang['SHOW_SL_HEAD']; ?></font></h1>
-                            <p  style="color: black"><font size="3"><?php echo $lang['SHOW_SL_DESC']; ?></font></p>
+                            <h1 style="color: black"><font size="6vw"><?php echo $lang['SHOW_SL_HEAD']; ?></font></h1>
+                            <p  style="color: black"><font size="4vw"><?php echo $lang['SHOW_SL_DESC']; ?></font></p>
                             <span class="btn btn-primary"><?php echo $lang['SHOW_SL_BTN']; ?></span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-3 topup-cont">
+            <div class="col-md-3 col-xs-12 topup-cont">
                 <div class="col-xs-12 topup">
                     <h4 style="color: red"><font size="4"><?php echo $lang['TOPUP_HEAD']; ?></font></h1>
 					<select style="width: 70%; height: 24%; margin-top: 2%; margin-bottom:10%">
@@ -167,13 +163,13 @@
 						<option>10 €</option>
 						<option>20 €</option>
 					</select>
-                    <span class="btn btn-primary"><?php echo $lang['TOPUP_BTN']; ?></span>
+                    <span class="btn btn-topup"><?php echo $lang['TOPUP_BTN']; ?></span>
                 </div>
                 <div class="col-xs-12 topup" style="margin-top: -1px">
-					<img src="https://img.tim.it:443/sdr/icone/icona_wcb_schede_offerta.png" class="img-tab" style="margin-top: 7.5%; margin-left: 18%">
+					<img src="https://img.tim.it:443/sdr/icone/icona_wcb_schede_offerta.png" class="img-tab" style="margin-top: 7.5%; margin-left: 24%">
                     <h1 style="color: black; text-align: left; margin-left: 10%"><font size="4"><?php echo $lang['NEWCUST_HEAD']; ?></font></h1>
 					<p  style="color: black; text-align: left; margin-left: 12%"><font size="3"><?php echo $lang['NEWCUST_BODY']; ?></font></p>
-                    <span class="btn btn-primary"><?php echo $lang['NEWCUST_BTN']; ?></span>
+                    <span class="btn btn-topup"><?php echo $lang['NEWCUST_BTN']; ?></span>
                 </div>
             </div>
         </div>

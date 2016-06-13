@@ -1,25 +1,25 @@
 <footer class="footer">
 	<div class="footer-filler clear-fix">
 		<div class="footer-wrapper clear-fix">
-			<div class="footer-spacing" style="height:190px">
+			<div class="col-xs-12 col-md-3 col-sm-6" >
 				<span class="btn footer-button"><?php echo $lang['FOOTER_BTN1']; ?></span>
 				<span class="btn footer-button"><?php echo $lang['FOOTER_BTN2']; ?></span>
 				
 			</div>
-			<div class="footer-left" >
+			<div class="col-xs-12 col-md-3 col-sm-6" >
 				
 				<b> <?php echo $lang['USEFUL_INFO']; ?> </b>
 				<p>
 					<a href="#"> <?php echo $lang['FOOTER_LEFT']; ?> </a> 
 				</p>
 			</div>
-			<div class="footer-center">
+			<div class="col-xs-12 col-md-3 col-sm-6" >
 				<b> <?php echo $lang['QUICK_ACCESS']; ?> </b>
 				<p>
 					<a href="#"> <?php echo $lang['FOOTER_CENTER']; ?></a> 
 				</p>
 			</div>
-			<div class="footer-right">
+			<div class="col-xs-12 col-md-3 col-sm-6" >
 				<b> <?php echo $lang['FOOTER_SOCIAL']; ?> </b>
 				<p><a href="https://it-it.facebook.com/TimOfficialPage" title="Facebook" target="_self" class="fb" style="background: url('https://img.tim.it:443/sdr/ico_fb.png') no-repeat left center rgba(0,0,0,0)">
 				&emsp;&emsp; Facebook </a></p>

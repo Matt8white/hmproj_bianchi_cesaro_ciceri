@@ -3,32 +3,42 @@
         <div class="container-fluid">
             <div class="row">
                 <a href="#">
-                    <div class="navbar-homebtn col-md-3">
-                        <img class="logo" src="https://img.tim.it:443/img/logo_tim_2016.png">
-                        <div class="button-home">Home</div>
-                    </div>
+                    <div class="navbar-homebtn col-sm-3  col-xs-7">
+						<img class="logo" src="https://img.tim.it:443/img/logo_tim_2016.png">
+						<div class="button-home">Home</div>
+					</div>
                 </a>
+				<div class="col-xs-5 button-spacer">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav col-sm-8">
                 <a href="#">
-                    <div class="navbar-button col-md-2">
+                    <li class="navbar-button col-sm-3 col-xs-12">
                         <?php echo $lang['NAV_1']; ?>
-                    </div>
+                    </li>
                 </a>
                 <a href="#">
-                    <div class="navbar-button col-md-2">
+                    <li class="navbar-button col-sm-3 col-xs-12">
                         <?php echo $lang['NAV_2']; ?>
-                    </div>
+                    </li>
                 </a>
                 <a href="#">
-                    <div class="navbar-button col-md-2">
+                    <li class="navbar-button col-sm-3 col-xs-12">
                         <?php echo $lang['NAV_3']; ?>
-                    </div>
+                    </li>
                 </a>
                 <a href="#">
-                    <div class="navbar-button col-md-2">
+                    <li class="navbar-button col-sm-3 col-xs-12">
                         <?php echo $lang['NAV_4']; ?>
-                    </div>
+                    </li>
                 </a>
-                <div class="navbar-lang col-md-1">
+				</ul>
+                <div class="navbar-lang col-sm-1">
                     <a href="?lang=ita">
                         <img src="assets/images/ita.png">
                     </a>
@@ -36,6 +46,7 @@
                         <img src="assets/images/en.png">
                     </a>
                 </div>
+				</div>	
             </div>
         </div><!-- /.container-fluid -->
     </nav>
