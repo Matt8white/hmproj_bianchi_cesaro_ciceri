@@ -6,6 +6,35 @@ body {
 	margin: 0 auto;
 }
 
+.navbar .navbar-inner {
+    padding: 0;
+}
+
+.navbar .nav {
+    margin: 0;
+    display: table;
+    width: 100%;
+}
+
+.navbar .nav > li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+    text-align: center;
+}
+
+
+.navbar .nav li:first-child a {
+    border-left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.navbar .nav li:last-child a {
+    border-right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+
 .navbar-homebtn {
     vertical-align: middle;
     align-items: center;
@@ -29,8 +58,6 @@ body {
 .navbar-button {
     text-align: center;
     color: #014591;
-    margin-left: 1px;
-    padding: 15px 10px;
 }
 .navbar-button:hover {
     background-color: #badaff;
@@ -85,9 +112,6 @@ body {
     padding: 9px 12px;
 }
 
-.nav > li > a {
-    padding: 20px 15px;
-}
 .img-tab {
     z-index: -1;
     position: absolute;
