@@ -64,7 +64,7 @@
     <div class="main-wrapper">
         <ol class="breadcrumb" id="bc">
         </ol>
-		
+        
 		<div class="col-xs-12 col-sm-5" style="background-size: 100% 100%; background-repeat: no-repeat;" id="displayImg">
 		</div>
 		<div class="col-xs-12 col-sm-7">
