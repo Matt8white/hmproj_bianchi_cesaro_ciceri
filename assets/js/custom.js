@@ -4,7 +4,9 @@ function fillDevicePage(str) {
         url: 'ajax/getDeviceInfo.php?q='+str, success: function (result) {
             var infos = JSON.parse(result);
             document.title = infos["brand"] + " " + infos["model"] + " | TIM";
-            document.getElementById('displayImg').style.background = "url(" + infos["image"] + ");";
+			var div = document.getElementById('displayImg');
+			div.style.background = "url(" + infos["image"] + ") no-repeat center top";
+			
             var str = createBreadcrumb(infos, "device");
             document.getElementById("bc").innerHTML = str;
         }

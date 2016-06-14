@@ -61,11 +61,11 @@
     <!-- =========================
          /END HEADER
     ============================== -->
-    <div class="main-wrapper">
+    <div class="main-wrapper clear-fix">
         <ol class="breadcrumb" id="bc">
         </ol>
         
-		<div class="col-xs-12 col-sm-5" style="background-size: 100% 100%; background-repeat: no-repeat;" id="displayImg">
+		<div class="col-xs-12 col-sm-5" style="height:760px;" id="displayImg">
 		</div>
 		<div class="col-xs-12 col-sm-7">
 			<div class="col-xs-12">
@@ -75,7 +75,7 @@
 				</ul>
 			</div>
 			<div class="col-xs-12">
-				<div class="tab-content" style="height:760px;">
+				<div class="tab-content" style="height:718px;">
 						<div class="tab-pane active" id="pres">
 							<div class="show-content">
 								<span class="btn btn-primary"><?php echo $lang['SHOW_PROM_BTN']; ?></span>
