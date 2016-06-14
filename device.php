@@ -53,7 +53,7 @@
 
 </head>
 
-<body onload="changePageName();">
+<body onload="fillDevicePage(1);">
     <!-- =========================
          HEADER
     ============================== -->
@@ -62,9 +62,8 @@
          /END HEADER
     ============================== -->
     <div class="main-wrapper">
-        <div id="txtHint">
-            replaceme
-        </div>
+        <ol class="breadcrumb" id="bc">
+        </ol>
     </div><!-- /End Main Wrapper -->
     <!-- ==================================================
         FOOTER
