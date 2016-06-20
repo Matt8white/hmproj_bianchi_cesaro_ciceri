@@ -8,6 +8,12 @@ function fillDevicePage(str) {
 			div.style.background = "url(" + infos["image"] + ") no-repeat center top";
             var str = createBreadcrumb(infos, "device");
             document.getElementById("bc").innerHTML = str;
+            var div = document.getElementById('pres');
+            div.children[0].innerHTML = '<p>' + infos["pres_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + div.children[0].innerHTML;
+            var div = document.getElementById('tech');
+            div.children[0].innerHTML = '<p>' + infos["spec_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' +div.children[0].innerHTML;
+            var div = document.getElementById('desc');
+            div.innerHTML = '<p>' + infos["descr_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>';
         }
     });
 }
