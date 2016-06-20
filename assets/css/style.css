@@ -115,7 +115,7 @@ ul > li {
     position: absolute;
     width: 300px;
     height: inherit;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .topup-cont {
    height: 360px;

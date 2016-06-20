@@ -15,8 +15,6 @@ function fillDevicePage() {
             div.innerHTML = '<p>' + infos["spec_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' +div.innerHTML;
             var div = document.getElementById('desc');
             div.innerHTML = '<p>' + infos["descr_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>';
-            $('.tab-content').height($('#displayImg').height());
-            $('.show-content').height($('#displayImg').height()-2*$('.nav-justified').height());
         }
     });
 }
@@ -53,3 +51,7 @@ function getUrlVars() {
 $('.tree-toggle').click(function () {
 	$(this).parent().children('ul.tree').toggle(200);
 });
+
+
+
+

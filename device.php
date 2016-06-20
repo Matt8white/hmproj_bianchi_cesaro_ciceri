@@ -70,12 +70,12 @@
 		<div class="col-xs-12 col-sm-7">
 			<div class="col-xs-12">
 				<ul class="nav nav-tabs nav-justified">
-						<li class="active"><a href="#pres" data-toggle="tab"><?php echo $lang['SHOW_PROMOTION']; ?></a></li>
-						<li><a href="#tech" data-toggle="tab"><?php echo $lang['SHOW_DEVICE']; ?></a></li>
+						<li class="active" id="presbutton"><a href="#pres" data-toggle="tab"><?php echo $lang['SHOW_PROMOTION']; ?></a></li>
+						<li id="techbutton"><a href="#tech" data-toggle="tab"><?php echo $lang['SHOW_DEVICE']; ?></a></li>
 				</ul>
 			</div>
 			<div class="col-xs-12">
-				<div class="tab-content">
+				<div class="tab-content" style="height:560px">
 						<div class="tab-pane active" id="pres">
 							<div class="show-content" style="width: 100%;">
 								<span class="btn btn-primary"><?php echo $lang['SHOW_PROM_BTN']; ?></span>
