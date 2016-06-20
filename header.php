@@ -22,7 +22,7 @@
                         <?php echo $lang['NAV_1']; ?>
                     </li>
                 </a>
-                <a href="category.php">
+                <a href="products.php">
                     <li class="navbar-button col-sm-3 col-xs-12">
                         <?php echo $lang['NAV_2']; ?>
                     </li>

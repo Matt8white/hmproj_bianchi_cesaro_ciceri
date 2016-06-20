@@ -143,7 +143,7 @@
                         <div class="show-content">
                             <h1 style="color: black"><font size="6vw"><?php echo $lang['SHOW_DEV_HEAD']; ?></font></h1>
                             <p  style="color: black"><font size="4vw"><?php echo $lang['SHOW_DEV_DESC']; ?></font></p>
-                            <a href="device.php"><span class="btn btn-primary"><?php echo $lang['SHOW_DEV_BTN']; ?></span></a>
+                            <a href="device.php?device=6"><span class="btn btn-primary"><?php echo $lang['SHOW_DEV_BTN']; ?></span></a>
                         </div>
                     </div>
                     <div class="tab-pane" id="sl" style="background: url('/assets/images/sl-home.jpg') no-repeat right top;">

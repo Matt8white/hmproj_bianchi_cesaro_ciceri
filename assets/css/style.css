@@ -11,6 +11,9 @@ ul > li {
 	margin: 0 auto;
 }
 
+/* =========================
+     NAVBAR
+============================ */
 .navbar .navbar-inner {
     padding: 0;
 }
@@ -38,8 +41,8 @@ ul > li {
 }
 
 .navbar-button {
-    text-align: center;		
-	color: #014591;	
+    text-align: center;
+	color: #014591;
 	padding: 15px 10px;
 }
 .navbar-button:hover {
@@ -74,6 +77,9 @@ ul > li {
     margin: 0;
 }
 
+/* =========================
+     HEADER
+============================ */
 .critem {
     height: 340px;
     position: relative;
@@ -126,7 +132,51 @@ ul > li {
 	height:50%;
 	border-radius: 15px;
 }
+/* =========================
+     DEVICES
+============================ */
+.banner {
+    background: url('/assets/images/devices_banner.jpg') no-repeat center top;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 50px;
+}
+.banner-content {
+    margin-top: 40px;
+    position: absolute;
+    width: 300px;
+    height: 65%;
+    overflow-y: auto;
+    left: 15%;
+}
 
+.prods-head {
+    border: 1px solid #b3b3b3;
+    background-color: #f0f0f0;
+}
+.prods-cont {
+    border: 8px;
+    height: 250px;
+}
+.prods-dev {
+    border: 1px solid #b3b3b3;
+    height: 100%;
+}
+.devspimg{
+    height: 80%;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+/* =========================
+     FOOTER
+============================ */
 .footer-filler{
 	background-color: #F0F0F0;
 	height: 100%;

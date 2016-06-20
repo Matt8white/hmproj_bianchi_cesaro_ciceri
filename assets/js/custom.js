@@ -1,3 +1,21 @@
+function fillDevicesPage (){
+    devInfoShort(1,'devsp1');
+    devInfoShort(2,'devsp2');
+    devInfoShort(3,'devsp3');
+}
+function devInfoShort (str, elem){
+    $.ajax({
+        url: 'ajax/getDeviceInfo.php?q='+str, success: function (result) {
+            var infos = JSON.parse(result);
+            var elem1 = document.getElementById(elem);
+            elem1.children[0].style.background = "url(" + infos["image"] + ") no-repeat center top";
+            $('.devspimg').css('background-size', 'contain');
+            elem1.innerHTML += infos["brand"] + " " + infos["model"];
+            elem1.innerHTML += "<br>" + infos["price"];
+        }
+    });
+}
+
 function fillDevicePage() {
     str = getUrlVars()["device"];
     "use strict";
@@ -41,18 +59,13 @@ function capitalLetter(string) {
 
 function getUrlVars() {
     var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,    
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
     function(m,key,value) {
       vars[key] = value;
     });
     return vars;
   }
 
-
 $('.tree-toggle').click(function () {
 	$(this).parent().children('ul.tree').toggle(200);
 });
-
-
-
-

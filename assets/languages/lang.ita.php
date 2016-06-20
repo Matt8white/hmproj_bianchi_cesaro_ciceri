@@ -33,8 +33,8 @@
     $lang['SHOW_PROM_HEAD'] = "TIM Young Junior";
     $lang['SHOW_PROM_DESC'] = "A soli 8 €/4 sett. tuo figlio parla, naviga e gioca con TIMgames Junior e tu sei tranquillo grazie al servizio TIM Protect.";
     $lang['SHOW_PROM_BTN'] = "Scopri l'offerta";
-    $lang['SHOW_DEV_HEAD'] = "Samsung Galaxy S7 e S7 edge";
-    $lang['SHOW_DEV_DESC'] = "Galaxy S7 edge a 20,84 €/mese per 36 mesi senza interessi, se hai una linea di casa TIM";
+    $lang['SHOW_DEV_HEAD'] = "Samsung Galaxy S7 edge";
+    $lang['SHOW_DEV_DESC'] = "Molto più di uno smartphone. <br> A 749,90 € invece di 829,90 € in 36 rate da 20,83 €/mese se hai una linea di casa TIM";
     $lang['SHOW_DEV_BTN'] = "Scopri l'offerta";
     $lang['SHOW_SL_HEAD'] = "TIM Home Connect";
     $lang['SHOW_SL_DESC'] = "La soluzione ideale per gestire tutti i sistemi di domotica presenti nella tua casa la cui gestione prevede l'uso di una SIM. Dalla semplice caldaia domestica  ai più avanzati impianti di sicurezza";
@@ -79,6 +79,15 @@
 	$lang['DIGITAL_ID'] = "Identità digitale";
 	$lang['THE_GROUP_FOOTER'] = "Gruppo Telecom Italia";
 
+    /*DEVICES*/
+    $lang['DEVICE_PAGE_TITLE'] = "Device | TIM";
+
+    $lang['PRODS_BANNER_TITLE'] = "Prodotti";
+    $lang['PRODS_BANNER_DESC'] = "Smartphone, Tablet, Telefoni per la casa anche a rate sul conto TIM";
+
     /*DEVICE*/
     $lang['DEVICE_PAGE_TITLE'] = "Device | TIM";
+
+    $lang['DEV_PRES'] = "Presentazione";
+    $lang['DEV_SPEC'] = "Specifiche Tecniche";
 ?>
