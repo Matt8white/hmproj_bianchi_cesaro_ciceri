@@ -9,9 +9,10 @@ function fillDevicePage() {
 			div.style.background = "url(" + infos["image"] + ") no-repeat center top";
             var str = createBreadcrumb(infos, "device");
             document.getElementById("bc").innerHTML = str;
-            var div = document.getElementById('pres').children[0];
+            $(".devname").html('<bf>'+infos["brand"] + " " + infos["model"] +'</bf>');
+            var div = document.getElementById('pres').children[1];
             div.innerHTML = '<p>' + infos["pres_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + div.innerHTML;
-            var div = document.getElementById('tech').children[0];
+            var div = document.getElementById('tech').children[1];
             div.innerHTML = '<p>' + infos["spec_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' +div.innerHTML;
             var div = document.getElementById('desc');
             div.innerHTML = '<p>' + infos["descr_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>';

@@ -77,11 +77,13 @@
 			<div class="col-xs-12">
 				<div class="tab-content" style="height:560px">
 						<div class="tab-pane active" id="pres">
+                            <div class="devname" style="font-size: 44px; color: #014591; font-family: Arial, Helvetica, sans-serif  "></div>
 							<div class="show-content" style="width: 100%;">
 								<span class="btn btn-primary"><?php echo $lang['SHOW_PROM_BTN']; ?></span>
 							</div>
 						</div>
 						<div class="tab-pane" id="tech">
+                            <div class="devname" style="font-size: 44px; color: #014591; font-family: Arial, Helvetica, sans-serif  "></div>
 							<div class="show-content" style="width: 100%;">
 								<span class="btn btn-primary"><?php echo $lang['SHOW_DEV_BTN']; ?></span>
 							</div>
