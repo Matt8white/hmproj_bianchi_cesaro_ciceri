@@ -143,7 +143,7 @@
                         <div class="show-content">
                             <h1 style="color: black"><font size="6vw"><?php echo $lang['SHOW_DEV_HEAD']; ?></font></h1>
                             <p  style="color: black"><font size="4vw"><?php echo $lang['SHOW_DEV_DESC']; ?></font></p>
-                            <span class="btn btn-primary"><?php echo $lang['SHOW_DEV_BTN']; ?></span>
+                            <a href="device.php"><span class="btn btn-primary"><?php echo $lang['SHOW_DEV_BTN']; ?></span></a>
                         </div>
                     </div>
                     <div class="tab-pane" id="sl" style="background: url('/assets/images/sl-home.jpg') no-repeat right top;">
@@ -157,18 +157,18 @@
             </div>
             <div class="col-md-3 col-xs-12 topup-cont">
                 <div class="col-xs-12 topup">
-                    <h4 style="color: red"><font size="4"><?php echo $lang['TOPUP_HEAD']; ?></font></h1>
-					<select style="width: 70%; height: 24%; margin-top: 2%; margin-bottom:10%">
-						<option>5 €</option>
-						<option>10 €</option>
-						<option>20 €</option>
-					</select>
+                    <h4 style="color: red"><font size="4"><?php echo $lang['TOPUP_HEAD']; ?></font></h4>
+                    <select style="width: 70%; height: 24%; margin-top: 2%; margin-bottom:10%">
+                        <option>5 €</option>
+                        <option>10 €</option>
+                        <option>20 €</option>
+                    </select>
                     <span class="btn btn-topup"><?php echo $lang['TOPUP_BTN']; ?></span>
                 </div>
                 <div class="col-xs-12 topup" style="margin-top: -1px">
-					<img src="https://img.tim.it:443/sdr/icone/icona_wcb_schede_offerta.png" class="img-tab" style="margin-top: 7.5%; margin-left: 24%">
+                    <img src="https://img.tim.it:443/sdr/icone/icona_wcb_schede_offerta.png" class="img-tab" style="margin-top: 7.5%; margin-left: 24%">
                     <h1 style="color: black; text-align: left; margin-left: 10%"><font size="4"><?php echo $lang['NEWCUST_HEAD']; ?></font></h1>
-					<p  style="color: black; text-align: left; margin-left: 12%"><font size="3"><?php echo $lang['NEWCUST_BODY']; ?></font></p>
+                    <p  style="color: black; text-align: left; margin-left: 12%"><font size="3"><?php echo $lang['NEWCUST_BODY']; ?></font></p>
                     <span class="btn btn-topup"><?php echo $lang['NEWCUST_BTN']; ?></span>
                 </div>
             </div>
