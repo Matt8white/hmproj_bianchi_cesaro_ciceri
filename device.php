@@ -53,7 +53,7 @@
 
 </head>
 
-<body onload="fillDevicePage(1);">
+<body onload="fillDevicePage();">
     <!-- =========================
          HEADER
     ============================== -->
