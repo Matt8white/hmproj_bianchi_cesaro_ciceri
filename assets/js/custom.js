@@ -14,6 +14,18 @@ function fillDevicePage(str) {
             div.children[0].innerHTML = '<p>' + infos["spec_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' +div.children[0].innerHTML;
             var div = document.getElementById('desc');
             div.innerHTML = '<p>' + infos["descr_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>';
+            $('#pres').removeClass('active');
+            $('#tech').addClass('active');
+            var maxHeight = -1;
+            $('div.show-content').each(function() {
+                if ($(this).outerHeight() > maxHeight) {
+                    maxHeight = $(this).outerHeight();
+                }
+            });
+            maxHeight+=120;
+            $('.tab-content').height(maxHeight);
+            $('#tech').removeClass('active');
+            $('#pres').addClass('active');
         }
     });
 }

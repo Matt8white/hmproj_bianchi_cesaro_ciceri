@@ -75,7 +75,7 @@
 				</ul>
 			</div>
 			<div class="col-xs-12">
-				<div class="tab-content" style="height:718px;">
+				<div class="tab-content">
 						<div class="tab-pane active" id="pres">
 							<div class="show-content" style="width: 100%;">
 								<span class="btn btn-primary"><?php echo $lang['SHOW_PROM_BTN']; ?></span>
