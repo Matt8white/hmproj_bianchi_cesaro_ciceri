@@ -53,7 +53,7 @@
 
 </head>
 
-<body onload="fillDevicePage(1);">
+<body onload="fillCategoryPage(1);">
     <!-- =========================
          HEADER
     ============================== -->
@@ -65,9 +65,38 @@
         <ol class="breadcrumb" id="bc">
         </ol>
         
-		<div class="col-xs-12 col-sm-5" style="height:760px;" id="displayImg">
+		<div class="col-xs-12 col-sm-4">
+			<div class="row">
+			  <div class="span3">
+				<div class="well">
+					<div>
+						<ul class="nav nav-list">
+							<li><label class="tree-toggle nav-header">Filters</label>
+								<ul class="nav nav-list tree">
+								<hr>
+									<li><label class="tree-toggle nav-header">Brand</label>
+										<ul class="nav nav-list tree">
+											<li class="checkbox">
+												<label>
+													<input type="checkbox"> LG
+												</label>
+											</li>
+											<li class="checkbox">
+												<label>
+													<input type="checkbox"> Samsung
+												</label>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
 		</div>
-		<div class="col-xs-12 col-sm-7">
+		<div class="col-xs-12 col-sm-8">
 			<div class="col-xs-12">
 				<ul class="nav nav-tabs nav-justified">
 						<li class="active"><a href="#pres" data-toggle="tab"><?php echo $lang['SHOW_PROMOTION']; ?></a></li>

@@ -1,6 +1,10 @@
 body {
     padding-top: 60px;
 }
+ul > li {
+	margin-left: 10px;
+}
+
 
 .main-wrapper {
     max-width: 1366px;

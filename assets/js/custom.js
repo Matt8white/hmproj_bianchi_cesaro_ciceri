@@ -4,7 +4,8 @@ function fillDevicePage(str) {
         url: 'ajax/getDeviceInfo.php?q='+str, success: function (result) {
             var infos = JSON.parse(result);
             document.title = infos["brand"] + " " + infos["model"] + " | TIM";
-            document.getElementById('displayImg').style.background = "url(" + infos["image"] + ");";
+			var div = document.getElementById('displayImg');
+			div.style.background = "url(" + infos["image"] + ") no-repeat center top";
             var str = createBreadcrumb(infos, "device");
             document.getElementById("bc").innerHTML = str;
         }
@@ -29,3 +30,8 @@ function createBreadcrumb(infos, type) {
 function capitalLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
+
+
+$('.tree-toggle').click(function () {
+	$(this).parent().children('ul.tree').toggle(200);
+});
