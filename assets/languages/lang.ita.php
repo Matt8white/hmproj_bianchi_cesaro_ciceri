@@ -85,25 +85,49 @@
     $lang['PRODS_BANNER_TITLE'] = "Prodotti";
     $lang['PRODS_BANNER_DESC'] = "Smartphone, Tablet, Telefoni per la casa anche a rate sul conto TIM";
 
-    $lang['SPS_FILTER_TITLE'] = "Smartphone e Telefoni";
+    $lang['SPS_FILTER_TITLE'] = "Smartphone & Telefoni";
     $lang['SPS_FILTER_ALL'] = "Tutti";
     $lang['SPS_FILTER_APPLE'] = "Apple";
     $lang['SPS_FILTER_SAMSUNG'] = "Samsung";
-    $lang['TBS_FILTER_TITLE'] = "Tablet e Computer";
+    $lang['TBS_FILTER_TITLE'] = "Tablet & Computer";
     $lang['TBS_FILTER_ALL'] = "Tutti";
     $lang['TBS_FILTER_APPLE'] = "Apple";
     $lang['TBS_FILTER_SAMSUNG'] = "Samsung";
-    $lang['MODS_FILTER_TITLE'] = "Modem e Networking";
+    $lang['MODS_FILTER_TITLE'] = "Modem & Networking";
     $lang['MODS_FILTER_ALL'] = "Tutti";
     $lang['MODS_FILTER_APPLE'] = "Apple";
     $lang['MODS_FILTER_SAMSUNG'] = "Samsung";
-    $lang['TVSLS_FILTER_TITLE'] = "TV e Smart Living";
+    $lang['TVSLS_FILTER_TITLE'] = "TV & Smart Living";
     $lang['TVSLS_FILTER_ALL'] = "Tutti";
     $lang['TVSLS_FILTER_APPLE'] = "Apple";
     $lang['TVSLS_FILTER_SAMSUNG'] = "Samsung";
 
+    /*PROMOTIONS*/
+    $lang['OFF_PAGE_TITLE'] = "Promozioni | TIM";
+
+    $lang['OFF_BANNER_TITLE'] = "Offerte TIM";
+    $lang['OFF_BANNER_DESC'] = "Le migliori offerte per te, a casa e fuori casa";
+
+    /*DEVICES*/
+    $lang['DEVICES_PAGE_TITLE'] = "Prodotti | TIM";
+
+    $lang['PRODS_BANNER_TITLE'] = "Prodotti";
+    $lang['PRODS_BANNER_DESC'] = "Smartphone, Tablet, Telefoni per la casa anche a rate sul conto TIM";
+
+    /*SL SERVICES*/
+    $lang['SL_PAGE_TITLE'] = "Smart Life | TIM";
+
+    $lang['SL_BANNER_TITLE'] = "CIAONE";
+    $lang['SL_BANNER_DESC'] = "CIAONE";
+
+    /*ASSISTANCE SERVICES*/
+    $lang['ASS_PAGE_TITLE'] = "Assistenza | TIM";
+
+    $lang['ASS_BANNER_TITLE'] = "CIAONE";
+    $lang['ASS_BANNER_DESC'] = "CIAONE";
+
     /*DEVICE*/
-    $lang['DEVICE_PAGE_TITLE'] = "Device | TIM";
+    $lang['PAGE_TITLE'] = "Device | TIM";
 
     $lang['DEV_PRES'] = "Presentazione";
     $lang['DEV_SPEC'] = "Specifiche Tecniche";
