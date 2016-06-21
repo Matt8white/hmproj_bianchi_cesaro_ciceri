@@ -70,10 +70,10 @@
                 <p  style="color: white"><font size="4vw"><?php echo $lang['PRODS_BANNER_DESC']; ?></font></p>
             </div>
         </div>
-        <div class="clear-fix" style="width: 94%; margin: 50px 3%;">
+        <div class="clear-fix" style="width: 70%; margin: 50px 15%;">
             <div class="col-xs-12 col-sm-3 prods-head">
                 <ul style="list-style-type: none;">
-                    <li><?php echo $lang['SPS_FILTER_TITLE']; ?></li>
+                    <li><h3><?php echo $lang['SPS_FILTER_TITLE']; ?></h3></li>
                     <li><?php echo $lang['SPS_FILTER_ALL']; ?></li>
                     <li><?php echo $lang['SPS_FILTER_APPLE']; ?></li>
                     <li><?php echo $lang['SPS_FILTER_SAMSUNG']; ?></li>
@@ -104,14 +104,13 @@
                 </a>
             </div>
         </div>
-        <div class="clear-fix" style="width: 94%; margin: 50px 3%;">
+        <div class="clear-fix" style="width: 70%; margin: 50px 15%;">
             <div class="col-xs-12 col-sm-3 prods-head">
                 <ul style="list-style-type: none;">
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
+                    <li><h3><?php echo $lang['TBS_FILTER_TITLE']; ?></h3></li>
+                    <li><?php echo $lang['TBS_FILTER_ALL']; ?></li>
+                    <li><?php echo $lang['TBS_FILTER_APPLE']; ?></li>
+                    <li><?php echo $lang['TBS_FILTER_SAMSUNG']; ?></li>
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-3 prods-cont">
@@ -133,6 +132,73 @@
             <div class="col-xs-12 col-sm-3 prods-cont">
                 <a>
                     <div class="col-xs-12 prods-dev" id="devtb3">
+                        <div class="devspimg">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="clear-fix" style="width: 70%; margin: 50px 15%;">
+            <div class="col-xs-12 col-sm-3 prods-head">
+                <ul style="list-style-type: none;">
+                    <li><h3><?php echo $lang['MODS_FILTER_TITLE']; ?></h3></li>
+                    <li><?php echo $lang['MODS_FILTER_ALL']; ?></li>
+                    <li><?php echo $lang['MODS_FILTER_APPLE']; ?></li>
+                    <li><?php echo $lang['MODS_FILTER_SAMSUNG']; ?></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-3 prods-cont">
+                <a>
+                    <div class="col-xs-12 prods-dev" id="devmod1">
+                        <div class="devspimg">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-3 prods-cont">
+                <a>
+                    <div class="col-xs-12 prods-dev" id="devmod2">
+                        <div class="devspimg">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-3 prods-cont">
+                <a>
+                    <div class="col-xs-12 prods-dev" id="devmod3">
+                        <div class="devspimg">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div><div class="clear-fix" style="width: 70%; margin: 50px 15%;">
+            <div class="col-xs-12 col-sm-3 prods-head">
+                <ul style="list-style-type: none;">
+                    <li><h3><?php echo $lang['TVSLS_FILTER_TITLE']; ?></h3></li>
+                    <li><?php echo $lang['TVSLS_FILTER_ALL']; ?></li>
+                    <li><?php echo $lang['TVSLS_FILTER_APPLE']; ?></li>
+                    <li><?php echo $lang['TVSLS_FILTER_SAMSUNG']; ?></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-3 prods-cont">
+                <a>
+                    <div class="col-xs-12 prods-dev" id="devtvsl1">
+                        <div class="devspimg">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-3 prods-cont">
+                <a>
+                    <div class="col-xs-12 prods-dev" id="devtvsl2">
+                        <div class="devspimg">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-3 prods-cont">
+                <a>
+                    <div class="col-xs-12 prods-dev" id="devtvsl3">
                         <div class="devspimg">
                         </div>
                     </div>
