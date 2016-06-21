@@ -64,7 +64,7 @@
     <div class="main-wrapper clear-fix">
         <ol class="breadcrumb" id="bc">
         </ol>
-        
+
 		<div class="col-xs-12 col-sm-4">
 			<div class="row">
 			  <div class="span3">
@@ -112,8 +112,9 @@
 						</div>
 						<div class="tab-pane" id="tech">
 							<div class="show-content">
-								<span class="btn btn-primary"><?php echo $lang['SHOW_DEV_BTN']; ?></span>
-							</div>
+								<a href="#" onclick="test('index.php','ciaonegrosso')"><span class="btn btn-primary"><?php echo $lang['SHOW_DEV_BTN']; ?></span>
+                                </a>    
+                            </div>
 						</div>
 				</div>
 			</div>

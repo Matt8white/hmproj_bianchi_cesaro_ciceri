@@ -7,7 +7,7 @@
     <meta charset="utf-8">
 
     <!-- TITLE OF SITE -->
-    <title><?php echo $lang['DEVICE_PAGE_TITLE']; ?></title>
+    <title><?php echo $lang['DEVICES_PAGE_TITLE']; ?></title>
 
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -73,6 +73,40 @@
         <div class="clear-fix" style="width: 94%; margin: 50px 3%;">
             <div class="col-xs-12 col-sm-3 prods-head">
                 <ul style="list-style-type: none;">
+                    <li><?php echo $lang['SPS_FILTER_TITLE']; ?></li>
+                    <li><?php echo $lang['SPS_FILTER_ALL']; ?></li>
+                    <li><?php echo $lang['SPS_FILTER_APPLE']; ?></li>
+                    <li><?php echo $lang['SPS_FILTER_SAMSUNG']; ?></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-3 prods-cont">
+                <a>
+                    <div class="col-xs-12 prods-dev" id="devsp1">
+                        <div class="devspimg">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-3 prods-cont">
+                <a>
+                    <div class="col-xs-12 prods-dev" id="devsp2">
+                        <div class="devspimg">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-3 prods-cont">
+                <a>
+                    <div class="col-xs-12 prods-dev" id="devsp3">
+                        <div class="devspimg">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="clear-fix" style="width: 94%; margin: 50px 3%;">
+            <div class="col-xs-12 col-sm-3 prods-head">
+                <ul style="list-style-type: none;">
                     <li>ciao</li>
                     <li>ciao</li>
                     <li>ciao</li>
@@ -81,25 +115,30 @@
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-3 prods-cont">
-                <div class="col-xs-12 prods-dev" id="devsp1">
-                    <div class="devspimg">
+                <a>
+                    <div class="col-xs-12 prods-dev" id="devtb1">
+                        <div class="devspimg">
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-xs-12 col-sm-3 prods-cont">
-                <div class="col-xs-12 prods-dev" id="devsp2">
-                    <div class="devspimg">
+                <a>
+                    <div class="col-xs-12 prods-dev" id="devtb2">
+                        <div class="devspimg">
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-xs-12 col-sm-3 prods-cont">
-                <div class="col-xs-12 prods-dev" id="devsp3">
-                    <div class="devspimg">
+                <a>
+                    <div class="col-xs-12 prods-dev" id="devtb3">
+                        <div class="devspimg">
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
-        
     </div><!-- /End Main Wrapper -->
     <!-- ==================================================
         FOOTER

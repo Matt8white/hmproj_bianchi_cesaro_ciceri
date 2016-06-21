@@ -1,26 +1,35 @@
-function fillDevicesPage (){
-    devInfoShort(1,'devsp1');
-    devInfoShort(2,'devsp2');
-    devInfoShort(3,'devsp3');
+/*RETRIEVE A CATEGORY OF DEVICES*/
+function fillDevicesPage () {
+    document.getElementById("bc").innerHTML = createBreadcrumb(null, 'devCategory');
+    devInfoShort('Smartphones','devsp');
+    devInfoShort('Tablet','devtb');
 }
 function devInfoShort (str, elem){
     $.ajax({
-        url: 'ajax/getDeviceInfo.php?q='+str, success: function (result) {
+        url: 'ajax/getCategories.php?q=' + str, success: function(result) {
             var infos = JSON.parse(result);
-            var elem1 = document.getElementById(elem);
-            elem1.children[0].style.background = "url(" + infos["image"] + ") no-repeat center top";
-            $('.devspimg').css('background-size', 'contain');
-            elem1.innerHTML += infos["brand"] + " " + infos["model"];
-            elem1.innerHTML += "<br>" + infos["price"];
+            for (var i = 1; i <= 3; i++) {
+                var elem1 = document.getElementById(elem + i);
+                var dev = infos[i];
+                $($(elem1)).parent().attr("href", "/device.php?device=" + dev["id"]);
+                elem1.children[0].style.background = "url(" + dev["image"] + ") no-repeat center top";
+                $('.devspimg').css('background-size', 'contain');
+                elem1.innerHTML += dev["brand"] + " " + dev["model"];
+                if(dev["promotion"] == 1)
+                    elem1.innerHTML += "<br><strike>" + dev["price"] + "</strike><br>" + "<font color='red'>" + dev["shortedprice"] + "</font>";
+                else
+                    elem1.innerHTML += "<br>" + dev["price"];
+            }
         }
     });
 }
 
+/*RETRIEVE A DEVICE INFO*/
 function fillDevicePage() {
     str = getUrlVars()["device"];
     "use strict";
     $.ajax({
-        url: 'ajax/getDeviceInfo.php?q='+str, success: function (result) {
+        url: 'ajax/getDeviceInfo.php?q='+str, success: function(result) {
             var infos = JSON.parse(result);
             document.title = infos["brand"] + " " + infos["model"] + " | TIM";
 			var div = document.getElementById('displayImg');
@@ -31,7 +40,7 @@ function fillDevicePage() {
             var div = document.getElementById('pres').children[1];
             div.innerHTML = '<p>' + infos["pres_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + div.innerHTML;
             var div = document.getElementById('tech').children[1];
-            div.innerHTML = '<p>' + infos["spec_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' +div.innerHTML;
+            div.innerHTML = '<p>' + infos["spec_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + div.innerHTML;
             var div = document.getElementById('desc');
             div.innerHTML = '<p>' + infos["descr_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>';
         }
@@ -43,10 +52,11 @@ function createBreadcrumb(infos, type) {
     switch(type) {
         case "device":
             str = "<li><a href='products.php'>Products</a></li><li><a href='category.php' onload='fillCategoryPage("
-                    +infos["category"]+")'>"+infos["category"]+"</a></li><li>"+infos["brand"] + " " + infos["model"]+"</li>";
+                    + infos["category"] + ")'>" + infos["category"] + "</a></li><li>" + infos["brand"] + " " + infos["model"] + "</li>";
             break;
         case "devCategory":
-            str = "<li><a href='products.php'>Products</a></li>"
+            str = "<li>Products</li>"
+            break;
         default:
             str = "ciaone";
     }
@@ -69,3 +79,8 @@ function getUrlVars() {
 $('.tree-toggle').click(function () {
 	$(this).parent().children('ul.tree').toggle(200);
 });
+
+function test(str, str2) {
+    var win = window.open(str, str2);
+    win.alert(str2);
+}

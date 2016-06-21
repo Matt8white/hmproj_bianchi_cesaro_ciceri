@@ -161,9 +161,12 @@ ul > li {
 .prods-dev {
     border: 1px solid #b3b3b3;
     height: 100%;
+    text-align: center;
+    color: #014591;
+    font-weight: bold;
 }
 .devspimg{
-    height: 80%;
+    height: 70%;
     background-size: cover;
 }
 

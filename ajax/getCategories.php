@@ -7,11 +7,13 @@
     }
 
     mysqli_select_db($con,"TimHypProj");
-    $sql = "SELECT * FROM devices WHERE category = '".$q."'";
+    $sql = "SELECT id, brand, model, price, promotion, shortedprice, image FROM devices WHERE category = '".$q."'";
     $result = mysqli_query($con,$sql);
 
-    while($row = mysqli_fetch_array($result)) {
-        echo json_encode($row);
+    $rows[] = array();
+    while($row = mysqli_fetch_assoc($result)) {
+        $rows[] = $row;
     }
+    echo json_encode($rows);
     mysqli_close($con);
 ?>

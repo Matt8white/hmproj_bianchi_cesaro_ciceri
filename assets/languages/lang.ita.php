@@ -80,10 +80,19 @@
 	$lang['THE_GROUP_FOOTER'] = "Gruppo Telecom Italia";
 
     /*DEVICES*/
-    $lang['DEVICE_PAGE_TITLE'] = "Device | TIM";
+    $lang['DEVICES_PAGE_TITLE'] = "Prodotti | TIM";
 
     $lang['PRODS_BANNER_TITLE'] = "Prodotti";
     $lang['PRODS_BANNER_DESC'] = "Smartphone, Tablet, Telefoni per la casa anche a rate sul conto TIM";
+
+    $lang['SPS_FILTER_TITLE'] = "Smartphone e Telefoni";
+    $lang['SPS_FILTER_ALL'] = "Tutti";
+    $lang['SPS_FILTER_APPLE'] = "Apple";
+    $lang['SPS_FILTER_SAMSUNG'] = "Samsung";
+    $lang['TAB_FILTER_TITLE'] = "";
+    $lang['TAB_FILTER_ALL'] = "";
+    $lang['TAB_FILTER_APPLE'] = "";
+    $lang['TAB_FILTER_SAMSUNG'] = "";
 
     /*DEVICE*/
     $lang['DEVICE_PAGE_TITLE'] = "Device | TIM";
