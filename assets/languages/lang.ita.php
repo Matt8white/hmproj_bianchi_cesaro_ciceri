@@ -89,10 +89,18 @@
     $lang['SPS_FILTER_ALL'] = "Tutti";
     $lang['SPS_FILTER_APPLE'] = "Apple";
     $lang['SPS_FILTER_SAMSUNG'] = "Samsung";
-    $lang['TAB_FILTER_TITLE'] = "";
-    $lang['TAB_FILTER_ALL'] = "";
-    $lang['TAB_FILTER_APPLE'] = "";
-    $lang['TAB_FILTER_SAMSUNG'] = "";
+    $lang['TBS_FILTER_TITLE'] = "Tablet e Computer";
+    $lang['TBS_FILTER_ALL'] = "Tutti";
+    $lang['TBS_FILTER_APPLE'] = "Apple";
+    $lang['TBS_FILTER_SAMSUNG'] = "Samsung";
+    $lang['MODS_FILTER_TITLE'] = "Modem e Networking";
+    $lang['MODS_FILTER_ALL'] = "Tutti";
+    $lang['MODS_FILTER_APPLE'] = "Apple";
+    $lang['MODS_FILTER_SAMSUNG'] = "Samsung";
+    $lang['TVSLS_FILTER_TITLE'] = "TV e Smart Living";
+    $lang['TVSLS_FILTER_ALL'] = "Tutti";
+    $lang['TVSLS_FILTER_APPLE'] = "Apple";
+    $lang['TVSLS_FILTER_SAMSUNG'] = "Samsung";
 
     /*DEVICE*/
     $lang['DEVICE_PAGE_TITLE'] = "Device | TIM";
