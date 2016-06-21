@@ -127,7 +127,7 @@
     $lang['ASS_BANNER_DESC'] = "CIAONE";
 
     /*DEVICE*/
-    $lang['PAGE_TITLE'] = "Device | TIM";
+    $lang['DEVICE_PAGE_TITLE'] = "Device | TIM";
 
     $lang['DEV_PRES'] = "Presentazione";
     $lang['DEV_SPEC'] = "Specifiche Tecniche";
