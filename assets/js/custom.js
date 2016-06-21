@@ -71,6 +71,7 @@ function fillCategoryPage () {
     //$.removeCookie('param');
     var arr = new Array();
     $(':checkbox').each(function() {
+        $(this).attr("id", $( this ).parent().text().trim()+"box");
         if(($( this ).parent().text().indexOf(passme["attr"])) > -1)
             $( this ).prop({checked: true});
     });
@@ -139,17 +140,8 @@ function filterCat(){
      var arr = [];
 
      $(':checkbox:checked').each(function(i){
-         arr[i] = $(this).val(); // u can get id or anything else
+         arr[i] = $(this).attr("id");
      });
-    /*
-    $('.checkbox').each(function() {
-        var arr = new Array();
-        if($( this ).prop("checked")){
-           arr.push($( this ).html());
-        }
-    
-    });
-    */
 
 }
 
