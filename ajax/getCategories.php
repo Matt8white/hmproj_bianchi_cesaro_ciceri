@@ -9,7 +9,6 @@
     mysqli_select_db($con,"TimHypProj");
     $sql = "SELECT id, brand, model, price, promotion, shortedprice, image FROM devices WHERE category = '".$q."'";
     $result = mysqli_query($con,$sql);
-
     $rows[] = array();
     while($row = mysqli_fetch_assoc($result)) {
         $rows[] = $row;

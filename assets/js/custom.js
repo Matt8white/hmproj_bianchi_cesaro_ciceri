@@ -10,21 +10,21 @@ function fillDevicesPage () {
 
 function devInfoLink() {
     $('li').each(function() {
-    var curr = $(this).html();
-    if($( this ).parent().get(0).tagName == 'UL' && curr[0] !='<'){
         var curr = $(this).html();
-        var currout =  "'" + curr +"'";
-        parent = $(this).parent().children(0).html().replace(/<(?:.|\n)*?>/gm, '');
-        if(curr == 'Tutti')
-            currout = null;
-        $(this).html('<a href="category.php" onClick="setCategory('+"'"+ parent +"'"+","+ currout+')">'+curr+'</a>');
+        if($( this ).parent().get(0).tagName == 'UL' && curr[0] !='<'){
+            var curr = $(this).html();
+            var currout =  "'" + curr +"'";
+            parent = $(this).parent().children(0).html().replace(/<(?:.|\n)*?>/gm, '');
+            if(curr == 'Tutti')
+                currout = null;
+            $(this).html('<a href="category.php" onClick="setCategory('+"'"+ parent +"'"+","+ currout+')">'+curr+'</a>');
     }
 });
 }
 
 function devInfoShort (str, elem){
     $.ajax({
-        url: 'ajax/getCategories.php?q=' + str, success: function(result) {
+        url: 'ajax/getCategories.php?q=' + encodeURIComponent(str), success: function(result) {
             var infos = JSON.parse(result);
             for (var i = 1; i <= 3; i++) {
                 var elem1 = document.getElementById(elem + i);
@@ -69,6 +69,13 @@ function fillDevicePage() {
 function fillCategoryPage () {
     var passme = JSON.parse($.cookie('param'));
     //$.removeCookie('param');
+    var arr = new Array();
+    $(':checkbox').each(function() {
+        if(($( this ).parent().text().indexOf(passme["attr"])) > -1)
+            $( this ).prop({checked: true});
+    });
+    
+    filterCat();
     document.getElementById("bc").innerHTML = createBreadcrumb(passme, 'category');
 }
 
@@ -77,8 +84,9 @@ function createBreadcrumb(infos, type) {
     var str;
     switch(type) {
         case "device":
-            str = "<li><a href='products.php'>Products</a></li><li><a href='category.php' onload='fillCategoryPage("
-                    + infos["category"] + ")'>" + infos["category"] + "</a></li><li>" + infos["brand"] + " " + infos["model"] + "</li>";
+            str = "<li><a href='products.php'>Products</a></li><li>" +
+            '<a href="category.php" onClick="setCategory('+"'"+ infos["category"] +"'"+","+ null+')">'+infos["category"]+'</a></a></li><li>'
+            + infos["brand"] + " " + infos["model"] + "</li>";
             break;
         case "devCategory":
             str = "<li>Products</li>"
@@ -124,5 +132,24 @@ function setCategory(cat,attr) {
     arr+='}';
    
     $.cookie('param', (arr));
-    }
+}
+
+function filterCat(){
+    //GET CHECK STATUS
+     var arr = [];
+
+     $(':checkbox:checked').each(function(i){
+         arr[i] = $(this).val(); // u can get id or anything else
+     });
+    /*
+    $('.checkbox').each(function() {
+        var arr = new Array();
+        if($( this ).prop("checked")){
+           arr.push($( this ).html());
+        }
+    
+    });
+    */
+
+}
 

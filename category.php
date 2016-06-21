@@ -86,6 +86,11 @@
 													<input type="checkbox"> Samsung
 												</label>
 											</li>
+                                            <li class="checkbox">
+												<label>
+													<input type="checkbox"> Apple
+												</label>
+											</li>
 										</ul>
 									</li>
 								</ul>
