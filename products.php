@@ -64,7 +64,7 @@
     <div class="main-wrapper clear-fix">
         <ol class="breadcrumb" id="bc">
         </ol>
-        <div class="banner">
+        <div class="banner" style="background: url('/assets/images/devices_banner.jpg') no-repeat center top;">
             <div class="banner-content">
                 <h1 style="color: white"><font size="6vw"><?php echo $lang['PRODS_BANNER_TITLE']; ?></font></h1>
                 <p  style="color: white"><font size="4vw"><?php echo $lang['PRODS_BANNER_DESC']; ?></font></p>
