@@ -97,26 +97,10 @@
 			</div>
 		</div>
 		<div class="col-xs-12 col-sm-8">
-			<div class="col-xs-12">
-				<ul class="nav nav-tabs nav-justified">
-						<li class="active"><a href="#pres" data-toggle="tab"><?php echo $lang['SHOW_PROMOTION']; ?></a></li>
-						<li><a href="#tech" data-toggle="tab"><?php echo $lang['SHOW_DEVICE']; ?></a></li>
-				</ul>
-			</div>
-			<div class="col-xs-12">
-				<div class="tab-content" style="height:718px;">
-						<div class="tab-pane active" id="pres">
-							<div class="show-content">
-								<span class="btn btn-primary"><?php echo $lang['SHOW_PROM_BTN']; ?></span>
-							</div>
-						</div>
-						<div class="tab-pane" id="tech">
-							<div class="show-content">
-								<a href="#" onclick="test('index.php','ciaonegrosso')"><span class="btn btn-primary"><?php echo $lang['SHOW_DEV_BTN']; ?></span>
-                                </a>    
-                            </div>
-						</div>
-				</div>
+            <div class="col-xs-12">
+				<div class="show-content">
+                    <span class="btn btn-primary"><?php echo $lang['SHOW_PROM_BTN']; ?></span>
+                </div>
 			</div>
 		</div>
 		<div class="col-xs-12" id="desc">
@@ -135,6 +119,7 @@
          SCRIPTS
     ============================== -->
     <script src="assets/js/plugins/jquery1.11.0.min.js"></script>
+    <script src="assets/js/plugins/jquery.cookie.js" type="text/javascript"></script>
     <script src="assets/js/plugins/bootstrap.min.js"></script>
     <script src="assets/js/plugins/jquery.easing.1.3.min.js"></script>
     <script src="assets/js/plugins/modernizr.custom.min.js"></script>

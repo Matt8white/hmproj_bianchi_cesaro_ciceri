@@ -85,11 +85,11 @@
     $lang['PRODS_BANNER_TITLE'] = "Prodotti";
     $lang['PRODS_BANNER_DESC'] = "Smartphone, Tablet, Telefoni per la casa anche a rate sul conto TIM";
 
-    $lang['SPS_FILTER_TITLE'] = "Smartphone & Telefoni";
+    $lang['SPS_FILTER_TITLE'] = "Smartphones";
     $lang['SPS_FILTER_ALL'] = "Tutti";
     $lang['SPS_FILTER_APPLE'] = "Apple";
     $lang['SPS_FILTER_SAMSUNG'] = "Samsung";
-    $lang['TBS_FILTER_TITLE'] = "Tablet & Computer";
+    $lang['TBS_FILTER_TITLE'] = "Tablet";
     $lang['TBS_FILTER_ALL'] = "Tutti";
     $lang['TBS_FILTER_APPLE'] = "Apple";
     $lang['TBS_FILTER_SAMSUNG'] = "Samsung";

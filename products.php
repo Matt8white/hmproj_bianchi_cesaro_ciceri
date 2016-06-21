@@ -74,7 +74,7 @@
             <div class="col-xs-12 col-sm-3 prods-head">
                 <ul style="list-style-type: none;">
                     <li><h3><?php echo $lang['SPS_FILTER_TITLE']; ?></h3></li>
-                    <li><?php echo $lang['SPS_FILTER_ALL']; ?></li>
+                    <li><?php echo $lang['SPS_FILTER_ALL']; ?> </li>
                     <li><?php echo $lang['SPS_FILTER_APPLE']; ?></li>
                     <li><?php echo $lang['SPS_FILTER_SAMSUNG']; ?></li>
                 </ul>
@@ -215,6 +215,7 @@
          SCRIPTS
     ============================== -->
     <script src="assets/js/plugins/jquery1.11.0.min.js"></script>
+    <script src="assets/js/plugins/jquery.cookie.js" type="text/javascript"></script>
     <script src="assets/js/plugins/bootstrap.min.js"></script>
     <script src="assets/js/plugins/jquery.easing.1.3.min.js"></script>
     <script src="assets/js/plugins/modernizr.custom.min.js"></script>
