@@ -108,6 +108,30 @@
     $lang['OFF_BANNER_TITLE'] = "Offerte TIM";
     $lang['OFF_BANNER_DESC'] = "Le migliori offerte per te, a casa e fuori casa";
 
+    $lang['PROM_DEV_TITLE'] = "Smartphone e tablet in offerta";
+    $lang['PROM_DEV_ALL'] = "Tutti";
+    $lang['PROM_DEV_SMART'] = "Smartphone";
+    $lang['PROM_DEV_TAB'] = "Tablet";
+    $lang['PROM_DEV_APPLE'] = "Apple";
+    $lang['PROM_DEV_SAMS'] = "Samsung";
+    $lang['PROM_SHOW_SMART'] = "Scegli il tuo smartphone";
+    $lang['PROM_SHOW_SMART2'] = "Su misura per te";
+    $lang['PROM_SHOW_TAB'] = "Scegli il tuo tablet";
+    $lang['PROM_SHOW_TAB2'] = "Con l'offerta più adatta";
+
+    $lang['PROM_SWITCH_ALL'] = "Tutti";
+    $lang['PROM_SWITCH_OFFERS'] = "In Offerta";
+
+    $lang['PROM_SL_TITLE'] = "TV & Entertainment";
+    $lang['PROM_SL1'] = "CIAONE";
+    $lang['PROM_SL2'] = "CIAONE";
+    $lang['PROM_SL3'] = "CIAONE";
+    $lang['PROM_SL4'] = "CIAONE";
+    $lang['PROM_SHOW_SL1'] = "Tim Sky";
+    $lang['PROM_SHOW_SL1_2'] = "Chiamate, Internet e Sky";
+    $lang['PROM_SHOW_SL2'] = "Tim Vision";
+    $lang['PROM_SHOW_SL2_2'] = "Cinema, Serie TV, cartoni dove e quando vuoi";
+
     /*DEVICES*/
     $lang['DEVICES_PAGE_TITLE'] = "Prodotti | TIM";
 
@@ -131,4 +155,6 @@
 
     $lang['DEV_PRES'] = "Presentazione";
     $lang['DEV_SPEC'] = "Specifiche Tecniche";
+    $lang['BUY_BTN'] = "Acquista";
+
 ?>

@@ -3,7 +3,7 @@ function fillDevicesPage () {
     document.getElementById("bc").innerHTML = createBreadcrumb(null, 'devCategory');
     devInfoLink();
     devInfoShort('Smartphones','devsp');
-    devInfoShort('Tablet','devtb');    
+    devInfoShort('Tablet','devtb');
     devInfoShort('Modem & Networking','devmod');
     devInfoShort('TV & Smart Living','devtvsl');
 }
@@ -50,13 +50,18 @@ function fillDevicePage() {
         url: 'ajax/getDeviceInfo.php?q='+str, success: function(result) {
             var infos = JSON.parse(result);
             document.title = infos["brand"] + " " + infos["model"] + " | TIM";
-			var div = document.getElementById('displayImg');
-			div.style.background = "url(" + infos["image"] + ") no-repeat center top";
+            var div = document.getElementById('displayImg');
+            div.style.background = "url(" + infos["image"] + ") no-repeat center top";
             var str = createBreadcrumb(infos, "device");
             document.getElementById("bc").innerHTML = str;
             $(".devname").html('<bf>'+infos["brand"] + " " + infos["model"] +'</bf>');
             var div = document.getElementById('pres').children[1];
-            div.innerHTML = '<p>' + infos["pres_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + div.innerHTML;
+            var addme;
+            if(infos["promotion"] == 1)
+                addme = "<strike>" + infos["price"] + "</strike><br>" + "<font color='red'>" + infos["shortedprice"] + "</font>";
+            else
+                addme = infos["price"];
+            div.innerHTML = '<p>' + infos["pres_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + "<br>" + addme + "<br>" + div.innerHTML ;
             var div = document.getElementById('tech').children[1];
             div.innerHTML = '<p>' + infos["spec_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + div.innerHTML;
             var div = document.getElementById('desc');
@@ -72,10 +77,10 @@ function fillCategoryPage () {
     var arr = new Array();
     $(':checkbox').each(function() {
         $(this).attr("id", $( this ).parent().text().trim()+"box");
-        if(($( this ).parent().text().indexOf(passme["attr"])) > -1)
+        if(passme["attr"].indexOf($( this ).parent().text().trim()) > -1)
             $( this ).prop({checked: true});
     });
-    
+
     filterCat();
     document.getElementById("bc").innerHTML = createBreadcrumb(passme, 'category');
 }
@@ -92,7 +97,7 @@ function createBreadcrumb(infos, type) {
         case "devCategory":
             str = "<li>Products</li>"
             break;
-         case "category":		          
+         case "category":
             str = "<li><a href='products.php'>Products</a></li><li>" + infos["cat"] + "</li>";
             break;
         default:
@@ -116,7 +121,7 @@ function getUrlVars() {
   }
 
 $('.tree-toggle').click(function () {
-	$(this).parent().children('ul.tree').toggle(200);
+    $(this).parent().children('ul.tree').toggle(200);
 });
 
 function setCategory(cat,attr) {
@@ -131,12 +136,12 @@ function setCategory(cat,attr) {
         arr+=',"attr":"'+attr+'"';
     }
     arr+='}';
-   
+
     $.cookie('param', (arr));
 }
 
 function filterCat(){
-    //GET CHECK STATUS
+    //TUTTI -> *
      var arr = [];
 
      $(':checkbox:checked').each(function(i){
@@ -144,4 +149,3 @@ function filterCat(){
      });
 
 }
-

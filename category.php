@@ -65,55 +65,61 @@
         <ol class="breadcrumb" id="bc">
         </ol>
 
-		<div class="col-xs-12 col-sm-4">
-			<div class="row">
-			  <div class="span3">
-				<div class="well">
-					<div>
-						<ul class="nav nav-list">
-							<li><label class="tree-toggle nav-header">Filters</label>
-								<ul class="nav nav-list tree">
-								<hr>
-									<li><label class="tree-toggle nav-header">Brand</label>
-										<ul class="nav nav-list tree">
-											<li class="checkbox">
-												<label>
-													<input type="checkbox"> LG
-												</label>
-											</li>
-											<li class="checkbox">
-												<label>
-													<input type="checkbox"> Samsung
-												</label>
-											</li>
+        <div class="col-xs-12 col-sm-4">
+            <div class="row">
+              <div class="span3">
+                <div class="well">
+                    <div>
+                        <ul class="nav nav-list">
+                            <li><label class="tree-toggle nav-header">Filters</label>
+                                <ul class="nav nav-list tree">
+                                    <hr>
+                                        <li class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <?php echo $lang['PROM_SWITCH_OFFERS']; ?>
+                                            </label>
+                                        </li>
+                                    <hr>
+                                    <li><label class="tree-toggle nav-header">Brand</label>
+                                        <ul class="nav nav-list tree">
                                             <li class="checkbox">
-												<label>
-													<input type="checkbox"> Apple
-												</label>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-8">
+                                                <label>
+                                                    <input type="checkbox"> LG
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Samsung
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Apple
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-8">
             <div class="col-xs-12">
-				<div class="show-content">
+                <div class="show-content">
                     <span class="btn btn-primary"><?php echo $lang['SHOW_PROM_BTN']; ?></span>
                 </div>
-			</div>
-		</div>
-		<div class="col-xs-12" id="desc">
-		</div>
-		<div class="col-xs-12 col-sm-6" id="slRel">
-		</div>
-		<div class="col-xs-12 col-sm-6" id="asRel">
-		</div>
+            </div>
+        </div>
+        <div class="col-xs-12" id="desc">
+        </div>
+        <div class="col-xs-12 col-sm-6" id="slRel">
+        </div>
+        <div class="col-xs-12 col-sm-6" id="asRel">
+        </div>
     </div><!-- /End Main Wrapper -->
     <!-- ==================================================
         FOOTER
