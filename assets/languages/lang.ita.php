@@ -108,6 +108,30 @@
     $lang['OFF_BANNER_TITLE'] = "Offerte TIM";
     $lang['OFF_BANNER_DESC'] = "Le migliori offerte per te, a casa e fuori casa";
 
+    $lang['PROM_DEV_TITLE'] = "Smartphone e tablet in offerta";
+    $lang['PROM_DEV_ALL'] = "Tutti";
+    $lang['PROM_DEV_SMART'] = "Smartphone";
+    $lang['PROM_DEV_TAB'] = "Tablet";
+    $lang['PROM_DEV_APPLE'] = "Apple";
+    $lang['PROM_DEV_SAMS'] = "Samsung";
+    $lang['PROM_SHOW_SMART'] = "Scegli il tuo smartphone";
+    $lang['PROM_SHOW_SMART2'] = "Su misura per te";
+    $lang['PROM_SHOW_TAB'] = "Scegli il tuo tablet";
+    $lang['PROM_SHOW_TAB2'] = "Con l'offerta più adatta";
+
+    $lang['PROM_SWITCH_ALL'] = "Tutti";
+    $lang['PROM_SWITCH_OFFERS'] = "In Offerta";
+
+    $lang['PROM_SL_TITLE'] = "TV & Entertainment";
+    $lang['PROM_SL1'] = "CIAONE";
+    $lang['PROM_SL2'] = "CIAONE";
+    $lang['PROM_SL3'] = "CIAONE";
+    $lang['PROM_SL4'] = "CIAONE";
+    $lang['PROM_SHOW_SL1'] = "Tim Sky";
+    $lang['PROM_SHOW_SL1_2'] = "Chiamate, Internet e Sky";
+    $lang['PROM_SHOW_SL2'] = "Tim Vision";
+    $lang['PROM_SHOW_SL2_2'] = "Cinema, Serie TV, cartoni dove e quando vuoi";
+
     /*DEVICES*/
     $lang['DEVICES_PAGE_TITLE'] = "Prodotti | TIM";
 
@@ -117,8 +141,15 @@
     /*SL SERVICES*/
     $lang['SL_PAGE_TITLE'] = "Smart Life | TIM";
 
-    $lang['SL_BANNER_TITLE'] = "CIAONE";
-    $lang['SL_BANNER_DESC'] = "CIAONE";
+    $lang['SL_TV_TITLE'] = "TV & Entertainment";
+    $lang['SL_TV_DESC'] = "SERIE TV, FILM, MUSICA, LIBRI, GIOCHI E CALCIO.<br>Scopri il tipo di intrattenimento che preferisci. Il divertimento comincia subito!<br>Quando vuoi e come vuoi.";
+    $lang['SL_HEALTH_TITLE'] = "Salute e Benessere";
+    $lang['SL_HEALTH_DESC'] = "Prova gli ultimi wearables. Scopri come salute e benessere possono cambiare in meglio la tua vita.<br>Libera la tua voglia di movimento. Condividi con gli amici i tuoi risultati. Il futuro è smart.";
+    $lang['SL_FAMILY_TITLE'] = "Casa e Famiglia";
+    $lang['SL_FAMILY_DESC'] = "Smart Life vuol dire anche una vita più semplice e sicura.<br>Anche per la tua casa e i tuoi cari.";
+    $lang['SL_PERSONAL_TITLE'] = "Servizi alla Persona";
+    $lang['SL_PERSONAL_DESC'] = "Un nuovo approccio al mondo dell’ e-payment e dell’identità digitale.<br>Potrai organizzare e gestire con semplicità e in tutta sicurezza i tuoi pagamenti digitali, il tuo archivio personale,<br>custodire le password, le fatture, gli scontrini ed i referti medici.";
+    $lang['BTN_FINDOUT'] = "Scopri";
 
     /*ASSISTANCE SERVICES*/
     $lang['ASS_PAGE_TITLE'] = "Assistenza | TIM";
@@ -131,4 +162,10 @@
 
     $lang['DEV_PRES'] = "Presentazione";
     $lang['DEV_SPEC'] = "Specifiche Tecniche";
+    $lang['BUY_BTN'] = "Acquista";
+
+    /*BREADCRUMB*/
+    $lang['BREAD_PROD'] = "Prodotti";
+    $lang['BREAD_PROM'] = "Promozioni";
+    $lang['BREAD_SL'] = "Servizi Smart Life";
 ?>

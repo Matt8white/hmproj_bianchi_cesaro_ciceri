@@ -53,7 +53,7 @@
 
 </head>
 
-<body onload="fillDevicePage();">
+<body onload="fillDevicePage('<?php echo $lang['BREAD_PROD']; ?>');">
     <!-- =========================
          HEADER
     ============================== -->
@@ -65,38 +65,37 @@
         <ol class="breadcrumb" id="bc">
         </ol>
 
-		<div class="col-xs-12 col-sm-5" style="height:760px;" id="displayImg">
-		</div>
-		<div class="col-xs-12 col-sm-7">
-			<div class="col-xs-12">
-				<ul class="nav nav-tabs nav-justified">
-						<li class="active" id="presbutton"><a href="#pres" data-toggle="tab"><?php echo $lang['DEV_PRES']; ?></a></li>
-						<li id="techbutton"><a href="#tech" data-toggle="tab"><?php echo $lang['DEV_SPEC']; ?></a></li>
-				</ul>
-			</div>
-			<div class="col-xs-12">
-				<div class="tab-content" style="height:560px">
-						<div class="tab-pane active" id="pres">
+        <div class="col-xs-12 col-sm-5" style="height:760px;" id="displayImg">
+        </div>
+        <div class="col-xs-12 col-sm-7">
+            <div class="col-xs-12">
+                <ul class="nav nav-tabs nav-justified">
+                        <li class="active" id="presbutton"><a href="#pres" data-toggle="tab"><?php echo $lang['DEV_PRES']; ?></a></li>
+                        <li id="techbutton"><a href="#tech" data-toggle="tab"><?php echo $lang['DEV_SPEC']; ?></a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12">
+                <div class="tab-content" style="height:560px">
+                        <div class="tab-pane active" id="pres">
                             <div class="devname" style="font-size: 44px; color: #014591; font-family: Arial, Helvetica, sans-serif  "></div>
-							<div class="show-content" style="width: 100%;">
-								<span class="btn btn-primary"><?php echo $lang['SHOW_PROM_BTN']; ?></span>
-							</div>
-						</div>
-						<div class="tab-pane" id="tech">
+                            <div class="show-content" style="width: 100%;">
+                                <span class="btn btn-primary"><?php echo $lang['BUY_BTN']; ?></span>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tech">
                             <div class="devname" style="font-size: 44px; color: #014591; font-family: Arial, Helvetica, sans-serif  "></div>
-							<div class="show-content" style="width: 100%;">
-								<span class="btn btn-primary"><?php echo $lang['SHOW_DEV_BTN']; ?></span>
-							</div>
-						</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-xs-12" id="desc" style="width: 80%; margin-left:10%">
-		</div>
-		<div class="col-xs-12 col-sm-6" id="slRel">
-		</div>
-		<div class="col-xs-12 col-sm-6" id="asRel">
-		</div>
+                            <div class="show-content" style="width: 100%;">
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12" id="desc" style="width: 80%; margin-left:10%">
+        </div>
+        <div class="col-xs-12 col-sm-6" id="slRel">
+        </div>
+        <div class="col-xs-12 col-sm-6" id="asRel">
+        </div>
     </div><!-- /End Main Wrapper -->
     <!-- ==================================================
         FOOTER
