@@ -108,11 +108,8 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-8">
-            <div class="col-xs-12">
-                <div class="show-content">
-                    <span class="btn btn-primary"><?php echo $lang['SHOW_PROM_BTN']; ?></span>
+                <div class="show-content" id ="devs" style="width:100%">
                 </div>
-            </div>
         </div>
         <div class="col-xs-12" id="desc">
         </div>

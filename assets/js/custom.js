@@ -71,6 +71,7 @@ function fillDevicePage(bread) {
 /* Build Category Page*/
 function fillCategoryPage (bread) {
     var passme = JSON.parse($.cookie('param'));
+    $('#devs').css('top', 0);
     //$.removeCookie('param');
     var arr = new Array();
     $(':checkbox').each(function() {
@@ -92,17 +93,22 @@ function createBreadcrumb(infos, type, subtree) {
             '<a href="category.php" onClick="setCategory('+"'"+ infos["category"] +"'"+","+ null+')">'+infos["category"]+'</a></a></li><li>'
             + infos["brand"] + " " + infos["model"] + "</li>";
             break;
-        case "devCategory":
+/*        case "devCategory":
             str = "<li>" + subtree + "</li>";
             break;
+*/  
         case "category":
             str = "<li><a href='products.php'>" + subtree + "</a></li><li>" + infos["cat"] + "</li>";
             break;
-        case "promotions":
+/*        case "promotions":
             str = "<li>" + subtree + "</li>";
             break;
+         case "slcat":
+            str = "<li>" + subtree + "</li>";
+            break;  
+*/            
         default:
-            str = "ciaone";
+            str = "<li>" + subtree + "</li>";
             break;
     }
     document.getElementById("bc").innerHTML = str;
@@ -125,28 +131,57 @@ $('.tree-toggle').click(function () {
     $(this).parent().children('ul.tree').toggle(200);
 });
 
+$( ".checkbox" ).click(function() {
+  filterCat();
+});
+
 function setCategory(cat,attr) {
 
-    var arr = '{"cat":"' +cat+'"';
+    var arr = '{"cat":"' +cat+'","attr":"';
     /*
     for (var i = 0; i < arr.length; i++) {
         arr+=',"attr":"'+attr[i]+'"';
     }
     */
     if(attr!=null){
-        arr+=',"attr":"'+attr+'"';
+        arr+=attr+'"}';
+    }else{
+        arr+='"}';
     }
-    arr+='}';
-
     $.cookie('param', (arr));
 }
 
 function filterCat(){
     //TUTTI -> *
-     var arr = [];
-
-     $(':checkbox:checked').each(function(i){
-         arr[i] = $(this).attr("id");
+    var arr = [];
+    var params = JSON.parse($.cookie('param'));
+    arr.push(params['cat']);
+    $(':checkbox:checked').each(function(i){
+         arr.push($(this).attr("id").slice(0, -3));
      });
+    $.ajax({
+        url: 'ajax/getDevices.php?s=' + encodeURIComponent(arr), success: function(result) {
+            var infos = JSON.parse(result);
+            var count = Object.keys(infos).length -1;
+            $('#devs').parent().css('height', (Math.ceil(count/3) * 250 + 50));
+            $('#devs').empty();
+            for(var i = 0; i <= count; i++) {
+                var div = document.createElement('div')
+                var dev = infos[i];
+                div.className += 'col-xs-12 col-sm-4 prods-cont'
+                div.innerHTML = '<a><div class="col-xs-12 prods-dev"><div class="devspimg"></div></div></a>'
+                var elem1 = div.children[0].children[0];
+                $($(elem1)).parent().attr("href", "/device.php?device=" + dev["id"]);
+                elem1.children[0].style.background = "url(" + dev["image"] + ") no-repeat center center";
+                $('.devspimg').css('background-size', 'contain');
+                elem1.innerHTML += dev["brand"] + " " + dev["model"];
+                if(dev["promotion"] == 1)
+                    elem1.innerHTML += "<br><strike>" + dev["price"] + "</strike><br>" + "<font color='red'>" + dev["shortedprice"] + "</font>";
+                else
+                    elem1.innerHTML += "<br>" + dev["price"];
+                document.getElementById("devs").appendChild(div);
+            }
+        }
+    });
 
 }
