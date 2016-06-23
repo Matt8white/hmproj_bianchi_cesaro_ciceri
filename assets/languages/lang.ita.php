@@ -141,8 +141,15 @@
     /*SL SERVICES*/
     $lang['SL_PAGE_TITLE'] = "Smart Life | TIM";
 
-    $lang['SL_BANNER_TITLE'] = "CIAONE";
-    $lang['SL_BANNER_DESC'] = "CIAONE";
+    $lang['SL_TV_TITLE'] = "TV & Entertainment";
+    $lang['SL_TV_DESC'] = "SERIE TV, FILM, MUSICA, LIBRI, GIOCHI E CALCIO.<br>Scopri il tipo di intrattenimento che preferisci. Il divertimento comincia subito!<br>Quando vuoi e come vuoi.";
+    $lang['SL_HEALTH_TITLE'] = "Salute e Benessere";
+    $lang['SL_HEALTH_DESC'] = "Prova gli ultimi wearables. Scopri come salute e benessere possono cambiare in meglio la tua vita.<br>Libera la tua voglia di movimento. Condividi con gli amici i tuoi risultati. Il futuro è smart.";
+    $lang['SL_FAMILY_TITLE'] = "Casa e Famiglia";
+    $lang['SL_FAMILY_DESC'] = "Smart Life vuol dire anche una vita più semplice e sicura.<br>Anche per la tua casa e i tuoi cari.";
+    $lang['SL_PERSONAL_TITLE'] = "Servizi alla Persona";
+    $lang['SL_PERSONAL_DESC'] = "Un nuovo approccio al mondo dell’ e-payment e dell’identità digitale.<br>Potrai organizzare e gestire con semplicità e in tutta sicurezza i tuoi pagamenti digitali, il tuo archivio personale,<br>custodire le password, le fatture, gli scontrini ed i referti medici.";
+    $lang['BTN_FINDOUT'] = "Scopri";
 
     /*ASSISTANCE SERVICES*/
     $lang['ASS_PAGE_TITLE'] = "Assistenza | TIM";
@@ -160,4 +167,5 @@
     /*BREADCRUMB*/
     $lang['BREAD_PROD'] = "Prodotti";
     $lang['BREAD_PROM'] = "Promozioni";
+    $lang['BREAD_SL'] = "Servizi Smart Life";
 ?>
