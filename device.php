@@ -53,7 +53,7 @@
 
 </head>
 
-<body onload="fillDevicePage();">
+<body onload="fillDevicePage('<?php echo $lang['BREAD_PROD']; ?>');">
     <!-- =========================
          HEADER
     ============================== -->

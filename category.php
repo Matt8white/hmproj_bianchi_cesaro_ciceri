@@ -53,7 +53,7 @@
 
 </head>
 
-<body onload="fillCategoryPage(1);">
+<body onload="fillCategoryPage('<?php echo $lang['BREAD_PROD']; ?>');">
     <!-- =========================
          HEADER
     ============================== -->

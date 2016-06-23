@@ -1,6 +1,5 @@
 /*RETRIEVE A CATEGORY OF DEVICES*/
 function fillDevicesPage () {
-    document.getElementById("bc").innerHTML = createBreadcrumb(null, 'devCategory');
     devInfoLink();
     devInfoShort('Smartphones','devsp');
     devInfoShort('Tablet','devtb');
@@ -43,7 +42,7 @@ function devInfoShort (str, elem){
 }
 
 /*RETRIEVE A DEVICE INFO*/
-function fillDevicePage() {
+function fillDevicePage(bread) {
     str = getUrlVars()["device"];
     "use strict";
     $.ajax({
@@ -52,8 +51,7 @@ function fillDevicePage() {
             document.title = infos["brand"] + " " + infos["model"] + " | TIM";
             var div = document.getElementById('displayImg');
             div.style.background = "url(" + infos["image"] + ") no-repeat center top";
-            var str = createBreadcrumb(infos, "device");
-            document.getElementById("bc").innerHTML = str;
+            createBreadcrumb(infos, "device", bread);
             $(".devname").html('<bf>'+infos["brand"] + " " + infos["model"] +'</bf>');
             var div = document.getElementById('pres').children[1];
             var addme;
@@ -71,7 +69,7 @@ function fillDevicePage() {
 }
 
 /* Build Category Page*/
-function fillCategoryPage () {
+function fillCategoryPage (bread) {
     var passme = JSON.parse($.cookie('param'));
     //$.removeCookie('param');
     var arr = new Array();
@@ -82,29 +80,32 @@ function fillCategoryPage () {
     });
 
     filterCat();
-    document.getElementById("bc").innerHTML = createBreadcrumb(passme, 'category');
+    createBreadcrumb(passme, 'category', bread);
 }
 
 
-function createBreadcrumb(infos, type) {
+function createBreadcrumb(infos, type, subtree) {
     var str;
     switch(type) {
         case "device":
-            str = "<li><a href='products.php'>Products</a></li><li>" +
+            str = "<li><a href='products.php'>" + subtree + "</a></li><li>" +
             '<a href="category.php" onClick="setCategory('+"'"+ infos["category"] +"'"+","+ null+')">'+infos["category"]+'</a></a></li><li>'
             + infos["brand"] + " " + infos["model"] + "</li>";
             break;
         case "devCategory":
-            str = "<li>Products</li>"
+            str = "<li>" + subtree + "</li>";
             break;
-         case "category":
-            str = "<li><a href='products.php'>Products</a></li><li>" + infos["cat"] + "</li>";
+        case "category":
+            str = "<li><a href='products.php'>" + subtree + "</a></li><li>" + infos["cat"] + "</li>";
+            break;
+        case "promotions":
+            str = "<li>" + subtree + "</li>";
             break;
         default:
             str = "ciaone";
             break;
     }
-    return str;
+    document.getElementById("bc").innerHTML = str;
 }
 
 function capitalLetter(string) {

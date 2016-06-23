@@ -157,4 +157,7 @@
     $lang['DEV_SPEC'] = "Specifiche Tecniche";
     $lang['BUY_BTN'] = "Acquista";
 
+    /*BREADCRUMB*/
+    $lang['BREAD_PROD'] = "Prodotti";
+    $lang['BREAD_PROM'] = "Promozioni";
 ?>

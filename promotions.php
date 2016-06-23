@@ -53,7 +53,7 @@
 
 </head>
 
-<body>
+<body onload="createBreadcrumb(null, 'promotions', '<?php echo $lang['BREAD_PROM']; ?>');">
     <!-- =========================
          HEADER
     ============================== -->

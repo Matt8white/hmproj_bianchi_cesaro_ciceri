@@ -53,7 +53,7 @@
 
 </head>
 
-<body onload="fillDevicesPage();">
+<body onload="fillDevicesPage(); createBreadcrumb(null, 'devCategory', '<?php echo $lang['BREAD_PROD']; ?>');">
     <!-- =========================
          HEADER
     ============================== -->
