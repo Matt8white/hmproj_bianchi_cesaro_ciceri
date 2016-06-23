@@ -189,6 +189,20 @@ ul > li {
     right: 0;
 }
 /* =========================
+     SL CATEGORY
+============================ */
+.banner_sl {
+    height: 640px;
+    margin-bottom: 10px;
+}
+.banner-sl-content {
+    text-align: center;
+    position: absolute;
+    margin-top: 250px;
+    left: 0;
+    right: 0;
+}
+/* =========================
      FOOTER
 ============================ */
 .footer-filler{
