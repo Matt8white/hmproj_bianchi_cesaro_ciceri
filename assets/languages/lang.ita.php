@@ -156,6 +156,8 @@
     $lang['SL_BREAD_CAT3'] = "Casa %26 Famiglia";
     $lang['SL_BREAD_CAT4'] = "Servizi alla persona";
 
+    $lang['SL_TITLE'] = "Prodotti e servizi";
+    
     /*ASSISTANCE SERVICES*/
     $lang['ASS_PAGE_TITLE'] = "Assistenza | TIM";
 

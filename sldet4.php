@@ -64,12 +64,71 @@
     <div class="main-wrapper clear-fix">
         <ol class="breadcrumb" id="bc">
         </ol>
-        <div class="banner" style="background: url('/assets/images/devices_banner.jpg') no-repeat center top;">
-            <div class="banner-content">
-                <h1 style="color: white"><font size="6vw"><?php echo $lang['PRODS_BANNER_TITLE']; ?></font></h1>
-                <p  style="color: white"><font size="4vw"><?php echo $lang['PRODS_BANNER_DESC']; ?></font></p>
+        <div class="banner_slcat" style="background: url('/assets/images/slpersonal.jpg') no-repeat center top;">
+            <div class="banner_slcat_content">
+                <h1 style="color: white"><font size="6vw"><?php echo $lang['SL_PERSONAL_TITLE']; ?></font></h1>
+                <p  style="color: white"><font size="4vw"><?php echo $lang['SL_PERSONAL_DESC']; ?></font></p>
             </div>
         </div>
+        <div class="sltitle col-xs-4 col-xs-offset-4"><?php echo $lang['SL_TITLE']; ?></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-offset-2">
+                    <div class="clearfix">
+                        <div id="thumbcarousel" class="carousel carousel-sl slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="http://placehold.it/100/e8117f/fff&amp;text=Product+Main"></div>
+                                    <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="http://placehold.it/100/00ffff/000&amp;text=Product+Image+2"></div>
+                                    <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="http://placehold.it/100/ff00ff/fff&amp;text=Product+Image+3"></div>
+                                    <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="http://placehold.it/100/ffff00/000&amp;text=Product+Image+4"></div>
+                                </div><!-- /item -->
+                                <div class="item">
+                                    <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="http://placehold.it/100/612b65/fff&amp;text=Product+Image+5"></div>
+                                    <div data-target="#carousel" data-slide-to="5" class="thumb"><img src="http://placehold.it/100/00ffcc/000&amp;text=Product+Image+6"></div>
+                                    <div data-target="#carousel" data-slide-to="6" class="thumb"><img src="http://placehold.it/100/db371b/fff&amp;text=Product+Image+7"></div>
+                                    <div data-target="#carousel" data-slide-to="7" class="thumb"><img src="http://placehold.it/100/feb8aa/000&amp;text=Product+Image+8"></div>
+                                </div><!-- /item -->
+                            </div><!-- /carousel-inner -->
+                            <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div> <!-- /thumbcarousel -->
+                    </div><!-- /clearfix -->
+                    <div id="carousel" class="carousel carousel-sl slide" data-ride="carousel" style="margin-bottom: 10px;">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="http://placehold.it/350x250/e8117f/fff&amp;text=Product+Main">
+                            </div>
+                            <div class="item">
+                                <img src="http://placehold.it/350x250/00ffff/000&amp;text=Product+Image+2">
+                            </div>
+                            <div class="item">
+                                <img src="http://placehold.it/350x250/ff00ff/fff&amp;text=Product+Image+3">
+                            </div>
+                            <div class="item">
+                                <img src="http://placehold.it/350x250/ffff00/000&amp;text=Product+Image+4">
+                            </div>
+                            <div class="item">
+                                <img src="http://placehold.it/350x250/612b65/fff&amp;text=Product+Image+5">
+                            </div>
+                            <div class="item">
+                                <img src="http://placehold.it/350x250/00ffff/000&amp;text=Product+Image+6">
+                            </div>
+                            <div class="item">
+                                <img src="http://placehold.it/350x250/db371b/fff&amp;text=Product+Image+7">
+                            </div>
+                            <div class="item">
+                                <img src="http://placehold.it/350x250/feb8aa/000&amp;text=Product+Image+8">
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /col-sm-6 -->
+            </div> <!-- /row -->
+        </div> <!-- /container -->
     </div><!-- /End Main Wrapper -->
     <!-- ==================================================
         FOOTER
