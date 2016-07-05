@@ -108,7 +108,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-8">
-                <div class="show-content" id ="devs" style="width:100%">
+                <div class="col-xs-12" id ="devs">
                 </div>
         </div>
         <div class="col-xs-12" id="desc">

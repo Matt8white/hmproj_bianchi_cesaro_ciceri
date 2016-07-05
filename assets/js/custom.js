@@ -157,18 +157,42 @@ function setCategory(cat,attr) {
 
 function filterCat(){
     //TUTTI -> *
-    var arr = [];
     var params = JSON.parse($.cookie('param'));
-    arr.push(params['cat']);
+    var brandstr = "";
+    var pricestr = "";
+    var osstr = "";    
+    var extraparamstr = "";
+    //attr":"
     $(':checkbox:checked').each(function(i){
-         arr.push($(this).attr("id").slice(0, -3));
+        switch($(this).parent().parent().parent().parent().children()[0].innerHTML){
+            case "Brand":
+                brandstr += "'"+$(this).attr("id").slice(0, -3) + "',";
+                break;
+            case "Filters":
+                extraparamstr += "'"+$(this).attr("id").slice(0, -3) + "',";
+                break;
+            case "OS":
+                osstr += "'"+$(this).attr("id").slice(0, -3) + "',";
+                break;
+            case "Price":
+                pricestr += "'"+$(this).attr("id").slice(0, -3) + "',";
+                break;
+            default:
+                break;
+        }
      });
     $.ajax({
-        url: 'ajax/getDevices.php?s=' + encodeURIComponent(arr), success: function(result) {
+        method: "POST",
+        data: { cat: "'"+params['cat']+"'", brand: brandstr.slice(0, -1), os: osstr.slice(0, -1), price: pricestr.slice(0, -1), extra: extraparamstr.slice(0, -1) },
+        url: 'ajax/getDevices.php', success: function(result) {
             var infos = JSON.parse(result);
-            var count = Object.keys(infos).length -1;
-            $('#devs').parent().css('height', (Math.ceil(count/3) * 250 + 50));
+            var count = Object.keys(infos).length;
+            $('#devs').parent().css('height', ((Math.ceil(count/3)) * 250 + 50));
+            if( $(window).width() < 768){
+                $('#devs').parent().css('height', (count * 250 + 50));
+            }  
             $('#devs').empty();
+            count--;
             for(var i = 0; i <= count; i++) {
                 var div = document.createElement('div')
                 var dev = infos[i];
@@ -177,7 +201,6 @@ function filterCat(){
                 var elem1 = div.children[0].children[0];
                 $($(elem1)).parent().attr("href", "/device.php?device=" + dev["id"]);
                 elem1.children[0].style.background = "url(" + dev["image"] + ") no-repeat center center";
-                $('.devspimg').css('background-size', 'contain');
                 elem1.innerHTML += dev["brand"] + " " + dev["model"];
                 if(dev["promotion"] == 1)
                     elem1.innerHTML += "<br><strike>" + dev["price"] + "</strike><br>" + "<font color='red'>" + dev["shortedprice"] + "</font>";
@@ -185,6 +208,7 @@ function filterCat(){
                     elem1.innerHTML += "<br>" + dev["price"];
                 document.getElementById("devs").appendChild(div);
             }
+            $('.devspimg').css('background-size', 'contain');
         }
     });
 
