@@ -155,6 +155,8 @@
     $lang['SL_BREAD_CAT3'] = "Home %26 Family";
     $lang['SL_BREAD_CAT4'] = "Personal Services";
 
+	$land['SL_TITLE'] = "Devices and Services";
+	
     /*ASSISTANCE SERVICES*/
     $lang['ASS_PAGE_TITLE'] = "Assistance Services | TIM";
 
