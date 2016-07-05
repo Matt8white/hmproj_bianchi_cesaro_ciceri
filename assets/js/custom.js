@@ -68,6 +68,18 @@ function fillDevicePage(bread) {
     });
 }
 
+/*RETRIEVE A SLS INFO*/
+function fillSlPage(str,bread) {
+    strdec = decodeURIComponent(str);
+    "use strict";
+    $.ajax({
+        url: 'ajax/getSLS.php?q='+strdec, success: function(result) {
+            document.title = strdec + " " + " | TIM";
+            createBreadcrumb(strdec, "slcat", bread);
+        }
+    });
+}
+
 /* Build Category Page*/
 function fillCategoryPage (bread) {
     var passme = JSON.parse($.cookie('param'));
@@ -93,20 +105,12 @@ function createBreadcrumb(infos, type, subtree) {
             '<a href="category.php" onClick="setCategory('+"'"+ infos["category"] +"'"+","+ null+')">'+infos["category"]+'</a></a></li><li>'
             + infos["brand"] + " " + infos["model"] + "</li>";
             break;
-/*        case "devCategory":
-            str = "<li>" + subtree + "</li>";
-            break;
-*/  
         case "category":
             str = "<li><a href='products.php'>" + subtree + "</a></li><li>" + infos["cat"] + "</li>";
             break;
-/*        case "promotions":
-            str = "<li>" + subtree + "</li>";
+        case "slcat":
+            str = "<li><a href='slcat.php'>" + subtree + "</a></li><li>" + infos + "</li>";
             break;
-         case "slcat":
-            str = "<li>" + subtree + "</li>";
-            break;  
-*/            
         default:
             str = "<li>" + subtree + "</li>";
             break;
@@ -122,7 +126,7 @@ function getUrlVars() {
     var vars = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
     function(m,key,value) {
-      vars[key] = value;
+      vars[key] = decodeURIComponent(value);
     });
     return vars;
   }

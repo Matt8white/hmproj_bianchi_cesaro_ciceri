@@ -151,6 +151,11 @@
     $lang['SL_PERSONAL_DESC'] = "Un nuovo approccio al mondo dell’ e-payment e dell’identità digitale.<br>Potrai organizzare e gestire con semplicità e in tutta sicurezza i tuoi pagamenti digitali, il tuo archivio personale,<br>custodire le password, le fatture, gli scontrini ed i referti medici.";
     $lang['BTN_FINDOUT'] = "Scopri";
 
+    $lang['SL_BREAD_CAT1'] = "TV %26 Intrattenimento";
+    $lang['SL_BREAD_CAT2'] = "Salute %26 Benessere";
+    $lang['SL_BREAD_CAT3'] = "Casa %26 Famiglia";
+    $lang['SL_BREAD_CAT4'] = "Servizi alla persona";
+
     /*ASSISTANCE SERVICES*/
     $lang['ASS_PAGE_TITLE'] = "Assistenza | TIM";
 

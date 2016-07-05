@@ -53,7 +53,7 @@
 
 </head>
 
-<body onload="createBreadcrumb(null, 'sl', '<?php echo $lang['BREAD_SL']; ?>')">
+<body  onload="fillSlPage('<?php echo $lang['SL_BREAD_CAT1']; ?>','<?php echo $lang['BREAD_SL']; ?>');">
     <!-- =========================
          HEADER
     ============================== -->
@@ -64,32 +64,10 @@
     <div class="main-wrapper clear-fix">
         <ol class="breadcrumb" id="bc">
         </ol>
-        <div class="banner_sl" style="background: url('/assets/images/sltv.jpg') no-repeat center top;">
-            <div class="banner-sl-content">
-                <h1 style="color: white"><font size="6vw"><?php echo $lang['SL_TV_TITLE']; ?></font></h1>
-                <p style="color: white"><font size="4vw"><?php echo $lang['SL_TV_DESC']; ?></font></p>
-                <a href="sldet1.php"><span class="btn btn-primary"><?php echo $lang['BTN_FINDOUT']; ?></span></a>
-            </div>
-        </div>
-        <div class="banner_sl" style="background: url('/assets/images/slhealth.jpg') no-repeat center top;">
-            <div class="banner-sl-content">
-                <h1 style="color: white"><font size="6vw"><?php echo $lang['SL_HEALTH_TITLE']; ?></font></h1>
-                <p  style="color: white"><font size="4vw"><?php echo $lang['SL_HEALTH_DESC']; ?></font></p>
-                <a href="sldet2.php"><span class="btn btn-primary"><?php echo $lang['BTN_FINDOUT']; ?></span></a>
-            </div>
-        </div>
-        <div class="banner_sl" style="background: url('/assets/images/slfamily.jpg') no-repeat center top;">
-            <div class="banner-sl-content">
-                <h1 style="color: white"><font size="6vw"><?php echo $lang['SL_FAMILY_TITLE']; ?></font></h1>
-                <p  style="color: white"><font size="4vw"><?php echo $lang['SL_FAMILY_DESC']; ?></font></p>
-                <a href="sldet3.php"><span class="btn btn-primary"><?php echo $lang['BTN_FINDOUT']; ?></span></a>
-            </div>
-        </div>
-        <div class="banner_sl" style="background: url('/assets/images/slpersonal.jpg') no-repeat center top;">
-            <div class="banner-sl-content">
-                <h1 style="color: white"><font size="6vw"><?php echo $lang['SL_PERSONAL_TITLE']; ?></font></h1>
-                <p  style="color: white"><font size="4vw"><?php echo $lang['SL_PERSONAL_DESC']; ?></font></p>
-                <a href="sldet4.php"><span class="btn btn-primary"><?php echo $lang['BTN_FINDOUT']; ?></span></a>
+        <div class="banner_slcat" style="background: url('/assets/images/sltv.jpg') no-repeat center top;">
+            <div class="banner-content">
+                <h1 style="color: white"><font size="6vw"><?php echo $lang['PRODS_BANNER_TITLE']; ?></font></h1>
+                <p  style="color: white"><font size="4vw"><?php echo $lang['PRODS_BANNER_DESC']; ?></font></p>
             </div>
         </div>
     </div><!-- /End Main Wrapper -->
