@@ -186,6 +186,7 @@
          SCRIPTS
     ============================== -->
     <script src="assets/js/plugins/jquery1.11.0.min.js"></script>
+    <script src="assets/js/plugins/jquery.cookie.js" type="text/javascript"></script>
     <script src="assets/js/plugins/bootstrap.min.js"></script>
     <script src="assets/js/plugins/jquery.easing.1.3.min.js"></script>
     <script src="assets/js/plugins/modernizr.custom.min.js"></script>

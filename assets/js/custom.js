@@ -109,6 +109,7 @@ function fillSlPage(str,bread) {
         url: 'ajax/getSLS.php', success: function(result) {
             document.title = strdec + " " + " | TIM";
             createBreadcrumb(strdec, "slcat", bread);
+            console.log(result);
         }
     });
 }
