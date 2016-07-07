@@ -31,9 +31,9 @@
     
     
     mysqli_select_db($con,"TimHypProj");
-    $sql = "SELECT name, image, desc_".$lang." AS 'desc' FROM slservices WHERE category = '".$q."' AND id !=".$slid." UNION SELECT CONCAT_WS(brand, model) as 'name', image,desc_".$lang." AS 'desc' FROM devices WHERE id in (SELECT iddevice FROM dvslrelations WHERE idslservice = ".$slid.")";
+    $sql = "SELECT name, image, desc_".$lang." AS 'desc' FROM slservices WHERE category = '".$q."' AND id !=".$slid." UNION SELECT CONCAT_WS(' ',brand, model) as 'name', image,desc_".$lang." AS 'desc' FROM devices WHERE id in (SELECT iddevice FROM dvslrelations WHERE idslservice = ".$slid.")";
     $result = mysqli_query($con,$sql);
-    echo $sql;
+    
     while($row = mysqli_fetch_array($result)) {
         echo json_encode($row);
     }
