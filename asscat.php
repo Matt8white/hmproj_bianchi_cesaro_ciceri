@@ -53,7 +53,7 @@
 
 </head>
 
-<body onload="fillDevicesPage();">
+<body onload="createBreadcrumb(null, 'ass', '<?php echo $lang['BREAD_ASS']; ?>')">
     <!-- =========================
          HEADER
     ============================== -->
@@ -64,10 +64,53 @@
     <div class="main-wrapper clear-fix">
         <ol class="breadcrumb" id="bc">
         </ol>
-        <div class="banner">
-            <div class="banner-content">
-                <h1 style="color: white"><font size="6vw"><?php echo $lang['ASS_BANNER_TITLE']; ?></font></h1>
-                <p  style="color: white"><font size="4vw"><?php echo $lang['ASS_BANNER_DESC']; ?></font></p>
+        <div class="container assist-cont">
+            <a href="">
+                <div class="col-xs-12 col-sm-3">
+                    <img src="assets/images/ass/assicon01.png">
+                    <p><?php echo $lang['ASS_DESC1']; ?></p>
+                </div>
+            </a>
+            <a href="">
+                <div class="col-xs-12 col-sm-3">
+                    <img src="assets/images/ass/assicon02.png">
+                    <p><?php echo $lang['ASS_DESC2']; ?></p>
+                </div>
+            </a>
+            <a href="">
+                <div class="col-xs-12 col-sm-3">
+                    <img src="assets/images/ass/assicon03.png">
+                    <p><?php echo $lang['ASS_DESC3']; ?></p>
+                </div>
+            </a>
+            <a href="">
+                <div class="col-xs-12 col-sm-3" style="border-right: 0px;">
+                    <img src="assets/images/ass/assicon04.png">
+                    <p><?php echo $lang['ASS_DESC4']; ?></p>
+                </div>
+            </a>
+        </div>
+        <div class="container">
+            <div class="col-xs-12 container ass-highlights">
+                <h4>In Evidenza</h4>
+                <div class="col-xs-12 col-md-6">
+                    <a href="">ciao</a>
+                </div>
+                <div class="col-xs-12 col-md-6 rightcol">
+                    <a href="">ciao</a>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <a href="">ne</a>
+                </div>
+                <div class="col-xs-12 col-md-6 rightcol">
+                    <a href="">ne</a>
+                </div>
+                <div class="col-xs-12 col-md-6 bottom">
+                    <a href="">grosso</a>
+                </div>
+                <div class="col-xs-12 col-md-6 rightcol bottom">
+                    <a href="">grosso</a>
+                </div>
             </div>
         </div>
     </div><!-- /End Main Wrapper -->

@@ -157,12 +157,14 @@
     $lang['SL_BREAD_CAT4'] = "Servizi alla persona";
 
     $lang['SL_TITLE'] = "Prodotti e servizi";
-    
+
     /*ASSISTANCE SERVICES*/
     $lang['ASS_PAGE_TITLE'] = "Assistenza | TIM";
 
-    $lang['ASS_BANNER_TITLE'] = "CIAONE";
-    $lang['ASS_BANNER_DESC'] = "CIAONE";
+    $lang['ASS_DESC1'] = "Gestione linea e servizi";
+    $lang['ASS_DESC2'] = "Controllo costi e pagamenti";
+    $lang['ASS_DESC3'] = "Supporto e configurazioni";
+    $lang['ASS_DESC4'] = "Contenuti e Smart Life";
 
     /*DEVICE*/
     $lang['DEVICE_PAGE_TITLE'] = "Device | TIM";
@@ -175,4 +177,5 @@
     $lang['BREAD_PROD'] = "Prodotti";
     $lang['BREAD_PROM'] = "Promozioni";
     $lang['BREAD_SL'] = "Servizi Smart Life";
+    $lang['BREAD_ASS'] = "Assistenza";
 ?>
