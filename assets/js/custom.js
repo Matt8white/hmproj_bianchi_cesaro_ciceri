@@ -23,7 +23,9 @@ function devInfoLink() {
 
 function devInfoShort (str, elem){
     $.ajax({
-        url: 'ajax/getCategories.php?q=' + encodeURIComponent(str), success: function(result) {
+        method: "POST",
+        data: { cat: str},
+        url: 'ajax/getCategories.php', success: function(result) {
             var infos = JSON.parse(result);
             for (var i = 1; i <= 3; i++) {
                 var elem1 = document.getElementById(elem + i);
@@ -41,12 +43,39 @@ function devInfoShort (str, elem){
     });
 }
 
+
+function slInfoShort (str){
+    $.ajax({
+        method: "POST",
+        data: { cat: str} ,
+        url: 'ajax/getSL.php', success: function(result) {
+            var infos = JSON.parse(result);
+            for (var i = 1; i <= 3; i++) {
+                var elem1 = document.getElementById(elem + i);
+                var dev = infos[i];
+                $($(elem1)).parent().attr("href", "/device.php?device=" + dev["id"]);
+                elem1.children[0].style.background = "url(" + dev["image"] + ") no-repeat center center";
+                $('.devspimg').css('background-size', 'contain');
+                elem1.innerHTML += dev["brand"] + " " + dev["model"];
+                if(dev["promotion"] == 1)
+                    elem1.innerHTML += "<br><strike>" + dev["price"] + "</strike><br>" + "<font color='red'>" + dev["shortedprice"] + "</font>";
+                else
+                    elem1.innerHTML += "<br>" + dev["price"];
+            }
+        }
+    });
+}
+
+
+
 /*RETRIEVE A DEVICE INFO*/
 function fillDevicePage(bread) {
     str = getUrlVars()["device"];
     "use strict";
     $.ajax({
-        url: 'ajax/getDeviceInfo.php?q='+str, success: function(result) {
+        method: "POST",
+        data: { devid: str },
+        url: 'ajax/getDeviceInfo.php', success: function(result) {
             var infos = JSON.parse(result);
             document.title = infos["brand"] + " " + infos["model"] + " | TIM";
             var div = document.getElementById('displayImg');
@@ -73,7 +102,9 @@ function fillSlPage(str,bread) {
     strdec = decodeURIComponent(str);
     "use strict";
     $.ajax({
-        url: 'ajax/getSLS.php?q='+strdec, success: function(result) {
+        method: "POST",
+        data: { cat: strdec},
+        url: 'ajax/getSLS.php?', success: function(result) {
             document.title = strdec + " " + " | TIM";
             createBreadcrumb(strdec, "slcat", bread);
         }

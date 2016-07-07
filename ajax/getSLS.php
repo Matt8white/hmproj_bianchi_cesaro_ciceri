@@ -1,5 +1,5 @@
 <?php
-    $q = intval($_GET['q']);
+    $q = intval($_POST['cat']);
 
     $con = mysqli_connect('localhost','hyper','hyper123','TimHypProj');
     $con -> query("SET NAMES 'utf8'");
