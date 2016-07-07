@@ -39,10 +39,10 @@
                 </a>
 				</ul>
                 <div class="navbar-lang col-sm-1">
-                    <a href="?lang=ita">
+                    <a href="#" onClick="javascript:window.location.href = appendparam('lang','it')">
                         <img src="assets/images/ita.png">
                     </a>
-                    <a href="?lang=en">
+                    <a href="#" onClick="javascript:window.location.href = appendparam('lang','en')">
                         <img src="assets/images/en.png">
                     </a>
                 </div>

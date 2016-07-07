@@ -1,5 +1,6 @@
 <?php
     $q = intval($_POST['devid']);
+    $lang = $_POST['lang'];
 
     $con = mysqli_connect('localhost','hyper','hyper123','TimHypProj');
     $con -> query("SET NAMES 'utf8'");

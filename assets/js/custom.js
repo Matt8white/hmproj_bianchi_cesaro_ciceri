@@ -70,11 +70,12 @@ function slInfoShort (str){
 
 /*RETRIEVE A DEVICE INFO*/
 function fillDevicePage(bread) {
-    str = getUrlVars()["device"];
+    var str = getUrlVars()["device"];
+    var getlang = $.cookie('lang');
     "use strict";
     $.ajax({
         method: "POST",
-        data: { devid: str },
+        data: { devid: str, lang: getlang },
         url: 'ajax/getDeviceInfo.php', success: function(result) {
             var infos = JSON.parse(result);
             document.title = infos["brand"] + " " + infos["model"] + " | TIM";
@@ -88,11 +89,11 @@ function fillDevicePage(bread) {
                 addme = "<strike>" + infos["price"] + "</strike><br>" + "<font color='red'>" + infos["shortedprice"] + "</font>";
             else
                 addme = infos["price"];
-            div.innerHTML = '<p>' + infos["pres_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + "<br>" + addme + "<br>" + div.innerHTML ;
+            div.innerHTML = '<p>' + infos["pres_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + "<br>" + addme + "<br>" + div.innerHTML ;
             var div = document.getElementById('tech').children[1];
-            div.innerHTML = '<p>' + infos["spec_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + div.innerHTML;
+            div.innerHTML = '<p>' + infos["spec_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + div.innerHTML;
             var div = document.getElementById('desc');
-            div.innerHTML = '<p>' + infos["descr_it"].replace(new RegExp('\r?\n','g'), '<br />') + '</p>';
+            div.innerHTML = '<p>' + infos["desc_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>';
         }
     });
 }
@@ -100,11 +101,12 @@ function fillDevicePage(bread) {
 /*RETRIEVE A SLS INFO*/
 function fillSlPage(str,bread) {
     strdec = decodeURIComponent(str);
+    var getlang = $.cookie('lang');
     "use strict";
     $.ajax({
         method: "POST",
-        data: { cat: strdec},
-        url: 'ajax/getSLS.php?', success: function(result) {
+        data: { cat: strdec, lang: getlang},
+        url: 'ajax/getSLS.php', success: function(result) {
             document.title = strdec + " " + " | TIM";
             createBreadcrumb(strdec, "slcat", bread);
         }
@@ -243,4 +245,27 @@ function filterCat(){
         }
     });
 
+}
+
+function appendparam(param, val){
+    url = window.location.href;
+    if(getUrlVars()[param] = null){
+        url += url.match( /[\?]/g ) ? '&' : '?' + param + '=' + val;
+        return url;
+    }
+    else{
+        var pattern = new RegExp('\\b('+param+'=).*?(&|$)')
+        if(url.search(pattern)>=0){
+            return url.replace(pattern,'$1' + val + '$2');
+        }
+        return url + (url.indexOf('?')>0 ? '&' : '?') + param + '=' + val 
+    }
+}
+
+function replaceUrlParam(paramName, paramValue){
+    var pattern = new RegExp('\\b('+paramName+'=).*?(&|$)')
+    if(url.search(pattern)>=0){
+        return url.replace(pattern,'$1' + paramValue + '$2');
+    }
+    return url + (url.indexOf('?')>0 ? '&' : '?') + paramName + '=' + paramValue 
 }

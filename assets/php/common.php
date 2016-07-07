@@ -26,7 +26,7 @@
         $lang_file = 'lang.en.php';
         break;
 
-        case 'ita':
+        case 'it':
         $lang_file = 'lang.ita.php';
         break;
 
