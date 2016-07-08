@@ -323,6 +323,43 @@ ul > li {
     }
 }
 /* =========================
+     WHO WE ARE
+============================ */
+.wwa-left {
+    background-color: #014591;
+    text-align: center;
+    position: relative;
+    height: 600px;
+}
+.wwa-left-content {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+.wwa-left > .wwa-left-content > img {
+    width: 40%;
+}
+.wwa-right-top {
+    background: url('/assets/images/projects.jpg') no-repeat center top;
+    background-size: cover;
+    height: 300px;
+}
+.wwa-right-top-content {
+    position: absolute;
+    top: 95px;
+    left: 100px;
+}
+.wwa-right-bot {
+    background: url('/assets/images/testimonials.jpg') no-repeat center top;
+    background-size: cover;
+    height: 300px;
+}
+.wwa-right-bot-content {
+    position: absolute;
+    top: 95px;
+    left: 100px;
+}
+/* =========================
      FOOTER
 ============================ */
 .footer-filler{

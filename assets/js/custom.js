@@ -1,3 +1,32 @@
+function changeWhoWeAreContent(param) {
+    "use strict";
+    switch(param){
+        case "innovation":
+            $.ajax({
+                url: 'ajax/innovation.php', success: function (result) {
+                    $('.changable').html(result);
+                }
+            });
+            break;
+        case "testimonials":
+            $.ajax({
+                url: 'ajax/testimonials.php', success: function (result) {
+                    $('.changable').html(result);
+                }
+            });
+            break;
+        case "projects":
+            $.ajax({
+                url: 'ajax/projects.php', success: function (result) {
+                    $('.changable').html(result);
+                }
+            });
+            break;
+        default:
+            break;
+    }
+}
+
 /*RETRIEVE A CATEGORY OF DEVICES*/
 function fillDevicesPage () {
     devInfoLink();
@@ -194,7 +223,7 @@ function filterCat(){
     var params = JSON.parse($.cookie('param'));
     var brandstr = "";
     var pricestr = "";
-    var osstr = "";    
+    var osstr = "";
     var extraparamstr = "";
     //attr":"
     $(':checkbox:checked').each(function(i){
@@ -224,7 +253,7 @@ function filterCat(){
             $('#devs').parent().css('height', ((Math.ceil(count/3)) * 250 + 50));
             if( $(window).width() < 768){
                 $('#devs').parent().css('height', (count * 250 + 50));
-            }  
+            }
             $('#devs').empty();
             count--;
             for(var i = 0; i <= count; i++) {
@@ -259,7 +288,7 @@ function appendparam(param, val){
         if(url.search(pattern)>=0){
             return url.replace(pattern,'$1' + val + '$2');
         }
-        return url + (url.indexOf('?')>0 ? '&' : '?') + param + '=' + val 
+        return url + (url.indexOf('?')>0 ? '&' : '?') + param + '=' + val
     }
 }
 
@@ -268,5 +297,5 @@ function replaceUrlParam(paramName, paramValue){
     if(url.search(pattern)>=0){
         return url.replace(pattern,'$1' + paramValue + '$2');
     }
-    return url + (url.indexOf('?')>0 ? '&' : '?') + paramName + '=' + paramValue 
+    return url + (url.indexOf('?')>0 ? '&' : '?') + paramName + '=' + paramValue
 }

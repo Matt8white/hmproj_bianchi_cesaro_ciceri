@@ -72,7 +72,7 @@
 							  Lavora con noi  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 							  Telecom Italia 2012 - P.IVA 00488410010";
 	$lang['FOOTER_SOCIAL'] = "Scopri l'offerta";
-	$lang['FOOTER_BTN1'] = "Chi siamo";
+	$lang['FOOTER_BTN1'] = "Chi Siamo";
 	$lang['FOOTER_BTN2'] = "Il Gruppo";
 	$lang['USEFUL_INFO'] = "INFORMAZIONI UTILI";
 	$lang['QUICK_ACCESS'] = "STRUMENTI VELOCI";
@@ -173,9 +173,15 @@
     $lang['DEV_SPEC'] = "Specifiche Tecniche";
     $lang['BUY_BTN'] = "Acquista";
 
+    /*WHO WE ARE*/
+    $lang['WWA_INN'] = "Il futuro firmato <br> Telecom Italia";
+    $lang['WWA_PROJ'] = "I progetti TIM disegnano il futuro <br> che immaginiamo.";
+    $lang['WWA_TESTIMONIALS'] = "I nostri testimonials";
+
     /*BREADCRUMB*/
     $lang['BREAD_PROD'] = "Prodotti";
     $lang['BREAD_PROM'] = "Promozioni";
     $lang['BREAD_SL'] = "Servizi Smart Life";
     $lang['BREAD_ASS'] = "Assistenza";
+    $lang['BREAD_WWA'] = "Chi Siamo";
 ?>
