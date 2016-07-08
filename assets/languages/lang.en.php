@@ -159,9 +159,11 @@
 	
     /*ASSISTANCE SERVICES*/
     $lang['ASS_PAGE_TITLE'] = "Assistance Services | TIM";
-
-    $lang['ASS_BANNER_TITLE'] = "BIG HELLO";
-    $lang['ASS_BANNER_DESC'] = "BIG HELLO";
+	
+	$lang['ASS_DESC1'] = "Line Services";
+    $lang['ASS_DESC2'] = "Costs and Payments";
+    $lang['ASS_DESC3'] = "Technical support";
+    $lang['ASS_DESC4'] = "Smart Life";
 
     /*DEVICE*/
     $lang['DEVICE_PAGE_TITLE'] = "Device | TIM";
@@ -174,4 +176,6 @@
     $lang['BREAD_PROD'] = "Devices";
     $lang['BREAD_PROM'] = "Promotions";
     $lang['BREAD_SL'] = "Smart Life Services";
+	$lang['BREAD_ASS'] = "Assistance Services";
+	$lang['BREAD_WWA'] = "Who We Are";
 ?>
