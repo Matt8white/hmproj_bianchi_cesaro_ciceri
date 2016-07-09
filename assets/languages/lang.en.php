@@ -172,6 +172,11 @@
     $lang['DEV_SPEC'] = "Technical specifications";
     $lang['BUY_BTN'] = "Buy";
 
+	/*WHO WE ARE*/
+	$lang['WWA_INN'] = "Telecom Italia's <br> Future";
+	$lang['WWA_PROJ'] = "TIM's Projects <br> create our future";
+	$lang['WWA_TESTIMONIALS'] = "Our Testimonials";	
+	
     /*BREADCRUMB*/
     $lang['BREAD_PROD'] = "Devices";
     $lang['BREAD_PROM'] = "Promotions";
