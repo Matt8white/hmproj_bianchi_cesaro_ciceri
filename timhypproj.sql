@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 07, 2016 at 03:07 PM
--- Server version: 5.7.9
--- PHP Version: 5.6.16
+-- Creato il: Lug 14, 2016 alle 13:45
+-- Versione del server: 5.7.9
+-- Versione PHP: 5.6.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `assdvrelation`
+-- Struttura della tabella `assdvrelation`
 --
 
 DROP TABLE IF EXISTS `assdvrelation`;
@@ -35,18 +35,18 @@ CREATE TABLE IF NOT EXISTS `assdvrelation` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `assdvrelation`
+-- Dump dei dati per la tabella `assdvrelation`
 --
 
 INSERT INTO `assdvrelation` (`idass`, `iddevice`) VALUES
 (3, 1),
 (9, 1),
-(14, 1),
 (20, 1),
 (22, 1),
 (3, 2),
 (6, 2),
 (12, 2),
+(14, 2),
 (3, 3),
 (9, 3),
 (12, 3),
@@ -139,7 +139,7 @@ INSERT INTO `assdvrelation` (`idass`, `iddevice`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `assistance`
+-- Struttura della tabella `assistance`
 --
 
 DROP TABLE IF EXISTS `assistance`;
@@ -157,7 +157,7 @@ CREATE TABLE IF NOT EXISTS `assistance` (
 ) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `assistance`
+-- Dump dei dati per la tabella `assistance`
 --
 
 INSERT INTO `assistance` (`id`, `category`, `subcategory`, `name_it`, `name_en`, `desc_it`, `faq_it`, `desc_en`, `faq_en`) VALUES
@@ -189,7 +189,7 @@ INSERT INTO `assistance` (`id`, `category`, `subcategory`, `name_it`, `name_en`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `devices`
+-- Struttura della tabella `devices`
 --
 
 DROP TABLE IF EXISTS `devices`;
@@ -212,7 +212,7 @@ CREATE TABLE IF NOT EXISTS `devices` (
 ) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `devices`
+-- Dump dei dati per la tabella `devices`
 --
 
 INSERT INTO `devices` (`id`, `category`, `brand`, `model`, `price`, `promotion`, `shortedprice`, `image`, `pres_it`, `desc_it`, `spec_it`, `pres_en`, `desc_en`, `spec_en`) VALUES
@@ -249,14 +249,14 @@ INSERT INTO `devices` (`id`, `category`, `brand`, `model`, `price`, `promotion`,
 (30, 'Modem & Networking', 'TIM', 'Modem Fibra', '99.00', 0, NULL, 'assets/images/devices/TIM_MODEMFIBRA.jpg', 'Collegamento a PC, tablet, telefoni\r\nNavigazione senza fili\r\nBanda Wi-Fi a 2.4 Ghz e 5 Ghz\r\nControllo e gestione con l’App 187', 'Con il Modem Fibra la Casa è Digitale!\r\n\r\nIl Modem Fibra è il centro digitale della Casa che ti permette di navigare ad altissime prestazioni grazie alla doppia banda Wi-Fi (a 2.4 Ghz e a 5 Ghz.) o in alternativa sfruttando le 4 porte Gigabit Ethernet offrendoti il vantaggio di condividere e visualizzare in modo semplice ed immediato contenuti Multimediali (Foto, Musica, Video) su Smart TV, Tablet, PC e Smartphone di ultima generazione sfruttando la tecnologia DLNA e collegando un Hard Disk o una chiavetta USB al modem.\r\n\r\nEd i vantaggi non finiscono qui! Puoi mettere in rete la tua stampante semplicemente collegandola alla porta USB del Modem Fibra, potendo così stampare comodamente qualunque documento o foto presente sui tuoi dispositivi connessi al modem.\r\n\r\nCollega i tuoi telefoni di casa direttamente al modem\r\nNaviga con tutti i PC, Tablet e Smartphone anche senza fili\r\nSfrutta al massimo le performance della tua linea ADSL grazie alla doppia banda Wi-Fi N di ultima generazione\r\nCondividi in modo semplice ed immediato foto, musica, video, Hard Disk e Stampanti\r\nInstallazione no problem: il modem si configura automaticamente sulla tua linea ADSL, senza installare software\r\nApp gratuita "TELEFONO" per trasformare il tuo smartphone in un cordless e sfruttare tutta la convenienza delle nuove offerte Fibra Ottica di Telecom Italia. Scarica subito la App nei Market Android e IOS (Google Play o App Store).\r\nFunzione Eco per risparmiare sulla bolletta elettrica\r\nIl Modem Fibra opera solo su linea ADSL di Telecom Italia (ad eccezione di linee “Alice Casa” e “Alice Voce”).\r\n\r\nAcquista il Modem Fibra direttamente su questo sito. Lo riceverai a casa tua in consegna gratuita.', 'Tecnologia: ADSL/ADSL 2+/VDSL\r\n\r\nWi-Fi: 802.11 b/g/n a 2.4 Ghz e 5 Ghz simultanee\r\n\r\nInterfacce: 1 porta ADSL/VDSL - 1 porta WAN 4 porte Gigabit Ethernet - 1 Interfaccia Dect integrata - 1 porta PSTN 2 porte FXS per collegamento di telefoni - 2 porte USB per collegamento dischi e stampanti\r\n\r\nFunzioni avanzate: Condivisione foto, musica e video, Hard Disk e stampanti\r\n\r\nRequisiti tecnici: Linea ADSL Flat o Fibra Ottica di Telecom Italia\r\n\r\nRequisiti di sistema per la gestione dell’interfaccia modem da PC: Principali browser inseriti di default sui sistemi operativi Windows 8, Windows 7, Vista, XP - MacOS 10.3\r\n\r\nAssistenza tecnica: 2 anni di garanzia sul prodotto\r\n\r\nContenuto della confezione: Modem Fibra, filtro DSL con 2 cavi telefonici già collegati, cavo Ethernet con connettori gialli, alimentatore', 'TBT', 'TBT', 'TBT'),
 (31, 'Modem & Networking', 'Technoware', 'ERA Plus 900', '79.90', 0, NULL, 'assets/images/devices/TECHNOWARE_PLUS900.jpg', 'Facile installazione\r\nPeso e dimensioni ridotti\r\nBassa rumorosità', 'ERA PLUS 900 è un UPS (Uninterruptible Power Supply), cioè un gruppo di continuità, di tipo Line Interactive, realizzato appositamente per proteggere il Modem Fibra di TIM da qualsiasi avaria della rete elettrica (black-out, sottotensioni, sovratensioni, microinterruzioni), causa dei frequenti danneggiamenti di Hardware e Software.\r\n\r\nQuando è presente la tensione di rete elettrica, ERA PLUS 900 svolge le funzioni di stabilizzatore e filtra i disturbi frequentemente presenti sulla linea elettrica (transienti, spike, interferenze, etc.), preservando in tal modo il modem ed eventuali altri dispositivi collegati alla sua uscita ad esempio il telefono cordless acquistato insieme all’offerta Fibra di TIM; inoltre ricarica le batterie in modo ottimale.\r\n\r\nIn caso di avaria della rete elettrica o caduta di tensione, l’UPS continua ad alimentare il modem ed altre apparecchiature protette ad esempio il telefono cordless garantendo per un lasso di tempo variabile il servizio telefonico e la connettività che sono compromesse in caso di black-out.\r\n\r\nERA PLUS presenta tutte le moderne caratteristiche che garantiscono massima affidabilità e sicurezza:\r\n\r\nControllo a microprocessore di tutte le funzioni, garanzia di alta affidabilità.\r\n\r\nStabilizzazione in uscita tramite AVR (Automatic Voltage Regulation).\r\nProtezione da sovraccarico sia nel modo di funzionamento normale che in modo batterie.\r\nCarica batterie di alte prestazioni che prolunga il tempo medio di vita delle batterie e ne garantisce una ricarica ottimale.\r\nAccensione anche in condizioni di rete elettrica assente.\r\nRiaccensione automatica dopo lo spegnimento per fine autonomia al ritorno della tensione di rete.\r\nAdattabilità automatica alla frequenza d’ingresso 50 o 60 Hz. Segnalazioni acustiche di vario tipo durante il normale funzionamento e che evidenziano le eventuali condizioni di allarme.\r\nAlta affidabilità.\r\nElevato rendimento e basso costo d’esercizio.\r\nDimensioni compatte.\r\nDesign curato ed ergonomico.\r\nSemplicità d’uso.', 'Tecnologia: Line Interactive con Stabilizzatore\r\n\r\nRaffreddamento: Naturale\r\n\r\nRumorosità: < 40 dBA a 1 m\r\n\r\nStabilizzazione tensione: Line Mode: Tramite AVR (Automatic Voltage Regulation)\r\nBattery Mode: +/-5%\r\n\r\nSovraccarico ammesso: < 130%\r\n\r\nBatteria: 1 (interna) di tipo al Piombo acido sigillata senza manutenzione\r\nTempo di ricarica (Tipico) 4 ore\r\nTensione nominale 12Vdc\r\nAutonomia Tipica 10 min\r\n\r\nDimensioni: 10,1x14,2x27,9 cm\r\n\r\nPeso: 3,7 Kg\r\n\r\nAmbiente operativo: Da 0 a 40 °C (per un corretto esercizio delle batterie da 20 a 25° C vedi grafi co “Vita Batterie dell’UPS in Servizio”)\r\nUmidità relativa < 95% non condensata\r\n\r\nDotazioni: Cavo d’alimentazione con spina Schuko', 'TBT', 'TBT', 'TBT'),
 (32, 'Modem & Networking', 'TIM', 'ADSL Modem Wi-Fi', '69.00', 0, NULL, 'assets/images/devices/TIM_MODEMWIFI.jpg', 'Navigazione senza fili più veloce\r\nConnessione di vari dispositivi\r\nInstallazione no problem\r\nFunzione Eco per risparmio energetico', 'Con il Modem ADSL Wi-Fi navighi ad alta velocità e senza fili, utilizzando l''interfaccia Wi-Fi o attraverso le 4 porte Ethernet.\r\n\r\nNavigazione più veloce grazie alla tecnologia senza fili Wi-Fi e migliore copertura della rete Wi-Fi della tua abitazione.\r\nProtezione: la cifratura WPA e WPA2 impedisce l’accesso ai non autorizzati alla rete Wi-Fi. Disponibili anche funzionalità avanzate come il filtro degli indirizzi MAC ed il firewall integrato.\r\nTutta la famiglia connessa: collega tutti i PC, smartphone e tablet al nuovo modem ADSL Wi-Fi e inoltre condividi Hard Disk e stampanti collegati alla porta USB del modem.\r\nInstallazione no problem: il modem si configura automaticamente sulla tua linea ADSL, senza installare software.\r\nRisparmia sulla bolletta elettrica: il nuovo modem, rispetto ad un prodotto Telecom Italia di generazione precedente con le stesse funzionalità, consente di risparmiare fino al 40% di energia elettrica su un utilizzo medio annuo.\r\nIl Modem Wi-Fi opera solo su linea ADSL di Telecom Italia ed è compatibile con i principali sistemi operativi (Windows 7, Vista, XP - MacOS 10.3).\r\n\r\nAcquista il Modem ADSL Wi-Fi direttamente su questo sito. Lo riceverai a casa tua in consegna gratuita.', 'Tecnologia: ADSL/ADSL2+; velocità fino a 20 Mbps down/1 Mbps up\r\n\r\nWi-Fi: Wi-Fi 802.11 b/g/n; velocità di trasferimento fino a 300Mbps\r\n\r\nInterfacce: Interfacce USB alta velocità (480 Mbit/s) ad alta potenza (500 mA), 1 porta connettore tipo A Interfaccia Wi-FiStandard IEEE 802.11nInterfaccia radio 2.4Ghz, 2 antenne, velocità di trasmissione teorica 300 Mbps\r\n\r\nProtezione Wireless:\r\nWPA, WPA-PSK, WEP - Supporto Wi-Fi Protected Setup - Controllo di accesso\r\n\r\nFunzioni avanzate:\r\nFunzionalità di routing avanzate (DHCP server, NAT, NAPT, Virtual Server) - Firewall - Condivisione Hard Disk e Stampante USB\r\n\r\nAssistenza tecnica: 2 anni di garanzia sul prodotto\r\n\r\nContenuto della confezione:\r\nGuida di installazione; CD autoinstallante (compatibile con Windows 7, Vista, XP- MacOS 10.3); 1 filtro ADSL 2+; 1 cavo Telefonico; 1 cavo Ethernet', 'TBT', 'TBT', 'TBT'),
-(33, 'TV e Smart Living', 'Philips', 'Friends of Hue Bloom', '179.95', 0, NULL, 'assets/images/device/PHILIPS_FRENDSOFHUEBLOOM.jpg', 'Connettività wireless\r\nControllo da dispositivi smart\r\nScegli la luce adatta al momento\r\nSi abbina a qualsiasi arredamento', 'Colora il tuo mondo di luce, che siano i colori luminosi del giorno o le sfumature dorate dell''autunno, lo starter kit Philips Friends of hue Bloom bianco ti consente di creare l''illuminazione che desideri tramite smartphone o altri dispositivi.', 'Materiale: Alluminio\r\n\r\nColore: Bianco\r\n\r\nIntensità regolabile: Si\r\n\r\nPerfetta per creare atmosfera: Si\r\n\r\nCambiacolore (LED): Si\r\n\r\nEffetto luce diffusa: Si\r\n\r\nConnessione ZigBee Light: Si\r\n\r\nBridge hue incluso: Si\r\n\r\nDimensioni del prodotto: 21,8x 22,8x 21,9 cm\r\n\r\nPeso del prodotto: 0,840 Kg\r\n\r\nTensione di rete: Da 100 V a 240 V, 50-60 Hz\r\n\r\nNumero di lampadine: 1\r\n\r\nWatt lampadina inclusa: 8 W\r\n\r\nTotale lumen emessi dall''apparecchio: 120 lm\r\n\r\nApparecchio di illuminazione: Ad intensità regolabile\r\n\r\nTecnologia: LED\r\n\r\nCodice IP: IP20, protezione contro gli oggetti superiori a 12,5 mm, nessuna protezione contro l''acqua\r\n\r\nClasse di protezione: II - doppio sistema di isolamento\r\n\r\nGaranzia: 2 anni\r\n\r\nDimensioni della confezione: 11,6x 36,8x 21,1 cm\r\n\r\nPeso della confezione: 1,444 Kg\r\n\r\nAppositamente progettata per:\r\nSalotto e camera da letto, Cameretta dei bambini\r\n\r\nStile: Espressivo\r\n\r\nTipo: Lampada da tavolo', 'TBT', 'TBT', 'TBT'),
-(34, 'TV & Smart Living', 'D-Link', 'SmartHome', '159.90', 0, NULL, 'assets/images/SL/DLINKSMARTHOME.jpg', ' Caratteristiche:\r\nServizio gratuito\r\nVisualizzazione da smartphone o tablet delle riprese\r\nInvio notifiche su smartphone/tablet/e-mail\r\nConnettività Wi-Fi tramite ADSL o modem mobile 3G o 4G.', 'Basta semplicemente scaricare l’app mydlink Home e la configurazione guidata ti aiuterà a utilizzare al meglio tutti i dispositivi presenti nel kit in modo facile e intuitivo.\r\nCon l’app potrai creare tu stesso le regole per accendere e spegnere i tuoi elettrodomestici quando e ovunque vuoi.\r\nNotifiche automatiche e real time sul tuo smartphone\r\n\r\nL’app mydlink Home ti notificherà quando:\r\nUn movimento o un suono viene rilevato\r\nUn dispositivo è stato acceso o spento\r\nIl consumo elettrico è stato superato\r\nUn dispositivo non funziona correttamente o si surriscalda\r\nIl sensore di movimento a infrarossi passivo riduce di gran lunga i falsi allarmi garantendoti di essere avvisato solo quando necessario: rilevazione dei movimenti fino a 8 metri (100° orizzontale, 80° verticale).\r\n\r\nMonitor HD\r\n\r\nCon il Monitor HD, potrai controllare la tua casa in alta definizione (720p) e grazie alla visione notturna anche in assenza di luce (fino a 5 mt). Il Monitor HD ti avvisa mediante notifica push ogni volta che verrà rilevato un suono o un movimento.\r\n\r\nSensore di movimento\r\nGrazie alla tecnologia a infrarossi passiva saranno ridotti i falsi allarmi e verrai avvisato solo quando necessario. Con il sensore di movimento rileverai i movimenti fino a 8 metri (100° orizzontale, 80° verticale).', 'Con lo Smart Home HD Starter Kit potrai impostare, controllare, monitorare e automatizzare la tua casa ovunque ti trovi.\r\nNel Kit sono inclusi:\r\n\r\nUn Monitor HD (DCS-935L) \r\nUn Wi-Fi Motion Sensor (DCH-S150)\r\nUna smart plug (DSP-W215) \r\nTramite l''App mydlink Home per smartphone e tablet hai a disposizione il controllo di tutti i dispositivi così da semplificarti la gestione della casa rendendola più sicura e intelligente.', 'TBT', 'TBT', 'TBT'),
+(33, 'TV e Smart Living', 'Philips', 'Friends of Hue Bloom', '179.95', 0, NULL, 'assets/images/devices/FRIENDSOFHUEBLOOM.jpg', 'Connettività wireless\r\nControllo da dispositivi smart\r\nScegli la luce adatta al momento\r\nSi abbina a qualsiasi arredamento', 'Colora il tuo mondo di luce, che siano i colori luminosi del giorno o le sfumature dorate dell''autunno, lo starter kit Philips Friends of hue Bloom bianco ti consente di creare l''illuminazione che desideri tramite smartphone o altri dispositivi.', 'Materiale: Alluminio\r\n\r\nColore: Bianco\r\n\r\nIntensità regolabile: Si\r\n\r\nPerfetta per creare atmosfera: Si\r\n\r\nCambiacolore (LED): Si\r\n\r\nEffetto luce diffusa: Si\r\n\r\nConnessione ZigBee Light: Si\r\n\r\nBridge hue incluso: Si\r\n\r\nDimensioni del prodotto: 21,8x 22,8x 21,9 cm\r\n\r\nPeso del prodotto: 0,840 Kg\r\n\r\nTensione di rete: Da 100 V a 240 V, 50-60 Hz\r\n\r\nNumero di lampadine: 1\r\n\r\nWatt lampadina inclusa: 8 W\r\n\r\nTotale lumen emessi dall''apparecchio: 120 lm\r\n\r\nApparecchio di illuminazione: Ad intensità regolabile\r\n\r\nTecnologia: LED\r\n\r\nCodice IP: IP20, protezione contro gli oggetti superiori a 12,5 mm, nessuna protezione contro l''acqua\r\n\r\nClasse di protezione: II - doppio sistema di isolamento\r\n\r\nGaranzia: 2 anni\r\n\r\nDimensioni della confezione: 11,6x 36,8x 21,1 cm\r\n\r\nPeso della confezione: 1,444 Kg\r\n\r\nAppositamente progettata per:\r\nSalotto e camera da letto, Cameretta dei bambini\r\n\r\nStile: Espressivo\r\n\r\nTipo: Lampada da tavolo', 'TBT', 'TBT', 'TBT'),
+(34, 'TV & Smart Living', 'D-Link', 'SmartHome', '159.90', 0, NULL, 'assets/images/devices/DLINKSMARTHOME.jpg', ' Caratteristiche:\r\nServizio gratuito\r\nVisualizzazione da smartphone o tablet delle riprese\r\nInvio notifiche su smartphone/tablet/e-mail\r\nConnettività Wi-Fi tramite ADSL o modem mobile 3G o 4G.', 'Basta semplicemente scaricare l’app mydlink Home e la configurazione guidata ti aiuterà a utilizzare al meglio tutti i dispositivi presenti nel kit in modo facile e intuitivo.\r\nCon l’app potrai creare tu stesso le regole per accendere e spegnere i tuoi elettrodomestici quando e ovunque vuoi.\r\nNotifiche automatiche e real time sul tuo smartphone\r\n\r\nL’app mydlink Home ti notificherà quando:\r\nUn movimento o un suono viene rilevato\r\nUn dispositivo è stato acceso o spento\r\nIl consumo elettrico è stato superato\r\nUn dispositivo non funziona correttamente o si surriscalda\r\nIl sensore di movimento a infrarossi passivo riduce di gran lunga i falsi allarmi garantendoti di essere avvisato solo quando necessario: rilevazione dei movimenti fino a 8 metri (100° orizzontale, 80° verticale).\r\n\r\nMonitor HD\r\n\r\nCon il Monitor HD, potrai controllare la tua casa in alta definizione (720p) e grazie alla visione notturna anche in assenza di luce (fino a 5 mt). Il Monitor HD ti avvisa mediante notifica push ogni volta che verrà rilevato un suono o un movimento.\r\n\r\nSensore di movimento\r\nGrazie alla tecnologia a infrarossi passiva saranno ridotti i falsi allarmi e verrai avvisato solo quando necessario. Con il sensore di movimento rileverai i movimenti fino a 8 metri (100° orizzontale, 80° verticale).', 'Con lo Smart Home HD Starter Kit potrai impostare, controllare, monitorare e automatizzare la tua casa ovunque ti trovi.\r\nNel Kit sono inclusi:\r\n\r\nUn Monitor HD (DCS-935L) \r\nUn Wi-Fi Motion Sensor (DCH-S150)\r\nUna smart plug (DSP-W215) \r\nTramite l''App mydlink Home per smartphone e tablet hai a disposizione il controllo di tutti i dispositivi così da semplificarti la gestione della casa rendendola più sicura e intelligente.', 'TBT', 'TBT', 'TBT'),
 (35, 'TV & Smart Living', 'HS5', 'iHealth', '119.90', 0, NULL, 'assets/images/devices/IHEALTH.jpg', 'Caratteristiche:\r\nBilancia digitale di alta qualità\r\nCompatibile con i dispositivi Apple iOS (versione iOS 5.0 o successiva)\r\nCompatibile con i dispositivi Android (sistema operativo 3.0 o successivo)\r\nComprende un servizio gratuito iHealth Cloud.', 'iHEALTH ha sviluppato una linea di prodotti innovativi, per la gestione della salute personale su smartphone o tablet. I prodotti wireless iHealth con connessione bluetooth per iPad, iPhone, iPod e Android consentono di misurare facilmente, memorizzare e condividere immediatamente i risultati con la famiglia o il medico. La potente applicazione iHealth MyVitals permette di gestire tutti i dati relativi alla propria salute con grafici, statistiche e tendenze. Questa applicazione, unica nel suo genere, traccia la relazione tra vari parametri come la pressione sanguigna, il peso, l’apporto calorico e l’attività fisica. Compatibile con tutte le piattaforme Apple e Android. Comprende un servizio gratuito iHealth Cloud.', 'Classificazione: Alimentazione interna, parti applicate di tipo BF\r\n\r\nConnettività wireless: Bluetooth V3.0 + EDR Classe 2 SPP\r\n\r\nDimensioni: 380 x 310 x 35 mm\r\n\r\nPeso: 1.5 kg (senza batteria)\r\n\r\nMetodo di misurazione: Misurazione elettronica completamente automatica\r\n\r\nAlimentazione: 4 batterie AA 1.5 V incluse\r\n\r\nRange del peso corporeo: 5-150 kg\r\n\r\nRange misurazione grasso corporeo: 5%-65%\r\n\r\nRange di misurazione acqua corporea: 20%- 85%\r\n\r\nRange del tasso di grasso viscerale: 1-59\r\n\r\nPeso corporeo: ±0.5 kg (5~40 kg); ±1% + 0.1 kg (40~150 kg)\r\n\r\nGrasso corporeo: ±1%\r\n\r\nAcqua corporea: ±1%\r\n\r\nMassa muscolare corporea: ±1% + 0.1 kg (± 1%)\r\n\r\nMassa ossea: ±0.3 kg', 'TBT', 'TBT', 'TBT');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `dvslrelations`
+-- Struttura della tabella `dvslrelations`
 --
 
 DROP TABLE IF EXISTS `dvslrelations`;
@@ -268,7 +268,7 @@ CREATE TABLE IF NOT EXISTS `dvslrelations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `dvslrelations`
+-- Dump dei dati per la tabella `dvslrelations`
 --
 
 INSERT INTO `dvslrelations` (`iddevice`, `idslservice`) VALUES
@@ -317,7 +317,7 @@ INSERT INTO `dvslrelations` (`iddevice`, `idslservice`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `slservices`
+-- Struttura della tabella `slservices`
 --
 
 DROP TABLE IF EXISTS `slservices`;
@@ -337,7 +337,7 @@ CREATE TABLE IF NOT EXISTS `slservices` (
 ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `slservices`
+-- Dump dei dati per la tabella `slservices`
 --
 
 INSERT INTO `slservices` (`id`, `category`, `name`, `image`, `price`, `desc_it`, `activation_it`, `faq_it`, `desc_en`, `activation_en`, `faq_en`) VALUES
@@ -355,18 +355,18 @@ INSERT INTO `slservices` (`id`, `category`, `name`, `image`, `price`, `desc_it`,
 (15, 'Personal Services', 'Personal Services', 'assets/images/SL/TIMFIDELITYCARD.jpg', '0.00', 'null', '', 'null', 'null', '0', 'null');
 
 --
--- Constraints for dumped tables
+-- Limiti per le tabelle scaricate
 --
 
 --
--- Constraints for table `assdvrelation`
+-- Limiti per la tabella `assdvrelation`
 --
 ALTER TABLE `assdvrelation`
   ADD CONSTRAINT `assdvrelation_ibfk_1` FOREIGN KEY (`idass`) REFERENCES `assistance` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `assdvrelation_ibfk_2` FOREIGN KEY (`iddevice`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `dvslrelations`
+-- Limiti per la tabella `dvslrelations`
 --
 ALTER TABLE `dvslrelations`
   ADD CONSTRAINT `dvslrelations_ibfk_1` FOREIGN KEY (`iddevice`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
