@@ -46,8 +46,8 @@ function devInfoLink() {
             if(curr == 'Tutti')
                 currout = null;
             $(this).html('<a href="category.php" onClick="setCategory('+"'"+ parent +"'"+","+ currout+')">'+curr+'</a>');
-    }
-});
+        }
+    });
 }
 
 function devInfoShort (str, elem){
@@ -151,15 +151,22 @@ function fillSlPage(str,bread) {
                 insert+='<div data-target="#carousel" data-slide-to="'+i+'" class="thumb"><img src="'+devs[i].image+'"></div>';
                 $('#thumbcarousel div div').eq(j).html(insert);
                 if(i==0)
-                    insert = $('#carousel div').html() + '<div class="item active"><img src="'+devs[i].image+'"></div>'
+                    insert = $('#carousel div').html() + '<span class="item active"><img src="'+devs[i].image+'"><span class="ctext">'+devs[i].name+'</span>   </span>';
                 else
-                    insert = $('#carousel div').html() + '<div class="item"><img src="'+devs[i].image+'"></div>'
+                    insert = $('#carousel div').html() + '<span class="item"><img src="'+devs[i].image+'"><span class="ctext">'+devs[i].name+'</span>   </span>';
                 $('#carousel div').html(insert);
                 
             });
-            
         }
     });
+}
+
+function ctextheight(){
+     $('.ctext').each(function() {
+                var h = $(this).prev().height();
+                $(this).css('top', 0.3*h+'px');
+                $(this).css('position', 'absolute');
+            });
 }
 
 /* Build Category Page*/
@@ -318,3 +325,4 @@ function replaceUrlParam(paramName, paramValue){
     }
     return url + (url.indexOf('?')>0 ? '&' : '?') + paramName + '=' + paramValue
 }
+
