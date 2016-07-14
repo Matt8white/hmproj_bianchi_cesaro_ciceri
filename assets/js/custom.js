@@ -130,15 +130,34 @@ function fillDevicePage(bread) {
 /*RETRIEVE A SLS INFO*/
 function fillSlPage(str,bread) {
     strdec = decodeURIComponent(str);
-    var getlang = $.cookie('lang');
+    var getlang = $.cookie('lang');    
+    document.title = strdec + " " + " | TIM";
+    createBreadcrumb(strdec, "slcat", bread);
     "use strict";
     $.ajax({
         method: "POST",
         data: { cat: strdec, lang: getlang},
         url: 'ajax/getSLS.php', success: function(result) {
-            document.title = strdec + " " + " | TIM";
-            createBreadcrumb(strdec, "slcat", bread);
-            console.log(result);
+            var devs = JSON.parse(result);
+            if(Object.keys(devs).length<=4)
+                $('#thumbcarousel .left,#thumbcarousel .right').remove();
+            var j = -1;
+            $('#thumbcarousel div div').html("");
+            $('#carousel div').html('');
+            $.each( devs, function( i ){
+                if (i%4 ==0)
+                    j++;
+                var insert = $('#thumbcarousel div div').eq(j).html();
+                insert+='<div data-target="#carousel" data-slide-to="'+i+'" class="thumb"><img src="'+devs[i].image+'"></div>';
+                $('#thumbcarousel div div').eq(j).html(insert);
+                if(i==0)
+                    insert = $('#carousel div').html() + '<div class="item active"><img src="'+devs[i].image+'"></div>'
+                else
+                    insert = $('#carousel div').html() + '<div class="item"><img src="'+devs[i].image+'"></div>'
+                $('#carousel div').html(insert);
+                
+            });
+            
         }
     });
 }
