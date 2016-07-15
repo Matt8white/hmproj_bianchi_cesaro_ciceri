@@ -53,7 +53,7 @@
 
 </head>
 
-<body onload="fillCategoryPage('<?php echo $lang['BREAD_PROD']; ?>');">
+<body onload="fillAsPage('<?php echo $lang['BREAD_SL']; ?>');">
     <!-- =========================
          HEADER
     ============================== -->
@@ -64,52 +64,17 @@
     <div class="main-wrapper clear-fix">
         <ol class="breadcrumb" id="bc">
         </ol>
-
-        <div class="col-xs-12 col-sm-4">
-            <div class="row">
-              <div class="span3">
-                <div class="well">
-                    <div>
-                        <ul class="nav nav-list">
-                            <li><label class="tree-toggle nav-header">Filters</label>
-                                <ul class="nav nav-list tree">
-                                    <hr>
-                                        <li class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> <?php echo $lang['PROM_SWITCH_OFFERS']; ?>
-                                            </label>
-                                        </li>
-                                    <hr>
-                                    <li><label class="tree-toggle nav-header">Brand</label>
-                                        <ul id='brandfilters' class="nav nav-list tree">
-                                           
-                                        </ul>
-                                    </li>
-                                    <hr>
-                                    <li><label class="tree-toggle nav-header">Price</label>
-                                        <ul id='pricefilters' class="nav nav-list tree">
-                                           <li class="radio"><label><input type="radio" name="price" value="<200"><200</label></li>
-                                           <li class="radio"><label><input type="radio" name="price" value="<300"><300</label></li>
-                                           <li class="radio"><label><input type="radio" name="price" value="<400"><400</label></li>
-                                           <li class="radio"><label><input type="radio" name="price" value="<=500"><500</label></li>
-                                           <li class="radio"><label><input type="radio" name="price" value=">500">>500</label></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <hr>
-                            <div class="btn btn-primary" onClick="clearFilters()"> Clear Filters</div>
-                        </ul>
-                    </div>
-                </div>
-                </div>
+        <div class="col-xs-12 ">
+            <hr>
+            <div class="devname" style="font-size: 44px; color: #014591; font-family: Arial, Helvetica, sans-serif  "></div>
+            <hr>
+            <div id="desc">
+            <br>
             </div>
-        </div>
-        <div class="col-xs-12 col-sm-8">
-                <div class="col-xs-12" id ="devs">
-                </div>
-        </div>
-        <div class="col-xs-12" id="desc">
+            <div style="font-size: 24px; color: #014591; font-family: Arial, Helvetica, sans-serif  ">FAQ</div>
+            <hr>
+            <div id="faq">
+            </div>
         </div>
         <div class="col-xs-12 col-sm-6" id="slRel">
         </div>

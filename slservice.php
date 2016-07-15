@@ -65,7 +65,7 @@
         <ol class="breadcrumb" id="bc">
         </ol>
 
-        <div class="col-xs-12 col-sm-5" style="height:760px;" id="displayImg">
+        <div class="col-xs-12 col-sm-5" style="height:500px;" id="displayImg">
         </div>
         <div class="col-xs-12 col-sm-7">
             <div class="col-xs-12">
@@ -76,7 +76,7 @@
                 </ul>
             </div>
             <div class="col-xs-12">
-                <div class="tab-content" style="height:560px">
+                <div class="tab-content" style="height:300px">
                         <div class="tab-pane active" id="desc">
                             <div class="devname" style="font-size: 44px; color: #014591; font-family: Arial, Helvetica, sans-serif  "></div>
                             <div class="show-content" style="width: 100%;">
@@ -94,8 +94,6 @@
                         </div>
                 </div>
             </div>
-        </div>
-        <div class="col-xs-12" id="desc" style="width: 80%; margin-left:10%">
         </div>
         <div class="col-xs-12 col-sm-6" id="slRel">
         </div>

@@ -183,7 +183,7 @@ function fillSlsPage(str,bread) {
     });
 }
 
-/*RETRIEVE SL INFO*/
+/*Build SL Page*/
 function fillSlPage(bread) {
     var str = getUrlVars()["service"];
     var getlang = $.cookie('lang');
@@ -209,17 +209,53 @@ function fillSlPage(bread) {
     });
 }
 
+/*Build As Service Page*/
+function fillAsPage(bread) {
+    var str = getUrlVars()["service"];
+    var getlang = $.cookie('lang');
+    "use strict";
+    $.ajax({
+        method: "POST",
+        data: { svid: str, lang: getlang },
+        url: 'ajax/getAsInfo.php', success: function(result) {
+            var infos = JSON.parse(result);
+            document.title = infos["name"] + " | TIM";
+            createBreadcrumb(infos, "service", bread);
+            $(".devname").html('<bf>'+infos["name_"+getlang] +'</bf>');
+            var div = document.getElementById('desc');
+            div.innerHTML = '<p>' + infos["desc_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + "<br>"+ div.innerHTML ;
+            var div = document.getElementById('faq');
+            div.innerHTML = '<p>' + infos["faq_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>';
+        }
+    });
+}
+
 /* Build Category Page*/
 function fillCategoryPage (bread) {
     var passme = JSON.parse($.cookie('param'));
     $('#devs').css('top', 0);
-    //$.removeCookie('param');
-    var arr = new Array();
-    $(':checkbox').each(function() {
-        $(this).attr("id", $( this ).parent().text().trim()+"box");
-        if(passme["attr"].indexOf($( this ).parent().text().trim()) > -1)
-            $( this ).prop({checked: true});
+    $.ajax({
+        method: "POST",
+        data: {cat: passme.cat},
+        url: 'ajax/getBrands.php', success: function(result) {
+            var brands = JSON.parse(result);
+            console.log(brands);
+            var insertme = '';
+            $.each( brands, function(i){
+            insertme+='<li class="checkbox"><label><input type="checkbox">'+brands[i].brand+'</label></li>';
+            });
+            $('#brandfilters').html(insertme);
+            $(':checkbox').each(function() {
+                $(this).attr("value", $( this ).parent().text().trim());
+                if(passme["attr"].indexOf($( this ).parent().text().trim()) > -1)
+                    $( this ).prop({checked: true});
+            });
+            $( ".checkbox" ).click(function() {
+              filterCat();
+            });
+        }
     });
+   
 
     filterCat();
     createBreadcrumb(passme, 'category', bread);
@@ -268,6 +304,10 @@ $( ".checkbox" ).click(function() {
   filterCat();
 });
 
+$( ".radio" ).click(function() {
+  filterCat();
+});
+
 function setCategory(cat,attr) {
 
     var arr = '{"cat":"' +cat+'","attr":"';
@@ -284,35 +324,44 @@ function setCategory(cat,attr) {
     $.cookie('param', (arr));
 }
 
+
+function clearFilters(){
+    $(':checkbox').each(function() {
+        $( this ).prop({checked: false});
+    });
+    $(':radio').each(function() {
+        $( this ).prop({checked: false});
+    });
+    filterCat();
+}
+
 function filterCat(){
     //TUTTI -> *
     var params = JSON.parse($.cookie('param'));
     var brandstr = "";
     var pricestr = "";
-    var osstr = "";
     var extraparamstr = "";
     //attr":"
     $(':checkbox:checked').each(function(i){
         switch($(this).parent().parent().parent().parent().children()[0].innerHTML){
             case "Brand":
-                brandstr += "'"+$(this).attr("id").slice(0, -3) + "',";
+                brandstr += "'"+$(this).attr("value") + "',";
                 break;
             case "Filters":
                 extraparamstr += "'"+$(this).attr("id").slice(0, -3) + "',";
-                break;
-            case "OS":
-                osstr += "'"+$(this).attr("id").slice(0, -3) + "',";
-                break;
-            case "Price":
-                pricestr += "'"+$(this).attr("id").slice(0, -3) + "',";
                 break;
             default:
                 break;
         }
      });
+    
+    $(':radio:checked').each(function(i){
+       pricestr=$(this).attr("value");
+     });
+    
     $.ajax({
         method: "POST",
-        data: { cat: "'"+params['cat']+"'", brand: brandstr.slice(0, -1), os: osstr.slice(0, -1), price: pricestr.slice(0, -1), extra: extraparamstr.slice(0, -1) },
+        data: { cat: "'"+params['cat']+"'", brand: brandstr.slice(0, -1), price: pricestr, extra: extraparamstr.slice(0, -1) },
         url: 'ajax/getDevices.php', success: function(result) {
             var infos = JSON.parse(result);
             var count = Object.keys(infos).length;
