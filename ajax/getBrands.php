@@ -6,8 +6,15 @@
         die('Could not connect: ' . mysqli_error($con));
     }
 
+    
+    if($_POST['cat']=="Tutti" || $_POST['cat'] == "All")
+        $q = "1 = 1";
+    else  
+        $q = "category = '".$q."'";
+        
+
     mysqli_select_db($con,"TimHypProj");
-    $sql = "SELECT DISTINCT brand FROM devices WHERE category = '".$q."'";
+    $sql = "SELECT DISTINCT brand FROM devices WHERE ".$q;
     $result = mysqli_query($con,$sql);
     $rows = array();
     while($row = mysqli_fetch_assoc($result)) {

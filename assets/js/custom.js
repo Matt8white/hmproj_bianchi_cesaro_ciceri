@@ -238,8 +238,8 @@ function fillCategoryPage (bread) {
         method: "POST",
         data: {cat: passme.cat},
         url: 'ajax/getBrands.php', success: function(result) {
+            console.log(result);
             var brands = JSON.parse(result);
-            console.log(brands);
             var insertme = '';
             $.each( brands, function(i){
             insertme+='<li class="checkbox"><label><input type="checkbox">'+brands[i].brand+'</label></li>';
