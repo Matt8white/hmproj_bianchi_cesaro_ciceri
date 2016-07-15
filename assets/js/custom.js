@@ -253,11 +253,11 @@ function fillCategoryPage (bread) {
             $( ".checkbox" ).click(function() {
               filterCat();
             });
+            filterCat();
         }
     });
    
 
-    filterCat();
     createBreadcrumb(passme, 'category', bread);
 }
 
@@ -348,7 +348,7 @@ function filterCat(){
                 brandstr += "'"+$(this).attr("value") + "',";
                 break;
             case "Filters":
-                extraparamstr += "'"+$(this).attr("id").slice(0, -3) + "',";
+                extraparamstr += "'"+$(this).attr("value").slice(0, -3) + "',";
                 break;
             default:
                 break;
