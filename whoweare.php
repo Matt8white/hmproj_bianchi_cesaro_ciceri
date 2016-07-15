@@ -68,7 +68,7 @@
             <div class="wwa-left-content">
                 <img src="assets/images/logo-wwa.png">
                 <h2 style="color: white;"><?php echo $lang['WWA_INN']; ?></h2>
-                <a id="wwa-inn" href="#new" class="btn btn-primary scrollto" style="background-color: white; color: #014591;"><?php echo $lang['BTN_FINDOUT']; ?></a>
+                <a href="#new" class="btn btn-primary scrollto" style="background-color: white; color: #014591;"><?php echo $lang['BTN_FINDOUT']; ?></a>
             </div>
         </div>
         <div class="col-xs-12 col-md-7" style="padding-left: 0px; padding-right: 0px;">
@@ -85,13 +85,13 @@
                 </div>
             </div>
         </div>
-        <div id="new" class="col-md-12" style="height: 600px;">
+        <div id="new" class="col-xs-12" style="height: 600px;">
             QUI NUOVA TIM
         </div>
-        <div id="proj" class="col-md-12" style="height: 600px;">
+        <div id="proj" class="col-xs-12" style="height: 600px;">
             QUI PROGETTI
         </div>
-        <div id="testimonials" class="col-md-12" style="height: 600px;">
+        <div id="testimonials" class="col-xs-12" style="height: 600px;">
             QUI TESTIMONIALS
         </div>
     </div><!-- /End Main Wrapper -->

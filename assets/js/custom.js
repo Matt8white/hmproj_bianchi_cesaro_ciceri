@@ -1,3 +1,25 @@
+/* =================================
+   SCROLL TO
+=================================== */
+$(document).ready(function () {
+    var onMobile;
+
+    onMobile = false;
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) { onMobile = true; }
+
+    if (onMobile === true) {
+        jQuery('a.scrollto').click(function (event) {
+        jQuery('html, body').scrollTo(this.hash, this.hash, {gap: {y: -10}, animation:  {easing: 'easeInOutCubic', duration: 0}});
+        event.preventDefault();
+    });
+    } else {
+        jQuery('a.scrollto').click(function (event) {
+        jQuery('html, body').scrollTo(this.hash, this.hash, {gap: {y: -10}, animation:  {easing: 'easeInOutCubic', duration: 1500}});
+            event.preventDefault();
+        });
+    }
+});
+
 function changeWhoWeAreContent(param) {
     "use strict";
     switch(param){
@@ -130,7 +152,7 @@ function fillDevicePage(bread) {
 /*BUILD SLS PAGE*/
 function fillSlsPage(str,bread) {
     strdec = decodeURIComponent(str);
-    var getlang = $.cookie('lang');    
+    var getlang = $.cookie('lang');
     document.title = strdec + " " + " | TIM";
     createBreadcrumb(strdec, "slcat", bread);
     "use strict";
@@ -155,7 +177,7 @@ function fillSlsPage(str,bread) {
                 else
                     insert = $('#carousel div').html() + '<span class="item"><span class="ctext">'+devs[i].name+'</span><img src="'+devs[i].image+'">   </span>';
                 $('#carousel div').html(insert);
-                
+
             });
         }
     });
@@ -343,4 +365,3 @@ function replaceUrlParam(paramName, paramValue){
     }
     return url + (url.indexOf('?')>0 ? '&' : '?') + paramName + '=' + paramValue
 }
-
