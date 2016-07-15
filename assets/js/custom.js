@@ -151,9 +151,9 @@ function fillSlPage(str,bread) {
                 insert+='<div data-target="#carousel" data-slide-to="'+i+'" class="thumb"><img src="'+devs[i].image+'"></div>';
                 $('#thumbcarousel div div').eq(j).html(insert);
                 if(i==0)
-                    insert = $('#carousel div').html() + '<span class="item active"><img src="'+devs[i].image+'"><span class="ctext">'+devs[i].name+'</span>   </span>';
+                    insert = $('#carousel div').html() + '<span class="item active"> <span class="ctext">'+devs[i].name+'</span>  <img src="'+devs[i].image+'">  </span>';
                 else
-                    insert = $('#carousel div').html() + '<span class="item"><img src="'+devs[i].image+'"><span class="ctext">'+devs[i].name+'</span>   </span>';
+                    insert = $('#carousel div').html() + '<span class="item"><span class="ctext">'+devs[i].name+'</span><img src="'+devs[i].image+'">   </span>';
                 $('#carousel div').html(insert);
                 
             });
