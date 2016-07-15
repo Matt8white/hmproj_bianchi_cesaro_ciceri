@@ -157,7 +157,7 @@
     $lang['SL_BREAD_CAT4'] = "Servizi alla persona";
 
     $lang['SL_TITLE'] = "Prodotti e servizi";
-    
+
     $lang['SL_DESC'] = "Descrizione";
     $lang['SL_ACT'] = "Attivazione e Regole";
     $lang['SL_FAQ'] = "FAQ";
@@ -181,6 +181,28 @@
     $lang['WWA_INN'] = "Il futuro firmato <br> Telecom Italia";
     $lang['WWA_PROJ'] = "I progetti TIM disegnano il futuro <br> che immaginiamo.";
     $lang['WWA_TESTIMONIALS'] = "I nostri testimonials";
+
+    $lang['WWA_NEW_TITLE'] = "L’EVOLUZIONE IN UN’ICONA";
+    $lang['WWA_NEW_BODY'] = "Evolversi significa migliorare per essere in grado di rispondere a nuove sfide. <br> Per accogliere il futuro e farne parte TIM si rinnova anche nel marchio. <br> Fin dalla sua nascita, oltre 20 anni fa, il suo logo è stato un segno di <strong>modernità</strong> e <br> <strong>dinamismo:</strong> una <strong>promessa</strong> di progetti e di orizzonti nuovi. Oggi continua a essere simbolo <br> di cambiamento, fondendo le competenze di due realtà: il trigramma rosso di Telecom <br>Italia, l’intenso blu del marchio TIM e una T a unire questi due mondi. <br> La sintesi di una grande eredità e di un deciso orientamento al domani. <br> Nasce così <strong>un’icona</strong> semplice e immediata: <strong>evoluta, per tempi evoluti.</strong>";
+
+    $lang['WWA_PROJ1_TITLE'] = "Innovazione";
+    $lang['WWA_PROJ1_DESC'] = "All'innovazione, forza motrice del futuro, <br> dedichiamo impegno e risorse.";
+
+    $lang['WWA_PROJ2_TITLE'] = "Ambiente e Sociale";
+    $lang['WWA_PROJ2_DESC'] = "Ci impegnamo ogni giorno per i bisogni delle <br> comunità con soluzioni innovative e altamente tecnologiche.";
+
+    $lang['WWA_PROJ3_TITLE'] = "Cultura";
+    $lang['WWA_PROJ3_DESC'] = "Le nuove tecnologie contribuiscono <br> alla diffusione della cultura nel Paese e <br> alla nascita di nuove professioni.";
+
+    $lang['WWA_PROJ4_TITLE'] = "Sport";
+    $lang['WWA_PROJ4_DESC'] = "Lo sport è passione, rispetto e condivisione <br> di emozioni. Un patrimonio di valori e <br> buone pratiche in cui ci identifichiamo.";
+
+    $lang['BERNERS_LEE'] = "Berners Lee";
+    $lang['BERNERS_LEE_QUOTE'] = "L'inventore del web";
+    $lang['FAZIO'] = "Fabio Fazio";
+    $lang['FAZIO_QUOTE'] = "\"Il futuro ci sorprenderà\"";
+    $lang['PIF'] = "PIF";
+    $lang['PIF_QUOTE'] = "\"Abbiamo fame di meraviglia!\"";
 
     /*BREADCRUMB*/
     $lang['BREAD_PROD'] = "Prodotti";

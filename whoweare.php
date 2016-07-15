@@ -85,14 +85,72 @@
                 </div>
             </div>
         </div>
-        <div id="new" class="col-xs-12" style="height: 600px;">
-            QUI NUOVA TIM
+        <div id="new" class="col-xs-12 wwa_newtim">
+            <div class="wwa_newtim_content">
+                <h1 style="font: normal normal 40px 'Bold', Arial, sans-serif; font-size: 3vw"><?php echo $lang['WWA_NEW_TITLE']; ?></h1>
+                <p><?php echo $lang['WWA_NEW_BODY']; ?></p>
+            </div>
         </div>
-        <div id="proj" class="col-xs-12" style="height: 600px;">
-            QUI PROGETTI
+        <div id="proj" class="col-xs-12" style="margin-top: 40px;">
+            <div class="col-xs-12 col-md-6 box-projects">
+                <img src="/assets/images/wwa_innovation.jpg">
+                <h3><?php echo $lang['WWA_PROJ1_TITLE']; ?></h3>
+                <p><?php echo $lang['WWA_PROJ1_DESC']; ?></p>
+                <span class="btn btn-primary"><?php echo $lang['BTN_FINDOUT']; ?></span>
+            </div>
+            <div class="col-xs-12 col-md-6 box-projects">
+                <img src="/assets/images/wwa_social.jpg">
+                <h3><?php echo $lang['WWA_PROJ2_TITLE']; ?></h3>
+                <p><?php echo $lang['WWA_PROJ2_DESC']; ?></p>
+                <span class="btn btn-primary"><?php echo $lang['BTN_FINDOUT']; ?></span>
+            </div>
+            <div class="col-xs-12 col-md-6 box-projects">
+                <img src="/assets/images/wwa_culture.jpg">
+                <h3><?php echo $lang['WWA_PROJ3_TITLE']; ?></h3>
+                <p><?php echo $lang['WWA_PROJ3_DESC']; ?></p>
+                <span class="btn btn-primary"><?php echo $lang['BTN_FINDOUT']; ?></span>
+            </div>
+            <div class="col-xs-12 col-md-6 box-projects">
+                <img src="/assets/images/wwa_sport.jpg">
+                <h3><?php echo $lang['WWA_PROJ4_TITLE']; ?></h3>
+                <p><?php echo $lang['WWA_PROJ4_DESC']; ?></p>
+                <span class="btn btn-primary"><?php echo $lang['BTN_FINDOUT']; ?></span>
+            </div>
         </div>
-        <div id="testimonials" class="col-xs-12" style="height: 600px;">
-            QUI TESTIMONIALS
+        <div id="testimonials" class="col-xs-12" style="margin-top: 40px;">
+            <div class="col-xs-12 col-md-8" style="height: 350px; background: url('/assets/images/testimonials/berners-lee.jpg') no-repeat center top;">
+                <div class="wwa_cont">
+                    <h1 style="color: white"><font size="6vw"><?php echo $lang['BERNERS_LEE']; ?></font></h1>
+                    <p style="color: white"><font size="4vw"><?php echo $lang['BERNERS_LEE_QUOTE']; ?></font></p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4" style="height: 350px;">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-rxy9lI8-7Q"></iframe>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8" style="height: 350px; background: url('/assets/images/testimonials/fabio-fazio.jpg') no-repeat center top;">
+                <div class="wwa_cont">
+                    <h1 style="color: white"><font size="6vw"><?php echo $lang['FAZIO']; ?></font></h1>
+                    <p style="color: white"><font size="4vw"><?php echo $lang['FAZIO_QUOTE']; ?></font></p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4" style="height: 350px;">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eTz4o7NMGXg"></iframe>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8" style="height: 350px; background: url('/assets/images/testimonials/pif.jpg') no-repeat center top;">
+                <div class="wwa_cont">
+                    <h1 style="color: white"><font size="6vw"><?php echo $lang['PIF']; ?></font></h1>
+                    <p style="color: white"><font size="4vw"><?php echo $lang['PIF_QUOTE']; ?></font></p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4" style="height: 350px; margin-bottom: 20px;">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5hHXbK9Dpyc"></iframe>
+                </div>
+            </div>
         </div>
     </div><!-- /End Main Wrapper -->
     <!-- ==================================================

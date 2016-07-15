@@ -98,7 +98,7 @@ ul > li {
 	text-align: center;
 	font-weight: bold;
 	font-size: 25pt;
-	
+
 }
 .btn-primary {
     text-transform: uppercase;
@@ -365,6 +365,35 @@ ul > li {
     position: absolute;
     top: 95px;
     left: 100px;
+}
+.wwa_newtim {
+    background: url("/assets/images/new_tim.png") no-repeat 50% 50%;
+    background-size: cover;
+    font: normal normal 15px/25px 'Light', 'arial', 'sans-serif';
+    font-size: 1.5vw;
+    color: #014591;
+    margin-top: 40px;
+    height: 350px;
+    position: relative;
+    text-align: center;
+}
+.wwa_newtim_content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    display: inline-block;
+    width: 100%;
+}
+.box-projects {
+    text-align: center;
+    margin-top: 10px;
+}
+.box-projects > img {
+    border-radius: 50%;
+}
+.wwa_cont {
+    margin-top: 15%;
+    margin-left: 20%;
 }
 /* =========================
      FOOTER
