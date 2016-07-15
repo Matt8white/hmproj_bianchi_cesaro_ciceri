@@ -156,6 +156,10 @@
     $lang['SL_BREAD_CAT4'] = "Personal Services";
 
 	$lang['SL_TITLE'] = "Devices and Services";
+    
+    $lang['SL_DESC'] = "Prodotti e servizi";
+    $lang['SL_ACT'] = "Prodotti e servizi";
+    $lang['SL_FAQ'] = "Prodotti e servizi";
 	
     /*ASSISTANCE SERVICES*/
     $lang['ASS_PAGE_TITLE'] = "Assistance Services | TIM";

@@ -127,8 +127,8 @@ function fillDevicePage(bread) {
     });
 }
 
-/*RETRIEVE A SLS INFO*/
-function fillSlPage(str,bread) {
+/*BUILD SLS PAGE*/
+function fillSlsPage(str,bread) {
     strdec = decodeURIComponent(str);
     var getlang = $.cookie('lang');    
     document.title = strdec + " " + " | TIM";
@@ -161,12 +161,30 @@ function fillSlPage(str,bread) {
     });
 }
 
-function ctextheight(){
-     $('.ctext').each(function() {
-                var h = $(this).prev().height();
-                $(this).css('top', 0.3*h+'px');
-                $(this).css('position', 'absolute');
-            });
+/*RETRIEVE SL INFO*/
+function fillSlPage(bread) {
+    var str = getUrlVars()["service"];
+    var getlang = $.cookie('lang');
+    "use strict";
+    $.ajax({
+        method: "POST",
+        data: { svid: str, lang: getlang },
+        url: 'ajax/getSlInfo.php', success: function(result) {
+            var infos = JSON.parse(result);
+            document.title = infos["name"] + " | TIM";
+            var div = document.getElementById('displayImg');
+            div.style.background = "url(" + infos["image"] + ") no-repeat center top";
+            createBreadcrumb(infos, "service", bread);
+            $(".devname").html('<bf>'+infos["name"] +'</bf>');
+            var div = document.getElementById('desc').children[1];
+            div.innerHTML = '<p>' + infos["desc_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + "<br>"+ div.innerHTML ;
+            var div = document.getElementById('act').children[1];
+            div.innerHTML = '<p>' + infos["activation_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + div.innerHTML;
+            var div = document.getElementById('faq');
+            div.innerHTML += '<p>' + infos["faq_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>';
+            $('#displayImg').css('background-size', 'contain');
+        }
+    });
 }
 
 /* Build Category Page*/

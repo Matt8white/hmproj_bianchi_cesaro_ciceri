@@ -7,7 +7,7 @@
     <meta charset="utf-8">
 
     <!-- TITLE OF SITE -->
-    <title><?php echo $lang['SL_PAGE_TITLE']; ?></title>
+    <title><?php echo $lang['DEVICE_PAGE_TITLE']; ?></title>
 
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -53,7 +53,7 @@
 
 </head>
 
-<body  onload="fillSlsPage('<?php echo $lang['SL_BREAD_CAT3']; ?>','<?php echo $lang['BREAD_SL']; ?>');">
+<body onload="fillSlPage('<?php echo $lang['BREAD_SL']; ?>');">
     <!-- =========================
          HEADER
     ============================== -->
@@ -64,47 +64,43 @@
     <div class="main-wrapper clear-fix">
         <ol class="breadcrumb" id="bc">
         </ol>
-        <div class="banner_slcat" style="background: url('/assets/images/slfamily.jpg') no-repeat center top;">
-            <div class="banner_slcat_content">
-                <h1 style="color: white"><font size="6vw"><?php echo $lang['SL_FAMILY_TITLE']; ?></font></h1>
-                <p  style="color: white"><font size="4vw"><?php echo $lang['SL_FAMILY_DESC']; ?></font></p>
-            </div>
+
+        <div class="col-xs-12 col-sm-5" style="height:760px;" id="displayImg">
         </div>
-        <div class="sltitle col-xs-4 col-xs-offset-4"><?php echo $lang['SL_TITLE']; ?></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-md-offset-2">
-                    <div class="clearfix">
-                        <div id="thumbcarousel" class="carousel carousel-sl slide" data-interval="false">
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                </div><!-- /item -->
-                                <div class="item">
-                                </div><!-- /item -->
-                            </div><!-- /carousel-inner -->
-                            <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
-                            <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
-                        </div> <!-- /thumbcarousel -->
-                    </div><!-- /clearfix -->
-                    <div id="carousel" class="carousel carousel-sl slide" data-ride="carousel" style="margin-bottom: 10px;">
-                        <div class="carousel-inner">
-                            <div class="item active">
-                            </div>
-                            <div class="item">
-                            </div>
-                            <div class="item">
-                            </div>
-                            <div class="item">
+        <div class="col-xs-12 col-sm-7">
+            <div class="col-xs-12">
+                <ul class="nav nav-tabs nav-justified">
+                        <li class="active" id="descbutton"><a href="#desc" data-toggle="tab"><?php echo $lang['SL_DESC']; ?></a></li>
+                        <li id="actbutton"><a href="#act" data-toggle="tab"><?php echo $lang['SL_ACT']; ?></a></li>
+                        <li id="faqbutton"><a href="#faq" data-toggle="tab"><?php echo $lang['SL_FAQ']; ?></a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12">
+                <div class="tab-content" style="height:560px">
+                        <div class="tab-pane active" id="desc">
+                            <div class="devname" style="font-size: 44px; color: #014591; font-family: Arial, Helvetica, sans-serif  "></div>
+                            <div class="show-content" style="width: 100%;">
                             </div>
                         </div>
-                    </div>
-                </div> <!-- /col-sm-6 -->
-            </div> <!-- /row -->
-        </div> <!-- /container -->
+                        <div class="tab-pane" id="act">
+                            <div class="devname" style="font-size: 44px; color: #014591; font-family: Arial, Helvetica, sans-serif  "></div>
+                            <div class="show-content" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="faq">
+                            <div class="devname" style="font-size: 44px; color: #014591; font-family: Arial, Helvetica, sans-serif  "></div>
+                            <div class="show-content" style="width: 100%;">
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12" id="desc" style="width: 80%; margin-left:10%">
+        </div>
+        <div class="col-xs-12 col-sm-6" id="slRel">
+        </div>
+        <div class="col-xs-12 col-sm-6" id="asRel">
+        </div>
     </div><!-- /End Main Wrapper -->
     <!-- ==================================================
         FOOTER
@@ -123,4 +119,7 @@
     <script src="assets/js/plugins/twitter/tweetie.min.js"></script>
     <!-- Custom Script -->
     <script src="assets/js/custom.js"></script>
+
+
+
 </body>

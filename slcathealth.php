@@ -53,7 +53,7 @@
 
 </head>
 
-<body  onload="fillSlPage('<?php echo $lang['SL_BREAD_CAT2']; ?>','<?php echo $lang['BREAD_SL']; ?>');">
+<body  onload="fillSlsPage('<?php echo $lang['SL_BREAD_CAT2']; ?>','<?php echo $lang['BREAD_SL']; ?>');">
     <!-- =========================
          HEADER
     ============================== -->
