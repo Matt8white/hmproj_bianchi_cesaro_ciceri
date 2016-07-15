@@ -7,7 +7,7 @@
     <meta charset="utf-8">
 
     <!-- TITLE OF SITE -->
-    <title><?php echo $lang['ASS_PAGE_TITLE']; ?></title>
+    <title><?php echo $lang['WWA_PAGE_TITLE']; ?></title>
 
     <meta name="description" content="" />
     <meta name="keywords" content="" />

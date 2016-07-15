@@ -178,6 +178,8 @@
     $lang['BUY_BTN'] = "Acquista";
 
     /*WHO WE ARE*/
+    $lang['WWA_PAGE_TITLE'] = "Chi Siamo | TIM";
+
     $lang['WWA_INN'] = "Il futuro firmato <br> Telecom Italia";
     $lang['WWA_PROJ'] = "I progetti TIM disegnano il futuro <br> che immaginiamo.";
     $lang['WWA_TESTIMONIALS'] = "I nostri testimonials";
