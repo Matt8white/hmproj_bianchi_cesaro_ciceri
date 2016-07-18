@@ -101,6 +101,12 @@
     $lang['TVSLS_FILTER_APPLE'] = "Apple";
     $lang['TVSLS_FILTER_SAMSUNG'] = "Samsung";
 
+	$lang['OUTLET_FILTER_TITLE'] = "Outlet";
+    $lang['OUT_TITLE'] = "TIM's Outlet";
+    $lang['OUT_DESC'] = "Only online <br> 60% off";
+    $lang['OUT_BTN'] = "MORE DETAILS";
+
+	
     /*PROMOTIONS*/
     $lang['OFF_PAGE_TITLE'] = "Promotions | TIM";
 
@@ -180,6 +186,28 @@
 	$lang['WWA_INN'] = "Telecom Italia's <br> Future";
 	$lang['WWA_PROJ'] = "TIM's Projects <br> create our future";
 	$lang['WWA_TESTIMONIALS'] = "Our Testimonials";
+
+    $lang['WWA_NEW_TITLE'] = "EVOLUTION IN AN ICON";
+    $lang['WWA_NEW_BODY'] = "Evolving means improve to be able to face new challenges. <br> TIM renews his brand to welcome the future and join it. <br> Since it was born, over 20 years ago, its brand was icon of <strong>modernity</strong> and <br> <strong>dinamism:</strong> a <strong>promise</strong> of new horizons. Today keeps being symbol <br> of changing, melting two realities: Telecom's red trigramma <br>and the strong blue of TIM's brand, with a T unifying those two worlds. <br> So it's born <strong>an icon</strong> simply and immediate: <strong>evolved, for evolved times.</strong>";
+
+    $lang['WWA_PROJ1_TITLE'] = "Innovation";
+    $lang['WWA_PROJ1_DESC'] = "To the innovation that moves the future, <br> we dedicate our resources.";
+
+    $lang['WWA_PROJ2_TITLE'] = "Social and environment";
+    $lang['WWA_PROJ2_DESC'] = "We work to fulfill community's needs <br>with innovative and highly technological solutions.";
+
+    $lang['WWA_PROJ3_TITLE'] = "Culture";
+    $lang['WWA_PROJ3_DESC'] = "New technologies help <br> the diffusion of the culture in the Country";
+
+    $lang['WWA_PROJ4_TITLE'] = "Sport";
+    $lang['WWA_PROJ4_DESC'] = "Sport is passion, respect and sharing <br> emotions. A treasure of <br>in which we identify.";
+
+    $lang['BERNERS_LEE'] = "Berners Lee";
+    $lang['BERNERS_LEE_QUOTE'] = "The inventor of WWW";
+    $lang['FAZIO'] = "Fabio Fazio";
+    $lang['FAZIO_QUOTE'] = "\"The future will surprise us\"";
+    $lang['PIF'] = "PIF";
+    $lang['PIF_QUOTE'] = "\"We're hungry for marvel!\"";
 
     /*BREADCRUMB*/
     $lang['BREAD_PROD'] = "Devices";
