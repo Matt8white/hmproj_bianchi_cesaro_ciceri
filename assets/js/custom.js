@@ -3,7 +3,7 @@
 =================================== */
 $(document).ready(function () {
     var onMobile;
-    
+
     onMobile = false;
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) { onMobile = true; }
 
@@ -18,7 +18,7 @@ $(document).ready(function () {
             event.preventDefault();
         });
     }
-    
+
 });
 
 function changeWhoWeAreContent(param) {
@@ -157,7 +157,7 @@ function fillDevicePage(bread) {
             console.log(services);
             var sl = $('#slRel').html();
             var as = $('#asRel').html();
-            
+
             for(var k in services) {
                 var info = services[k];
                 var addme;
@@ -232,9 +232,9 @@ function fillSlPage(bread) {
             createBreadcrumb(infos, "service", bread);
             $(".devname").html('<bf>'+infos["name"] +'</bf>');
             var div = document.getElementById('desc').children[1];
-            div.innerHTML = '<p>' + infos["desc_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + "<br>"+ div.innerHTML ;
+            div.innerHTML += '<br><p>' + infos["desc_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + "<br>";
             var div = document.getElementById('act').children[1];
-            div.innerHTML = '<p>' + infos["activation_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + div.innerHTML;
+            div.innerHTML += '<br><p>' + infos["activation_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>';
             var div = document.getElementById('faq');
             div.innerHTML += '<p>' + infos["faq_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>';
             $('#displayImg').css('background-size', 'contain');
@@ -247,7 +247,7 @@ function fillSlPage(bread) {
             var services = JSON.parse(result);
             console.log(services);
             var dev = $('#devRel').html();
-            
+
             for(var k in services) {
                 var info = services[k];
                 var addme = '<a href="device.php?device='+info.id+'"><div class="relsvc"><img style="width:80px" src="'+info.image+'">'+info.name+'</div></a>';
@@ -284,7 +284,7 @@ function fillAsPage(bread) {
             var services = JSON.parse(result);
             console.log(services);
             var dev = $('#devRel').html();
-            
+
             for(var k in services) {
                 var info = services[k];
                 var addme = '<a href="device.php?device='+info.id+'"><div class="relsvc"><img style="width:80px" src="'+info.image+'">'+info.name+'</div></a>';
@@ -321,7 +321,7 @@ function fillCategoryPage (bread) {
             filterCat();
         }
     });
-   
+
 
     createBreadcrumb(passme, 'category', bread);
 }
@@ -419,11 +419,11 @@ function filterCat(){
                 break;
         }
      });
-    
+
     $(':radio:checked').each(function(i){
        pricestr=$(this).attr("value");
      });
-    
+
     $.ajax({
         method: "POST",
         data: { cat: "'"+params['cat']+"'", brand: brandstr.slice(0, -1), price: pricestr, extra: extraparamstr.slice(0, -1) },

@@ -133,21 +133,21 @@
                 <!-- Tab panes -->
                 <div class="tab-content" style="height:360px;">
                     <div class="tab-pane active" id="promotion" style="background: url('/assets/images/prom-home.jpg') no-repeat right top;">
-                        <div class="show-content">
+                        <div class="home-content">
                             <h1><font size="6vw"><?php echo $lang['SHOW_PROM_HEAD']; ?></font></h1>
                             <p><font size="4vw"><?php echo $lang['SHOW_PROM_DESC']; ?></font></p>
                             <span class="btn btn-primary"><?php echo $lang['SHOW_PROM_BTN']; ?></span>
                         </div>
                     </div>
                     <div class="tab-pane" id="device" style="background: url('/assets/images/device-home.jpg') no-repeat right top;">
-                        <div class="show-content">
+                        <div class="home-content">
                             <h1><font size="6vw"><?php echo $lang['SHOW_DEV_HEAD']; ?></font></h1>
                             <p><font size="4vw"><?php echo $lang['SHOW_DEV_DESC']; ?></font></p>
                             <a href="device.php?device=6"><span class="btn btn-primary"><?php echo $lang['SHOW_DEV_BTN']; ?></span></a>
                         </div>
                     </div>
                     <div class="tab-pane" id="sl" style="background: url('/assets/images/sl-home.jpg') no-repeat right top;">
-                        <div class="show-content">
+                        <div class="home-content">
                             <h1><font size="6vw"><?php echo $lang['SHOW_SL_HEAD']; ?></font></h1>
                             <p><font size="4vw"><?php echo $lang['SHOW_SL_DESC']; ?></font></p>
                             <a href="slservice.php?service=7" class="btn btn-primary"><?php echo $lang['SHOW_SL_BTN']; ?></a>

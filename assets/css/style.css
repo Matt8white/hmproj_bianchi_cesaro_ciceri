@@ -124,6 +124,14 @@ ul > li {
 }
 .show-content {
     top: 15%;
+    position: absolute;
+    width: 300px;
+    height: inherit;
+    overflow-y: auto;
+}
+
+.home-content {
+    top: 15%;
     left: 10%;
     color: #014591;
     position: absolute;
@@ -132,7 +140,7 @@ ul > li {
     overflow-y: auto;
 }
 @media (max-width:768px) {
-    .show-content {
+    .home-content {
         color: white;
         -webkit-text-stroke-width: 0.5px;
         -webkit-text-stroke-color: black;
