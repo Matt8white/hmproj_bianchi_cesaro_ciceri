@@ -79,7 +79,7 @@
         <div class="col-xs-12 col-sm-10 col-sm-offset-1" style="text-align: center;">
             <br>
             <br>
-            <h1 style="color: #014591;"><?php echo $lang['RELATED_SVS']; ?></h1>
+            <h1 style="color: #014591;"><?php echo $lang['RELATED_DVCS']; ?></h1>
             <br>
         </div>
         <div class="col-xs-12 col-sm-10 col-sm-offset-1" id="devRel">

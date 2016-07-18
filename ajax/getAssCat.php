@@ -8,8 +8,8 @@
     if (!$con) {
         die('Could not connect: ' . mysqli_error($con));
     }
-    
-    
+
+
     mysqli_select_db($con,"TimHypProj");
     $sql = "SELECT category, subcategory, id, name_".$langs." FROM assistance WHERE category = '".$q."'";
     $result = mysqli_query($con,$sql);
