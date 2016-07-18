@@ -14,7 +14,7 @@
     $lang['NAV_2'] = "Devices";
     $lang['NAV_3'] = "Smart Life";
     $lang['NAV_4'] = "Assistance";
-	
+
 	$lang['CAROUSEL_HEADER1'] = "TIM SMART HOME";
     $lang['CAROUSEL_DESC1'] = "20 Mb Internet and unlimited calls. <br> Smart Modem Wi-Fi included";
     $lang['CAROUSEL_BTN1'] = "View deatils";
@@ -121,11 +121,11 @@
     $lang['PROM_SWITCH_ALL'] = "All";
     $lang['PROM_SWITCH_OFFERS'] = "Discount";
 
-    $lang['PROM_SL_TITLE'] = "TV & Entertainment";
-    $lang['PROM_SL1'] = "BIG HELLO";
-    $lang['PROM_SL2'] = "BIG HELLO";
-    $lang['PROM_SL3'] = "BIG HELLO";
-    $lang['PROM_SL4'] = "BIG HELLO";
+    $lang['PROM_SL_TITLE'] = "Smart Life Services";
+    $lang['PROM_SL1'] = "Tim Netflix";
+    $lang['PROM_SL2'] = "Tim Payment";
+    $lang['PROM_SL3'] = "Tim Transport";
+    $lang['PROM_SL4'] = "Tim Coupon";
     $lang['PROM_SHOW_SL1'] = "Tim Sky";
     $lang['PROM_SHOW_SL1_2'] = "Calls, Internet and Sky";
     $lang['PROM_SHOW_SL2'] = "Tim Vision";
@@ -156,14 +156,14 @@
     $lang['SL_BREAD_CAT4'] = "Personal Services";
 
 	$lang['SL_TITLE'] = "Devices and Services";
-    
+
     $lang['SL_DESC'] = "Prodotti e servizi";
     $lang['SL_ACT'] = "Prodotti e servizi";
     $lang['SL_FAQ'] = "Prodotti e servizi";
-	
+
     /*ASSISTANCE SERVICES*/
     $lang['ASS_PAGE_TITLE'] = "Assistance Services | TIM";
-	
+
 	$lang['ASS_DESC1'] = "Line Services";
     $lang['ASS_DESC2'] = "Costs and Payments";
     $lang['ASS_DESC3'] = "Technical support";
@@ -179,8 +179,8 @@
 	/*WHO WE ARE*/
 	$lang['WWA_INN'] = "Telecom Italia's <br> Future";
 	$lang['WWA_PROJ'] = "TIM's Projects <br> create our future";
-	$lang['WWA_TESTIMONIALS'] = "Our Testimonials";	
-	
+	$lang['WWA_TESTIMONIALS'] = "Our Testimonials";
+
     /*BREADCRUMB*/
     $lang['BREAD_PROD'] = "Devices";
     $lang['BREAD_PROM'] = "Promotions";

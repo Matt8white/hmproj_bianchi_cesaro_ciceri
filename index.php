@@ -96,7 +96,7 @@
                     <div class="carousel-content">
                         <h1 style="color: white"><font size="6vw"><?php echo $lang['CAROUSEL_HEADER3']; ?></font></h1>
                         <p  style="color: white"><font size="4vw"><?php echo $lang['CAROUSEL_DESC3']; ?></font></p>
-                        <span class="btn btn-primary"><?php echo $lang['CAROUSEL_BTN3']; ?></span>
+                        <a href="slservice.php?service=1" class="btn btn-primary"><?php echo $lang['CAROUSEL_BTN3']; ?></a>
                     </div>
                 </div>
 
@@ -134,23 +134,23 @@
                 <div class="tab-content" style="height:360px;">
                     <div class="tab-pane active" id="promotion" style="background: url('/assets/images/prom-home.jpg') no-repeat right top;">
                         <div class="show-content">
-                            <h1 style="color: black"><font size="6vw"><?php echo $lang['SHOW_PROM_HEAD']; ?></font></h1>
-                            <p  style="color: black"><font size="4vw"><?php echo $lang['SHOW_PROM_DESC']; ?></font></p>
+                            <h1><font size="6vw"><?php echo $lang['SHOW_PROM_HEAD']; ?></font></h1>
+                            <p><font size="4vw"><?php echo $lang['SHOW_PROM_DESC']; ?></font></p>
                             <span class="btn btn-primary"><?php echo $lang['SHOW_PROM_BTN']; ?></span>
                         </div>
                     </div>
                     <div class="tab-pane" id="device" style="background: url('/assets/images/device-home.jpg') no-repeat right top;">
                         <div class="show-content">
-                            <h1 style="color: black"><font size="6vw"><?php echo $lang['SHOW_DEV_HEAD']; ?></font></h1>
-                            <p  style="color: black"><font size="4vw"><?php echo $lang['SHOW_DEV_DESC']; ?></font></p>
+                            <h1><font size="6vw"><?php echo $lang['SHOW_DEV_HEAD']; ?></font></h1>
+                            <p><font size="4vw"><?php echo $lang['SHOW_DEV_DESC']; ?></font></p>
                             <a href="device.php?device=6"><span class="btn btn-primary"><?php echo $lang['SHOW_DEV_BTN']; ?></span></a>
                         </div>
                     </div>
                     <div class="tab-pane" id="sl" style="background: url('/assets/images/sl-home.jpg') no-repeat right top;">
                         <div class="show-content">
-                            <h1 style="color: black"><font size="6vw"><?php echo $lang['SHOW_SL_HEAD']; ?></font></h1>
-                            <p  style="color: black"><font size="4vw"><?php echo $lang['SHOW_SL_DESC']; ?></font></p>
-                            <span class="btn btn-primary"><?php echo $lang['SHOW_SL_BTN']; ?></span>
+                            <h1><font size="6vw"><?php echo $lang['SHOW_SL_HEAD']; ?></font></h1>
+                            <p><font size="4vw"><?php echo $lang['SHOW_SL_DESC']; ?></font></p>
+                            <a href="slservice.php?service=7" class="btn btn-primary"><?php echo $lang['SHOW_SL_BTN']; ?></a>
                         </div>
                     </div>
                 </div>
@@ -163,13 +163,13 @@
                         <option>10 €</option>
                         <option>20 €</option>
                     </select>
-                    <span class="btn btn-topup"><?php echo $lang['TOPUP_BTN']; ?></span>
+                    <span class="btn btn-topup" style="color: white;"><?php echo $lang['TOPUP_BTN']; ?></span>
                 </div>
                 <div class="col-xs-12 topup" style="margin-top: -1px">
                     <img src="https://img.tim.it:443/sdr/icone/icona_wcb_schede_offerta.png" class="img-tab" style="margin-top: 7.5%; margin-left: 24%">
                     <h1 style="color: black; text-align: left; margin-left: 10%"><font size="4"><?php echo $lang['NEWCUST_HEAD']; ?></font></h1>
                     <p  style="color: black; text-align: left; margin-left: 12%"><font size="3"><?php echo $lang['NEWCUST_BODY']; ?></font></p>
-                    <span class="btn btn-topup"><?php echo $lang['NEWCUST_BTN']; ?></span>
+                    <span class="btn btn-topup" style="color: white;"><?php echo $lang['NEWCUST_BTN']; ?></span>
                 </div>
             </div>
         </div>

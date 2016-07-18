@@ -132,30 +132,29 @@
                 <ul style="list-style-type: none;">
                     <li><h3><?php echo $lang['PROM_SL_TITLE']; ?></h3></li>
                     <li>
-                        <a href="category.php" onclick="setCategory('<?php echo $lang['PROM_SWITCH_ALL']; ?>', '<?php echo $lang['PROM_SWITCH_OFFERS']; ?>')">
+                        <a href="slservice.php?service=1">
                             <?php echo $lang['PROM_SL1']; ?>
                         </a>
                     </li>
                     <li>
-                        <a href="category.php" onclick="setCategory('Smartphones', '<?php echo $lang['PROM_SWITCH_OFFERS']; ?>')">
+                        <a href="slservice.php?service=8">
                             <?php echo $lang['PROM_SL2']; ?>
                         </a>
                     <li>
-                        <a href="category.php" onclick="setCategory('Tablet', '<?php echo $lang['PROM_SWITCH_OFFERS']; ?>')">
+                        <a href="slservice.php?service=9">
                             <?php echo $lang['PROM_SL3']; ?>
                         </a>
                     </li>
                     <li>
-                        <a href="category.php" onclick="setCategory('<?php echo $lang['PROM_SWITCH_ALL']; ?>', '<?php echo $lang['PROM_SWITCH_OFFERS']; ?>' + ' ' + '<?php echo $lang['PROM_DEV_APPLE']; ?>')">
+                        <a href="slservice.php?service=11">
                             <?php echo $lang['PROM_SL4']; ?>
                         </a>
                     </li>
                 </ul>
             </div>
-            <!-- LINK SBAGLIATI TODO -->
             <div class="col-xs-12 col-md-9">
                 <div class="col-xs-12 col-sm-6 prods-cont">
-                    <a href="category.php" onclick="setCategory('Smartphones', '<?php echo $lang['PROM_SWITCH_OFFERS']; ?>')">
+                    <a href="slservice.php?service=3">
                         <div class="col-xs-12 prods-dev" style="padding: 0;">
                             <div style="background: url('/assets/images/prom_sl1.jpg') no-repeat center top; height: 250px;">
                                 <div class="proms-content">
@@ -167,7 +166,7 @@
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-6 prods-cont">
-                    <a href="category.php" onclick="setCategory('Tablet', '<?php echo $lang['PROM_SWITCH_OFFERS']; ?>')">
+                    <a href="slservice.php?service=2">
                         <div class="col-xs-12 prods-dev" style="padding: 0;">
                             <div style="background: url('/assets/images/prom_sl2.jpg') no-repeat center top; height: 250px;">
                                 <div class="proms-content">

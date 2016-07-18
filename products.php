@@ -171,7 +171,8 @@
                     </div>
                 </a>
             </div>
-        </div><div class="clear-fix" style="width: 70%; margin: 50px 15%;">
+        </div>
+        <div class="clear-fix" style="width: 70%; margin: 50px 15%;">
             <div class="col-xs-12 col-sm-3 prods-head">
                 <ul style="list-style-type: none;">
                     <li><h3><?php echo $lang['TVSLS_FILTER_TITLE']; ?></h3></li>
@@ -203,6 +204,22 @@
                         </div>
                     </div>
                 </a>
+            </div>
+        </div>
+        <div class="clear-fix" style="width: 70%; margin: 50px 15%;">
+            <div class="col-xs-12 col-sm-3 prods-head">
+                <ul style="list-style-type: none;">
+                    <li><h3 style="list-style-type: none;"><?php echo $lang['OUTLET_FILTER_TITLE']; ?></h3></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-9 prods-cont">
+                <div class="col-xs-12 prods-dev" style="background: url('/assets/images/devcat_outlet.jpg') no-repeat center top;">
+                    <div class="outlet-content">
+                        <h1><font size="6vw"><?php echo $lang['OUT_TITLE']; ?></font></h1>
+                        <p><font size="4vw"><?php echo $lang['OUT_DESC']; ?></font></p>
+                        <a href="category.php" onclick="setCategory('<?php echo $lang['PROM_SWITCH_ALL']; ?>', '<?php echo $lang['PROM_SWITCH_OFFERS']; ?>')"><span class="btn btn-primary" style="background-color: white; color: #014591;"><?php echo $lang['OUT_BTN']; ?></span></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div><!-- /End Main Wrapper -->

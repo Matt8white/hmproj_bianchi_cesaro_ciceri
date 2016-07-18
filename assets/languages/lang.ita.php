@@ -102,6 +102,11 @@
     $lang['TVSLS_FILTER_APPLE'] = "Apple";
     $lang['TVSLS_FILTER_SAMSUNG'] = "Samsung";
 
+    $lang['OUTLET_FILTER_TITLE'] = "Outlet";
+    $lang['OUT_TITLE'] = "Outlet di TIM";
+    $lang['OUT_DESC'] = "Solo online <br> prezzi scontati fino al 60%";
+    $lang['OUT_BTN'] = "SCOPRI LE OFFERTE";
+
     /*PROMOTIONS*/
     $lang['OFF_PAGE_TITLE'] = "Promozioni | TIM";
 
@@ -122,11 +127,11 @@
     $lang['PROM_SWITCH_ALL'] = "Tutti";
     $lang['PROM_SWITCH_OFFERS'] = "In Offerta";
 
-    $lang['PROM_SL_TITLE'] = "TV & Entertainment";
-    $lang['PROM_SL1'] = "CIAONE";
-    $lang['PROM_SL2'] = "CIAONE";
-    $lang['PROM_SL3'] = "CIAONE";
-    $lang['PROM_SL4'] = "CIAONE";
+    $lang['PROM_SL_TITLE'] = "Servizi Smart Life";
+    $lang['PROM_SL1'] = "Tim Netflix";
+    $lang['PROM_SL2'] = "Tim Pagamenti";
+    $lang['PROM_SL3'] = "Tim Trasporti";
+    $lang['PROM_SL4'] = "Tim Coupon";
     $lang['PROM_SHOW_SL1'] = "Tim Sky";
     $lang['PROM_SHOW_SL1_2'] = "Chiamate, Internet e Sky";
     $lang['PROM_SHOW_SL2'] = "Tim Vision";
