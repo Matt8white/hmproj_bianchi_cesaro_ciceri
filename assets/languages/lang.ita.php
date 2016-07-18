@@ -167,6 +167,8 @@
     $lang['SL_ACT'] = "Attivazione e Regole";
     $lang['SL_FAQ'] = "FAQ";
 
+    $lang['RELATED_DVCS'] = "Dispositivi Correlati";
+
     /*ASSISTANCE SERVICES*/
     $lang['ASS_PAGE_TITLE'] = "Assistenza | TIM";
 
@@ -188,6 +190,7 @@
     $lang['DEV_PRES'] = "Presentazione";
     $lang['DEV_SPEC'] = "Specifiche Tecniche";
     $lang['BUY_BTN'] = "Acquista";
+    $lang['RELATED_SVS'] = "Servizi Correlati";
 
     /*WHO WE ARE*/
     $lang['WWA_PAGE_TITLE'] = "Chi Siamo | TIM";

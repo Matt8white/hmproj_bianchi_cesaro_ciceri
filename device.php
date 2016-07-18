@@ -92,6 +92,12 @@
         </div>
         <div class="col-xs-12" id="desc" style="width: 80%; margin-left:10%">
         </div>
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1" style="text-align: center;">
+            <br>
+            <br>
+            <h1 style="color: #014591;"><?php echo $lang['RELATED_SVS']; ?></h1>
+            <br>
+        </div>
         <div class="col-xs-12 col-sm-5 col-sm-offset-1" id="slRel">
         </div>
         <div class="col-xs-12 col-sm-5" id="asRel">
