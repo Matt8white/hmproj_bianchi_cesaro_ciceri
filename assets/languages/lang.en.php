@@ -203,7 +203,7 @@
     $lang['WWA_PROJ4_DESC'] = "Sport is passion, respect and sharing <br> emotions. A treasure of <br>in which we identify.";
 
     $lang['BERNERS_LEE'] = "Berners Lee";
-    $lang['BERNERS_LEE_QUOTE'] = "The inventor of WWW";
+    $lang['BERNERS_LEE_QUOTE'] = "The inventor of the Web";
     $lang['FAZIO'] = "Fabio Fazio";
     $lang['FAZIO_QUOTE'] = "\"The future will surprise us\"";
     $lang['PIF'] = "PIF";
