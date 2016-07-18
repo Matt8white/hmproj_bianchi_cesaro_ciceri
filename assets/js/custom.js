@@ -18,7 +18,7 @@ $(document).ready(function () {
             event.preventDefault();
         });
     }
-
+    
 });
 
 function changeWhoWeAreContent(param) {
@@ -229,7 +229,8 @@ function fillSlPage(bread) {
             document.title = infos["name"] + " | TIM";
             var div = document.getElementById('displayImg');
             div.style.background = "url(" + infos["image"] + ") no-repeat center top";
-            createBreadcrumb(infos, "service", bread);
+            console.log(infos);
+            createBreadcrumb(infos, "slservice", bread);
             $(".devname").html('<bf>'+infos["name"] +'</bf>');
             var div = document.getElementById('desc').children[1];
             div.innerHTML += '<br><p>' + infos["desc_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + "<br>";
@@ -250,7 +251,7 @@ function fillSlPage(bread) {
 
             for(var k in services) {
                 var info = services[k];
-                var addme = '<a href="device.php?device='+info.id+'"><div class="relsvc"><img style="width:80px" src="'+info.image+'">'+info.name+'</div></a>';
+                var addme = '<a href="device.php?device='+info.id+'"><div class="relsvc col-sm-6 col-xs-12"><img style="width:80px" src="'+info.image+'">'+info.name+'</div></a>';
                 dev+=addme;
             }
             $('#devRel').html(dev);
@@ -287,7 +288,7 @@ function fillAsPage(bread) {
 
             for(var k in services) {
                 var info = services[k];
-                var addme = '<a href="device.php?device='+info.id+'"><div class="relsvc"><img style="width:80px" src="'+info.image+'">'+info.name+'</div></a>';
+                var addme = '<a href="device.php?device='+info.id+'"><div class="relsvc col-sm-6 col-xs-12"><img style="width:80px" src="'+info.image+'">'+info.name+'</div></a>';
                 dev+=addme;
             }
             $('#devRel').html(dev);
@@ -327,10 +328,92 @@ function fillCategoryPage (bread) {
 }
 
 
+/*BUILD ASSCAT PAGE*/
+function fillAssCat(bread) {
+    var getlang = $.cookie('lang');
+    var str = lookupasscat(getUrlVars()["cat"], getlang);
+    document.title = str + " " + " | TIM";
+    createBreadcrumb(str, "asscat", bread);
+    "use strict";
+    $.ajax({
+        method: "POST",
+        data: { cat: lookupasscat(getUrlVars()["cat"], "en"), lang: getlang},
+        url: 'ajax/getAssCat.php', success: function(result) {
+            var svs = JSON.parse(result);
+            var keys = getDistinct(svs);
+            for(var i=0;i<keys.length;i++){
+                var j = i+1;
+                $('#asstitle'+j).text(keys[i]);
+            }
+            for(var k in svs){
+            }
+            
+          
+        }
+    });
+}
+
+function getDistinct(data){
+    var lookup = {};
+    var items = data;
+    var result = [];
+
+    for (var item, i = 0; item = items[i++];) {
+      var name = item.subcategory;
+
+      if (!(name in lookup)) {
+        lookup[name] = 1;
+        result.push(name);
+      }
+    }
+    return result;
+}
+
+function lookupasscat(str, lang){
+    switch(str+lang){
+    case "1en":
+        str = "Line Services";
+        break;
+    case "2en":
+        str = "Costs and Payments";
+        break;
+    case "3en":
+        str = "Technical Support";
+        break;
+    case "4en":
+        str = "Smart Life";
+        break;
+    case "1it":
+        str = "Gestione linea e servizi";
+        break;
+    case "2it":
+        str = "Controllo costi e pagamenti";
+        break;
+    case "3it":
+        str = "Supporto e configurazioni";
+        break;
+    case "4it":
+        str = "Contenuti e Smart Life";
+        break;
+    default:
+        return -1;
+        break;
+    }
+    return str;
+}
+
 function createBreadcrumb(infos, type, subtree) {
     var str;
     switch(type) {
         case "device":
+            str = "<li><a href='products.php'>" + subtree + "</a></li><li>" +
+            '<a href="category.php" onClick="setCategory('+"'"+ infos["category"] +"'"+","+ null+')">'+infos["category"]+'</a></a></li><li>'
+            + infos["brand"] + " " + infos["model"] + "</li>";
+            break;
+        case "slservice":
+            str = "<li><a href='slcat.php'>" + subtree + "</a></li><li>" + '<a href="'+getslcat(infos)+'">'+infos["category"]+'</a></li><li>'+ infos["name"] + "</li>";
+            break;
+        case "asservice":
             str = "<li><a href='products.php'>" + subtree + "</a></li><li>" +
             '<a href="category.php" onClick="setCategory('+"'"+ infos["category"] +"'"+","+ null+')">'+infos["category"]+'</a></a></li><li>'
             + infos["brand"] + " " + infos["model"] + "</li>";
@@ -346,6 +429,27 @@ function createBreadcrumb(infos, type, subtree) {
             break;
     }
     document.getElementById("bc").innerHTML = str;
+}
+
+function getslcat(infos){
+    switch(infos["category"]){
+    case "TV & Entertainment":
+        str = "slcattv.php";
+        break;
+    case "Home & Family":
+        str = "slcathome.php";
+        break;
+    case "Health & Welness":
+        str = "slcathealth.php";
+        break;
+    case "Personal Services":
+        str = "slcatpersonal.php";
+        break;
+    default:
+        return -1;
+        break;
+    }
+    return str;
 }
 
 function capitalLetter(string) {
