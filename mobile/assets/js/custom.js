@@ -18,6 +18,8 @@ $(document).ready(function () {
             event.preventDefault();
         });
     }
+	$('header').load("header.html");
+	$('footer').load("footer.html");
 });
 
 function changeWhoWeAreContent(param) {
@@ -67,7 +69,7 @@ function devInfoLink() {
             parent = $(this).parent().children(0).html().replace(/<(?:.|\n)*?>/gm, '');
             if(curr == 'Tutti')
                 currout = null;
-            $(this).html('<a href="category.php" onClick="setCategory('+"'"+ parent +"'"+","+ currout+')">'+curr+'</a>');
+            $(this).html('<a href="category.html" onClick="setCategory('+"'"+ parent +"'"+","+ currout+')">'+curr+'</a>');
         }
     });
 }
@@ -81,7 +83,7 @@ function devInfoShort (str, elem){
             for (var i = 1; i <= 3; i++) {
                 var elem1 = document.getElementById(elem + i);
                 var dev = infos[i];
-                $($(elem1)).parent().attr("href", "/device.php?device=" + dev["id"]);
+                $($(elem1)).parent().attr("href", "/device.html?device=" + dev["id"]);
                 elem1.children[0].style.background = "url(" + dev["image"] + ") no-repeat center center";
                 $('.devspimg').css('background-size', 'contain');
                 elem1.innerHTML += dev["brand"] + " " + dev["model"];
@@ -104,7 +106,7 @@ function slInfoShort (str){
             for (var i = 1; i <= 3; i++) {
                 var elem1 = document.getElementById(elem + i);
                 var dev = infos[i];
-                $($(elem1)).parent().attr("href", "/device.php?device=" + dev["id"]);
+                $($(elem1)).parent().attr("href", "/device.html?device=" + dev["id"]);
                 elem1.children[0].style.background = "url(" + dev["image"] + ") no-repeat center center";
                 $('.devspimg').css('background-size', 'contain');
                 elem1.innerHTML += dev["brand"] + " " + dev["model"];
@@ -266,15 +268,15 @@ function createBreadcrumb(infos, type, subtree) {
     var str;
     switch(type) {
         case "device":
-            str = "<li><a href='products.php'>" + subtree + "</a></li><li>" +
-            '<a href="category.php" onClick="setCategory('+"'"+ infos["category"] +"'"+","+ null+')">'+infos["category"]+'</a></a></li><li>'
+            str = "<li><a href='products.html'>" + subtree + "</a></li><li>" +
+            '<a href="category.html" onClick="setCategory('+"'"+ infos["category"] +"'"+","+ null+')">'+infos["category"]+'</a></a></li><li>'
             + infos["brand"] + " " + infos["model"] + "</li>";
             break;
         case "category":
-            str = "<li><a href='products.php'>" + subtree + "</a></li><li>" + infos["cat"] + "</li>";
+            str = "<li><a href='products.html'>" + subtree + "</a></li><li>" + infos["cat"] + "</li>";
             break;
         case "slcat":
-            str = "<li><a href='slcat.php'>" + subtree + "</a></li><li>" + infos + "</li>";
+            str = "<li><a href='slcat.html'>" + subtree + "</a></li><li>" + infos + "</li>";
             break;
         default:
             str = "<li>" + subtree + "</li>";
@@ -377,7 +379,7 @@ function filterCat(){
                 div.className += 'col-xs-12 col-sm-4 prods-cont'
                 div.innerHTML = '<a><div class="col-xs-12 prods-dev"><div class="devspimg"></div></div></a>'
                 var elem1 = div.children[0].children[0];
-                $($(elem1)).parent().attr("href", "/device.php?device=" + dev["id"]);
+                $($(elem1)).parent().attr("href", "/device.html?device=" + dev["id"]);
                 elem1.children[0].style.background = "url(" + dev["image"] + ") no-repeat center center";
                 elem1.innerHTML += dev["brand"] + " " + dev["model"];
                 if(dev["promotion"] == 1)
