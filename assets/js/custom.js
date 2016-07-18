@@ -154,7 +154,6 @@ function fillDevicePage(bread) {
         data: { id: str, lang: getlang, type: 'dev' },
         url: 'ajax/getRelated.php', success: function(result) {
             var services = JSON.parse(result);
-            console.log(services);
             var sl = $('#slRel').html();
             var as = $('#asRel').html();
 
@@ -165,7 +164,6 @@ function fillDevicePage(bread) {
                     addme = '<a href="slservice.php?service='+info.id+'"><div class="relsvc"><img style="width:80px" src="'+info.image+'">'+info.name+'</div></a>';
                     sl+=addme;
                 }else{
-                    console.log(info.id);
                     addme = '<a href="assspec.php?service='+info.id+'"><div class="relsvc">'+info.name+'</div></a>';
                     as+=addme;
                 }
@@ -181,7 +179,7 @@ function fillSlsPage(str,bread) {
     strdec = decodeURIComponent(str);
     var getlang = $.cookie('lang');
     document.title = strdec + " " + " | TIM";
-    createBreadcrumb(strdec, "slcat", bread);
+    createBreadcrumb(strdec, "asscat", bread);
     "use strict";
     $.ajax({
         method: "POST",
@@ -229,7 +227,6 @@ function fillSlPage(bread) {
             document.title = infos["name"] + " | TIM";
             var div = document.getElementById('displayImg');
             div.style.background = "url(" + infos["image"] + ") no-repeat center top";
-            console.log(infos);
             createBreadcrumb(infos, "slservice", bread);
             $(".devname").html('<bf>'+infos["name"] +'</bf>');
             var div = document.getElementById('desc').children[1];
@@ -246,7 +243,6 @@ function fillSlPage(bread) {
         data: { id: str, lang: getlang, type: 'sl' },
         url: 'ajax/getRelated.php', success: function(result) {
             var services = JSON.parse(result);
-            console.log(services);
             var dev = $('#devRel').html();
 
             for(var k in services) {
@@ -270,7 +266,7 @@ function fillAsPage(bread) {
         url: 'ajax/getAsInfo.php', success: function(result) {
             var infos = JSON.parse(result);
             document.title = infos["name_"+getlang] + " | TIM";
-            createBreadcrumb(infos, "service", bread);
+            createBreadcrumb(infos, "asservice", bread);
             $(".devname").html('<bf>'+infos["name_"+getlang] +'</bf>');
             var div = document.getElementById('desc');
             div.innerHTML = '<p>' + infos["desc_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + "<br>"+ div.innerHTML ;
@@ -283,7 +279,6 @@ function fillAsPage(bread) {
         data: { id: str, lang: getlang, type: 'as' },
         url: 'ajax/getRelated.php', success: function(result) {
             var services = JSON.parse(result);
-            console.log(services);
             var dev = $('#devRel').html();
 
             for(var k in services) {
@@ -304,7 +299,6 @@ function fillCategoryPage (bread) {
         method: "POST",
         data: {cat: passme.cat},
         url: 'ajax/getBrands.php', success: function(result) {
-            console.log(result);
             var brands = JSON.parse(result);
             var insertme = '';
             $.each( brands, function(i){
@@ -344,10 +338,12 @@ function fillAssCat(bread) {
             for(var i=0;i<keys.length;i++){
                 var j = i+1;
                 $('#asstitle'+j).text(keys[i]);
+                for(var k in svs){
+                    var mytext = '<a href="assspec.php?service='+svs[k].id+'">'+svs[k]["name_"+getlang]+'</a><br>';
+                    if(svs[k].subcategory==keys[i])
+                        $('#asstitle'+j).next().append(mytext);
+                }
             }
-            for(var k in svs){
-            }
-            
           
         }
     });
@@ -402,6 +398,15 @@ function lookupasscat(str, lang){
     return str;
 }
 
+function catlookup(infos){
+    for(i=1;i<5;i++)
+        if(infos['category']==lookupasscat(i, 'en'))
+            return i;
+
+
+
+}
+
 function createBreadcrumb(infos, type, subtree) {
     var str;
     switch(type) {
@@ -414,15 +419,19 @@ function createBreadcrumb(infos, type, subtree) {
             str = "<li><a href='slcat.php'>" + subtree + "</a></li><li>" + '<a href="'+getslcat(infos)+'">'+infos["category"]+'</a></li><li>'+ infos["name"] + "</li>";
             break;
         case "asservice":
-            str = "<li><a href='products.php'>" + subtree + "</a></li><li>" +
-            '<a href="category.php" onClick="setCategory('+"'"+ infos["category"] +"'"+","+ null+')">'+infos["category"]+'</a></a></li><li>'
-            + infos["brand"] + " " + infos["model"] + "</li>";
+            var catme = catlookup(infos);
+            str = "<li><a href='asscat.php'>" + subtree + "</a></li><li>" +
+            '<a href="assbycat.php?cat='+catme+'">'+lookupasscat(catme, $.cookie('lang'))+'</a></a></li><li>'
+            + infos["name_"+ $.cookie('lang')] + "</li>";
             break;
         case "category":
             str = "<li><a href='products.php'>" + subtree + "</a></li><li>" + infos["cat"] + "</li>";
             break;
         case "slcat":
             str = "<li><a href='slcat.php'>" + subtree + "</a></li><li>" + infos + "</li>";
+            break;
+        case "asscat":
+            str = "<li><a href='asscat.php'>" + subtree + "</a></li><li>" + infos + "</li>";
             break;
         default:
             str = "<li>" + subtree + "</li>";

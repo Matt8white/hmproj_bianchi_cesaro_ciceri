@@ -53,7 +53,7 @@
 
 </head>
 
-<body onload="createBreadcrumb(null, 'ass', '<?php echo $lang['BREAD_ASS']; ?>')">
+<body onload="fillAssCat('<?php echo $lang['BREAD_ASS']; ?>')">
     <!-- =========================
          HEADER
     ============================== -->
@@ -66,27 +66,18 @@
         </ol>
         <div class="container">
             <div class="col-xs-12" style="border-bottom: #d8d8d8 1px solid;">
-                <h1 id="asstitle1">TITOLO</h1>
-                <a id="assserv11">1</a>
-                <br>
-                <a id="assserv12">2</a>
-                <br>
+                <h1 style="color:#014591" id="asstitle1"></h1>
+                <p></p>
                 <br>
             </div>
             <div class="col-xs-12" style="border-bottom: #d8d8d8 1px solid;">
-                <h1 id="asstitle2">TITOLO</h1>
-                <a id="assserv21">1</a>
-                <br>
-                <a id="assserv22">2</a>
-                <br>
+                <h1 style="color:#014591" id="asstitle2"></h1>
+                <p></p>
                 <br>
             </div>
             <div class="col-xs-12">
-                <h1 id="asstitle3">TITOLO</h1>
-                <a id="assserv31">1</a>
-                <br>
-                <a id="assserv32">2</a>
-                <br>
+                <h1 style="color:#014591" id="asstitle3"></h1>
+                <p></p>
                 <br>
             </div>
         </div>
@@ -100,6 +91,7 @@
          SCRIPTS
     ============================== -->
     <script src="assets/js/plugins/jquery1.11.0.min.js"></script>
+    <script src="assets/js/plugins/jquery.cookie.js" type="text/javascript"></script>
     <script src="assets/js/plugins/bootstrap.min.js"></script>
     <script src="assets/js/plugins/jquery.easing.1.3.min.js"></script>
     <script src="assets/js/plugins/modernizr.custom.min.js"></script>
