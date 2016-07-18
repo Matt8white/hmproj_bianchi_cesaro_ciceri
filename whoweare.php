@@ -126,7 +126,7 @@
             </div>
             <div class="col-xs-12 col-md-4" style="height: 350px;">
                 <div class="embed-responsive embed-responsive-4by3">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-rxy9lI8-7Q"></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-rxy9lI8-7Q? rel=0&hd=1&showinfo=0"></iframe>
                 </div>
             </div>
             <div class="col-xs-12 col-md-8" style="height: 350px; background: url('/assets/images/testimonials/fabio-fazio.jpg') no-repeat center top;">
@@ -137,7 +137,7 @@
             </div>
             <div class="col-xs-12 col-md-4" style="height: 350px;">
                 <div class="embed-responsive embed-responsive-4by3">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eTz4o7NMGXg"></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eTz4o7NMGXg? rel=0&hd=1&showinfo=0"></iframe>
                 </div>
             </div>
             <div class="col-xs-12 col-md-8" style="height: 350px; background: url('/assets/images/testimonials/pif.jpg') no-repeat center top;">
@@ -148,7 +148,7 @@
             </div>
             <div class="col-xs-12 col-md-4" style="height: 350px; margin-bottom: 20px;">
                 <div class="embed-responsive embed-responsive-4by3">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5hHXbK9Dpyc"></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5hHXbK9Dpyc? rel=0&hd=1&showinfo=0"></iframe>
                 </div>
             </div>
         </div>
