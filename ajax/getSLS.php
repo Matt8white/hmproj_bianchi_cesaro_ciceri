@@ -1,7 +1,14 @@
 <?php
+    include_once '../assets/php/common.php';
     $q = $_POST['cat'];
-    $lang = $_POST['lang'];
+    $langs = $_POST['lang'];
     $slid = "";
+    
+    $actualcat = array_search ( $q , $lang );
+        include '../assets/languages/lang.en.php';
+        $q = urldecode($lang[$actualcat]);
+    
+    
     
     switch($q){
         case "Health & Wellness":
@@ -31,7 +38,7 @@
     
     
     mysqli_select_db($con,"TimHypProj");
-    $sql = "SELECT name, image, desc_".$lang." AS 'desc' FROM slservices WHERE category = '".$q."' AND id !=".$slid." UNION SELECT CONCAT_WS(' ',brand, model) as 'name', image,desc_".$lang." AS 'desc' FROM devices WHERE id in (SELECT iddevice FROM dvslrelations WHERE idslservice = ".$slid.")";
+    $sql = "SELECT name, image, desc_".$langs." AS 'desc' FROM slservices WHERE category = '".$q."' AND id !=".$slid." UNION SELECT CONCAT_WS(' ',brand, model) as 'name', image,desc_".$langs." AS 'desc' FROM devices WHERE id in (SELECT iddevice FROM dvslrelations WHERE idslservice = ".$slid.")";
     $result = mysqli_query($con,$sql);
     
     $arr = array();

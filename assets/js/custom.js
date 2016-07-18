@@ -158,7 +158,7 @@ function fillSlsPage(str,bread) {
     "use strict";
     $.ajax({
         method: "POST",
-        data: { cat: strdec, lang: getlang},
+        data: { cat: str, lang: getlang},
         url: 'ajax/getSLS.php', success: function(result) {
             var devs = JSON.parse(result);
             if(Object.keys(devs).length<=4)
