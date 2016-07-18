@@ -65,25 +65,25 @@
         <ol class="breadcrumb" id="bc">
         </ol>
         <div class="container assist-cont">
-            <a href="">
+            <a href="assbycat.php?cat=1">
                 <div class="col-xs-12 col-sm-3">
                     <img src="assets/images/ass/assicon01.png">
                     <p><?php echo $lang['ASS_DESC1']; ?></p>
                 </div>
             </a>
-            <a href="">
+            <a href="assbycat.php?cat=2">
                 <div class="col-xs-12 col-sm-3">
                     <img src="assets/images/ass/assicon02.png">
                     <p><?php echo $lang['ASS_DESC2']; ?></p>
                 </div>
             </a>
-            <a href="">
+            <a href="assbycat.php?cat=3">
                 <div class="col-xs-12 col-sm-3">
                     <img src="assets/images/ass/assicon03.png">
                     <p><?php echo $lang['ASS_DESC3']; ?></p>
                 </div>
             </a>
-            <a href="">
+            <a href="assbycat.php?cat=4">
                 <div class="col-xs-12 col-sm-3" style="border-right: 0px;">
                     <img src="assets/images/ass/assicon04.png">
                     <p><?php echo $lang['ASS_DESC4']; ?></p>

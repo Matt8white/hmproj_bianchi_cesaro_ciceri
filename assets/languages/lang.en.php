@@ -106,7 +106,7 @@
     $lang['OUT_DESC'] = "Only online <br> 60% off";
     $lang['OUT_BTN'] = "MORE DETAILS";
 
-	
+
     /*PROMOTIONS*/
     $lang['OFF_PAGE_TITLE'] = "Promotions | TIM";
 
@@ -172,7 +172,7 @@
 
 	$lang['ASS_DESC1'] = "Line Services";
     $lang['ASS_DESC2'] = "Costs and Payments";
-    $lang['ASS_DESC3'] = "Technical support";
+    $lang['ASS_DESC3'] = "Technical Support";
     $lang['ASS_DESC4'] = "Smart Life";
 
     /*DEVICE*/
