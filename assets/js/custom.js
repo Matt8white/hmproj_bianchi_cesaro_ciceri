@@ -3,7 +3,7 @@
 =================================== */
 $(document).ready(function () {
     var onMobile;
-
+    
     onMobile = false;
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) { onMobile = true; }
 
@@ -18,6 +18,7 @@ $(document).ready(function () {
             event.preventDefault();
         });
     }
+    
 });
 
 function changeWhoWeAreContent(param) {
@@ -145,6 +146,32 @@ function fillDevicePage(bread) {
             div.innerHTML = '<p>' + infos["spec_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + div.innerHTML;
             var div = document.getElementById('desc');
             div.innerHTML = '<p>' + infos["desc_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>';
+            $('#displayImg').css('background-size', 'contain');
+        }
+    });
+    $.ajax({
+        method: "POST",
+        data: { id: str, lang: getlang, type: 'dev' },
+        url: 'ajax/getRelated.php', success: function(result) {
+            var services = JSON.parse(result);
+            console.log(services);
+            var sl = $('#slRel').html();
+            var as = $('#asRel').html();
+            
+            for(var k in services) {
+                var info = services[k];
+                var addme;
+                if(info.type == 'sl'){
+                    addme = '<a href="slservice.php?service='+info.id+'"><div class="relsvc"><img style="width:80px" src="'+info.image+'">'+info.name+'</div></a>';
+                    sl+=addme;
+                }else{
+                    console.log(info.id);
+                    addme = '<a href="assspec.php?service='+info.id+'"><div class="relsvc">'+info.name+'</div></a>';
+                    as+=addme;
+                }
+            }
+            $('#asRel').html(as);
+            $('#slRel').html(sl);
         }
     });
 }
@@ -172,10 +199,16 @@ function fillSlsPage(str,bread) {
                 var insert = $('#thumbcarousel div div').eq(j).html();
                 insert+='<div data-target="#carousel" data-slide-to="'+i+'" class="thumb"><img src="'+devs[i].image+'"></div>';
                 $('#thumbcarousel div div').eq(j).html(insert);
-                if(i==0)
-                    insert = $('#carousel div').html() + '<span class="item active"> <span class="ctext">'+devs[i].name+'</span>  <img src="'+devs[i].image+'">  </span>';
+                var desc = '<br><p style="font-size:14px">'+devs[i].desc+'</p>';
+                var ref;
+                if(devs[i].type == 'dev')
+                    ref = '<a href="device.php?device='+devs[i].id+'">';
                 else
-                    insert = $('#carousel div').html() + '<span class="item"><span class="ctext">'+devs[i].name+'</span><img src="'+devs[i].image+'">   </span>';
+                    ref = '<a href="slservice.php?service='+devs[i].id+'">';
+                if(i==0)
+                    insert = $('#carousel div').html() + '<span class="item active"> <span class="ctext">'+devs[i].name+desc+'</span>'+ref+'<img src="'+devs[i].image+'"></a>  </span>';
+                else
+                    insert = $('#carousel div').html() + '<span class="item"><span class="ctext">'+devs[i].name+desc+'</span>'+ref+'<img src="'+devs[i].image+'"></a>   </span>';
                 $('#carousel div').html(insert);
 
             });
@@ -207,6 +240,22 @@ function fillSlPage(bread) {
             $('#displayImg').css('background-size', 'contain');
         }
     });
+    $.ajax({
+        method: "POST",
+        data: { id: str, lang: getlang, type: 'sl' },
+        url: 'ajax/getRelated.php', success: function(result) {
+            var services = JSON.parse(result);
+            console.log(services);
+            var dev = $('#devRel').html();
+            
+            for(var k in services) {
+                var info = services[k];
+                var addme = '<a href="device.php?device='+info.id+'"><div class="relsvc"><img style="width:80px" src="'+info.image+'">'+info.name+'</div></a>';
+                dev+=addme;
+            }
+            $('#devRel').html(dev);
+        }
+    });
 }
 
 /*Build As Service Page*/
@@ -219,13 +268,29 @@ function fillAsPage(bread) {
         data: { svid: str, lang: getlang },
         url: 'ajax/getAsInfo.php', success: function(result) {
             var infos = JSON.parse(result);
-            document.title = infos["name"] + " | TIM";
+            document.title = infos["name_"+getlang] + " | TIM";
             createBreadcrumb(infos, "service", bread);
             $(".devname").html('<bf>'+infos["name_"+getlang] +'</bf>');
             var div = document.getElementById('desc');
             div.innerHTML = '<p>' + infos["desc_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + "<br>"+ div.innerHTML ;
             var div = document.getElementById('faq');
             div.innerHTML = '<p>' + infos["faq_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>';
+        }
+    });
+     $.ajax({
+        method: "POST",
+        data: { id: str, lang: getlang, type: 'as' },
+        url: 'ajax/getRelated.php', success: function(result) {
+            var services = JSON.parse(result);
+            console.log(services);
+            var dev = $('#devRel').html();
+            
+            for(var k in services) {
+                var info = services[k];
+                var addme = '<a href="device.php?device='+info.id+'"><div class="relsvc"><img style="width:80px" src="'+info.image+'">'+info.name+'</div></a>';
+                dev+=addme;
+            }
+            $('#devRel').html(dev);
         }
     });
 }

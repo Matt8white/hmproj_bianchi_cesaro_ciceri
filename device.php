@@ -92,9 +92,9 @@
         </div>
         <div class="col-xs-12" id="desc" style="width: 80%; margin-left:10%">
         </div>
-        <div class="col-xs-12 col-sm-6" id="slRel">
+        <div class="col-xs-12 col-sm-5 col-sm-offset-1" id="slRel">
         </div>
-        <div class="col-xs-12 col-sm-6" id="asRel">
+        <div class="col-xs-12 col-sm-5" id="asRel">
         </div>
     </div><!-- /End Main Wrapper -->
     <!-- ==================================================

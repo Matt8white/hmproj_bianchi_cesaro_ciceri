@@ -7,7 +7,7 @@
     <meta charset="utf-8">
 
     <!-- TITLE OF SITE -->
-    <title><?php echo $lang['DEVICE_PAGE_TITLE']; ?></title>
+    <title>SV | TIM</title>
 
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -76,9 +76,7 @@
             <div id="faq">
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6" id="slRel">
-        </div>
-        <div class="col-xs-12 col-sm-6" id="asRel">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1" id="devRel">
         </div>
     </div><!-- /End Main Wrapper -->
     <!-- ==================================================

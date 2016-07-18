@@ -95,10 +95,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6" id="slRel">
-        </div>
-        <div class="col-xs-12 col-sm-6" id="asRel">
-        </div>
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1" id="devRel">
     </div><!-- /End Main Wrapper -->
     <!-- ==================================================
         FOOTER

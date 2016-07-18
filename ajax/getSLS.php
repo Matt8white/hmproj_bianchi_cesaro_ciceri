@@ -38,9 +38,8 @@
     
     
     mysqli_select_db($con,"TimHypProj");
-    $sql = "SELECT name, image, desc_".$langs." AS 'desc' FROM slservices WHERE category = '".$q."' AND id !=".$slid." UNION SELECT CONCAT_WS(' ',brand, model) as 'name', image,desc_".$langs." AS 'desc' FROM devices WHERE id in (SELECT iddevice FROM dvslrelations WHERE idslservice = ".$slid.")";
+    $sql = "SELECT 'sv' AS type, id, name, image, desc_".$langs." AS 'desc' FROM slservices WHERE category = '".$q."' AND id !=".$slid." UNION SELECT 'dev' AS type, id, CONCAT_WS(' ',brand, model) as 'name', image,desc_".$langs." AS 'desc' FROM devices WHERE id in (SELECT iddevice FROM dvslrelations WHERE idslservice = ".$slid.")";
     $result = mysqli_query($con,$sql);
-    
     $arr = array();
     while($row = mysqli_fetch_array($result)) {
         array_push($arr, $row);
