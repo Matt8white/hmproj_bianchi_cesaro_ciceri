@@ -163,9 +163,11 @@
 
 	$lang['SL_TITLE'] = "Devices and Services";
 
-    $lang['SL_DESC'] = "Prodotti e servizi";
-    $lang['SL_ACT'] = "Prodotti e servizi";
-    $lang['SL_FAQ'] = "Prodotti e servizi";
+    $lang['SL_DESC'] = "Desciption";
+	$lang['SL_ACT'] = "Activation and Rules";
+    $lang['SL_FAQ'] = "FAQ";
+	
+	$lang['RELATED_DVCS'] = "Related Devices";
 
     /*ASSISTANCE SERVICES*/
     $lang['ASS_PAGE_TITLE'] = "Assistance Services | TIM";
@@ -175,14 +177,24 @@
     $lang['ASS_DESC3'] = "Technical Support";
     $lang['ASS_DESC4'] = "Smart Life";
 
+    $lang['ASS_HL1'] = "Abroad with TIM";
+    $lang['ASS_HL2'] = "Connect your phone to the Internet";
+    $lang['ASS_HL3'] = "Mail Managing";
+    $lang['ASS_HL4'] = "What is TIMvision";
+    $lang['ASS_HL5'] = "Address Book Managing	";
+    $lang['ASS_HL6'] = "How to pay line's invoice";
+	
     /*DEVICE*/
     $lang['DEVICE_PAGE_TITLE'] = "Device | TIM";
 
     $lang['DEV_PRES'] = "Presentation";
     $lang['DEV_SPEC'] = "Technical specifications";
     $lang['BUY_BTN'] = "Buy";
-
+	$lang['RELATED_SVS'] = "Related Services";
+	
 	/*WHO WE ARE*/
+	$lang['WWA_PAGE_TITLE'] = "Who we are | TIM";
+	
 	$lang['WWA_INN'] = "Telecom Italia's <br> Future";
 	$lang['WWA_PROJ'] = "TIM's Projects <br> create our future";
 	$lang['WWA_TESTIMONIALS'] = "Our Testimonials";
