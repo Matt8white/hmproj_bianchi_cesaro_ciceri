@@ -203,6 +203,9 @@ ul > li {
     height: inherit;
     overflow-y: auto;
 }
+.relsvc{
+    height: 100px;
+}
 /* =========================
      PROMOTIONS
 ============================ */
