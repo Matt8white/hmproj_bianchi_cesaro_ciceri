@@ -175,6 +175,13 @@
     $lang['ASS_DESC3'] = "Supporto e configurazioni";
     $lang['ASS_DESC4'] = "Contenuti e Smart Life";
 
+    $lang['ASS_HL1'] = "All'estero con TIM";
+    $lang['ASS_HL2'] = "Connettersi a Internet col telefonino";
+    $lang['ASS_HL3'] = "Gestione posta";
+    $lang['ASS_HL4'] = "Cos'è TIM Vision";
+    $lang['ASS_HL5'] = "Gestione rubrica";
+    $lang['ASS_HL6'] = "Modalità di pagamento della fattura linea mobile";
+
     /*DEVICE*/
     $lang['DEVICE_PAGE_TITLE'] = "Device | TIM";
 

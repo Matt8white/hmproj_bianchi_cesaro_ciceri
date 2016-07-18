@@ -64,53 +64,30 @@
     <div class="main-wrapper clear-fix">
         <ol class="breadcrumb" id="bc">
         </ol>
-        <div class="container assist-cont">
-            <a href="">
-                <div class="col-xs-12 col-sm-3">
-                    <img src="assets/images/ass/assicon01.png">
-                    <p><?php echo $lang['ASS_DESC1']; ?></p>
-                </div>
-            </a>
-            <a href="">
-                <div class="col-xs-12 col-sm-3">
-                    <img src="assets/images/ass/assicon02.png">
-                    <p><?php echo $lang['ASS_DESC2']; ?></p>
-                </div>
-            </a>
-            <a href="">
-                <div class="col-xs-12 col-sm-3">
-                    <img src="assets/images/ass/assicon03.png">
-                    <p><?php echo $lang['ASS_DESC3']; ?></p>
-                </div>
-            </a>
-            <a href="">
-                <div class="col-xs-12 col-sm-3" style="border-right: 0px;">
-                    <img src="assets/images/ass/assicon04.png">
-                    <p><?php echo $lang['ASS_DESC4']; ?></p>
-                </div>
-            </a>
-        </div>
         <div class="container">
-            <div class="col-xs-12 container ass-highlights">
-                <h4>In Evidenza</h4>
-                <div class="col-xs-12 col-md-6">
-                    <a href="assspec.php?service=4"><?php echo $lang['ASS_HL1']; ?></a>
-                </div>
-                <div class="col-xs-12 col-md-6 rightcol">
-                    <a href="assspec.php?service=13"><?php echo $lang['ASS_HL2']; ?></a>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <a href="assspec.php?service=17"><?php echo $lang['ASS_HL3']; ?></a>
-                </div>
-                <div class="col-xs-12 col-md-6 rightcol">
-                    <a href="assspec.php?service=23"><?php echo $lang['ASS_HL4']; ?></a>
-                </div>
-                <div class="col-xs-12 col-md-6 bottom">
-                    <a href="assspec.php?service=18"><?php echo $lang['ASS_HL5']; ?></a>
-                </div>
-                <div class="col-xs-12 col-md-6 rightcol bottom">
-                    <a href="assspec.php?service=10"><?php echo $lang['ASS_HL6']; ?></a>
-                </div>
+            <div class="col-xs-12" style="border-bottom: #d8d8d8 1px solid;">
+                <h1 id="asstitle1">TITOLO</h1>
+                <a id="assserv11">1</a>
+                <br>
+                <a id="assserv12">2</a>
+                <br>
+                <br>
+            </div>
+            <div class="col-xs-12" style="border-bottom: #d8d8d8 1px solid;">
+                <h1 id="asstitle2">TITOLO</h1>
+                <a id="assserv21">1</a>
+                <br>
+                <a id="assserv22">2</a>
+                <br>
+                <br>
+            </div>
+            <div class="col-xs-12">
+                <h1 id="asstitle3">TITOLO</h1>
+                <a id="assserv31">1</a>
+                <br>
+                <a id="assserv32">2</a>
+                <br>
+                <br>
             </div>
         </div>
     </div><!-- /End Main Wrapper -->
