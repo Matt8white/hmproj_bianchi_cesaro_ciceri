@@ -53,7 +53,7 @@
 
 </head>
 
-<body onload="fillAsPage('<?php echo $lang['BREAD_SL']; ?>');">
+<body onload="fillAsPage('<?php echo $lang['BREAD_ASS']; ?>');">
     <!-- =========================
          HEADER
     ============================== -->
