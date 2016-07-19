@@ -13,4 +13,4 @@ Our mobile build instead lives on another repository. We had to convert every pa
 
 
 We slightly adjusted our site in relation to our old mockups. First of all, we removed the search functionality to simplify the site, since we were already implementing multilanguage. We also relinked our promotions page to filtered category pages, instead of creating separate "new" pages for that purpose.
-Also, the "home" link was removed from every breadcrumb since it wasn't necessary but rather redundant. Updated diagrams that reflect these changes are available within this repository as well.
+Also, the "home" link was removed from every breadcrumb since it wasn't necessary but rather redundant. Updated diagrams and mockups that reflect these changes are available within this repository as well in the Design folder.
