@@ -1,15 +1,17 @@
 <?php
-    include_once '../assets/php/common.php';
+ 	header("Access-Control-Allow-Origin: *");
+	include '/membri/hmproj2/assets/languages/lang.ita.php';
     $q = $_POST['cat'];
     $langs = $_POST['lang'];
     $slid = "";
     
-    $actualcat = array_search ( $q , $lang );
-        include '../assets/languages/lang.en.php';
-        $q = urldecode($lang[$actualcat]);
+    $actualcat = array_search($q , $lang);
+    if($actualcat){
+      include '/membri/hmproj2/assets/languages/lang.en.php';
+      $q = urldecode($lang[$actualcat]);
+    }
     
-    
-    
+    $q = urldecode($q);
     switch($q){
         case "Health & Wellness":
             $slid = 12;
@@ -30,7 +32,7 @@
     
     }
 
-    $con = mysqli_connect('localhost','hyper','hyper123','TimHypProj');
+    $con = mysqli_connect('localhost','hmproj2','fovpopikke55','my_hmproj2');
     $con -> query("SET NAMES 'utf8'");
     if (!$con) {
         die('Could not connect: ' . mysqli_error($con));

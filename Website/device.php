@@ -78,13 +78,13 @@
                 <div class="tab-content" style="height:560px">
                         <div class="tab-pane active" id="pres">
                             <div class="devname" style="font-size: 44px; color: #014591; font-family: Arial, Helvetica, sans-serif  "></div>
-                            <div class="show-content" style="width: 100%;">
+                            <div id="devdesc" class="show-content" style="width: 100%;">
                                 <span class="btn btn-primary"><?php echo $lang['BUY_BTN']; ?></span>
                             </div>
                         </div>
                         <div class="tab-pane" id="tech">
                             <div class="devname" style="font-size: 44px; color: #014591; font-family: Arial, Helvetica, sans-serif  "></div>
-                            <div class="show-content" style="width: 100%;">
+                            <div id="devspec" class="show-content" style="width: 100%;">
                             </div>
                         </div>
                 </div>

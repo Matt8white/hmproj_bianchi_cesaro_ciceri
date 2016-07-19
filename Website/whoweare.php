@@ -96,25 +96,25 @@
                 <img src="/assets/images/wwa_innovation.jpg">
                 <h3><?php echo $lang['WWA_PROJ1_TITLE']; ?></h3>
                 <p><?php echo $lang['WWA_PROJ1_DESC']; ?></p>
-                <span class="btn btn-primary"><?php echo $lang['BTN_FINDOUT']; ?></span>
+                <span class="btn btn-primary" style="color: black"><?php echo $lang['BTN_FINDOUT']; ?></span>
             </div>
             <div class="col-xs-12 col-md-6 box-projects">
                 <img src="/assets/images/wwa_social.jpg">
                 <h3><?php echo $lang['WWA_PROJ2_TITLE']; ?></h3>
                 <p><?php echo $lang['WWA_PROJ2_DESC']; ?></p>
-                <span class="btn btn-primary"><?php echo $lang['BTN_FINDOUT']; ?></span>
+                <span class="btn btn-primary" style="color: black"><?php echo $lang['BTN_FINDOUT']; ?></span>
             </div>
             <div class="col-xs-12 col-md-6 box-projects">
                 <img src="/assets/images/wwa_culture.jpg">
                 <h3><?php echo $lang['WWA_PROJ3_TITLE']; ?></h3>
                 <p><?php echo $lang['WWA_PROJ3_DESC']; ?></p>
-                <span class="btn btn-primary"><?php echo $lang['BTN_FINDOUT']; ?></span>
+                <span class="btn btn-primary" style="color: black"><?php echo $lang['BTN_FINDOUT']; ?></span>
             </div>
             <div class="col-xs-12 col-md-6 box-projects">
                 <img src="/assets/images/wwa_sport.jpg">
                 <h3><?php echo $lang['WWA_PROJ4_TITLE']; ?></h3>
                 <p><?php echo $lang['WWA_PROJ4_DESC']; ?></p>
-                <span class="btn btn-primary"><?php echo $lang['BTN_FINDOUT']; ?></span>
+                <span class="btn btn-primary" style="color: black"><?php echo $lang['BTN_FINDOUT']; ?></span>
             </div>
         </div>
         <div id="testimonials" class="col-xs-12" style="margin-top: 40px;">

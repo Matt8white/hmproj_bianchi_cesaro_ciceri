@@ -89,7 +89,7 @@
                         </div>
                         <div class="tab-pane" id="faq">
                             <div class="devname" style="font-size: 44px; color: #014591; font-family: Arial, Helvetica, sans-serif  "></div>
-                            <div class="show-content" style="width: 100%;">
+                            <div id="slspec" class="show-content" style="width: 100%;">
                             </div>
                         </div>
                 </div>

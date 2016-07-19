@@ -3,7 +3,8 @@
 =================================== */
 $(document).ready(function () {
     var onMobile;
-
+	if (!($.cookie('lang') == 'it' || $.cookie('lang') == 'en'))
+    	$.cookie('lang', 'it');
     onMobile = false;
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) { onMobile = true; }
 
@@ -233,8 +234,8 @@ function fillSlPage(bread) {
             div.innerHTML += '<br><p>' + infos["desc_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>' + "<br>";
             var div = document.getElementById('act').children[1];
             div.innerHTML += '<br><p>' + infos["activation_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>';
-            var div = document.getElementById('faq');
-            div.innerHTML += '<p>' + infos["faq_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>';
+            var div = document.getElementById('faq').children[1];
+            div.innerHTML += '<br><p>' + infos["faq_"+getlang].replace(new RegExp('\r?\n','g'), '<br />') + '</p>';
             $('#displayImg').css('background-size', 'contain');
         }
     });
