@@ -1,7 +1,8 @@
 <?php
+ 	header("Access-Control-Allow-Origin: *");
     include_once '../assets/php/common.php';
 
-    $con = mysqli_connect('localhost','hyper','hyper123','TimHypProj');
+    $con = mysqli_connect('localhost','hmproj2','fovpopikke55','my_hmproj2');
     $con -> query("SET NAMES 'utf8'");
     if (!$con) {
         die('Could not connect: ' . mysqli_error($con));
@@ -34,7 +35,7 @@
     mysqli_select_db($con,"TimHypProj");
     $sql = "SELECT id, brand, model, price, promotion, shortedprice, image FROM devices WHERE ".$wherestring."";
     $result = mysqli_query($con,$sql);
-    $array = [];
+    $array = array();
     while($row = mysqli_fetch_array($result)) {
         array_push($array, $row);
     }

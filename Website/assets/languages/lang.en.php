@@ -30,8 +30,8 @@
     $lang['SHOW_DEVICE'] = "Devices";
     $lang['SHOW_SL'] = "Smart Life";
 
-    $lang['SHOW_PROM_HEAD'] = "TIM Young Junior";
-    $lang['SHOW_PROM_DESC'] = "Only 8 €/4 week your son talks and plays with TIMgames Junior and he's safe with TIM Protect.";
+    $lang['SHOW_PROM_HEAD'] = "TIM Transport";
+    $lang['SHOW_PROM_DESC'] = "Buy transport tickets of your city, through the SMS ticketing service. Check now if the service is already available in your city!";
     $lang['SHOW_PROM_BTN'] = "View details";
     $lang['SHOW_DEV_HEAD'] = "Samsung Galaxy S7 edge";
     $lang['SHOW_DEV_DESC'] = "More than a smartphone. <br> Only 749,90 € instead of 829,90 € in 36 payments of 20,83 €/month if you have a Tim home line.";

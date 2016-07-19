@@ -10,13 +10,13 @@
 
 				<b> <?php echo $lang['USEFUL_INFO']; ?> </b>
 				<p>
-					<a href="#"> <?php echo $lang['FOOTER_LEFT']; ?> </a>
+					<a> <?php echo $lang['FOOTER_LEFT']; ?> </a>
 				</p>
 			</div>
 			<div class="col-xs-12 col-md-3 col-sm-6" >
 				<b> <?php echo $lang['QUICK_ACCESS']; ?> </b>
 				<p>
-					<a href="#"> <?php echo $lang['FOOTER_CENTER']; ?></a>
+					<a> <?php echo $lang['FOOTER_CENTER']; ?></a>
 				</p>
 			</div>
 			<div class="col-xs-12 col-md-3 col-sm-6" >
@@ -37,7 +37,7 @@
 			</div>
 		</div>
 		<div class="footer-bottom">
-			<a href="#"> <?php echo $lang['FOOTER_BOTTOM']; ?> </a>
+			<a> <?php echo $lang['FOOTER_BOTTOM']; ?> </a>
 		</div>
 
 	</div>

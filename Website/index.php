@@ -68,19 +68,19 @@
         <div id="myCarousel" class="carousel slide" style="margin-bottom: 20px;" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="0"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
             </ol>
 
               <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
 
-                <div class="item critem active" style="background: url('/assets/images/banner1.jpg') no-repeat center top;">
+                <div class="item critem" style="background: url('/assets/images/banner1.jpg') no-repeat center top;">
                     <div class="carousel-content">
                         <h1 style="color: white"><font size="6vw"><?php echo $lang['CAROUSEL_HEADER1']; ?></font></h1>
                         <p  style="color: white"><font size="4vw"><?php echo $lang['CAROUSEL_DESC1']; ?></font></p>
-                        <span class="btn btn-primary"><?php echo $lang['CAROUSEL_BTN1']; ?></span>
+                        <span class="btn btn-primary" style="color: black"><?php echo $lang['CAROUSEL_BTN1']; ?></span>
                     </div>
                 </div>
 
@@ -88,11 +88,11 @@
                     <div class="carousel-content">
                         <h1 style="color: white"><font size="6vw"><?php echo $lang['CAROUSEL_HEADER2']; ?></font></h1>
                         <p  style="color: white"><font size="4vw"><?php echo $lang['CAROUSEL_DESC2']; ?></font></p>
-                        <span class="btn btn-primary"><?php echo $lang['CAROUSEL_BTN2']; ?></span>
+                        <span class="btn btn-primary" style="color: black"><?php echo $lang['CAROUSEL_BTN2']; ?></span>
                     </div>
                 </div>
 
-                <div class="item critem" style="background: url('/assets/images/banner3.jpg') no-repeat center top;">
+                <div class="item critem active" style="background: url('/assets/images/banner3.jpg') no-repeat center top;">
                     <div class="carousel-content">
                         <h1 style="color: white"><font size="6vw"><?php echo $lang['CAROUSEL_HEADER3']; ?></font></h1>
                         <p  style="color: white"><font size="4vw"><?php echo $lang['CAROUSEL_DESC3']; ?></font></p>
@@ -136,7 +136,7 @@
                         <div class="home-content">
                             <h1><font size="6vw"><?php echo $lang['SHOW_PROM_HEAD']; ?></font></h1>
                             <p><font size="4vw"><?php echo $lang['SHOW_PROM_DESC']; ?></font></p>
-                            <span class="btn btn-primary"><?php echo $lang['SHOW_PROM_BTN']; ?></span>
+                            <a href="slservice.php?service=9"><span class="btn btn-primary"><?php echo $lang['SHOW_PROM_BTN']; ?></span></a>
                         </div>
                     </div>
                     <div class="tab-pane" id="device" style="background: url('/assets/images/device-home.jpg') no-repeat right top;">
@@ -163,13 +163,13 @@
                         <option>10 €</option>
                         <option>20 €</option>
                     </select>
-                    <span class="btn btn-topup" style="color: white;"><?php echo $lang['TOPUP_BTN']; ?></span>
+                    <span class="btn btn-topup" style="color: black;"><?php echo $lang['TOPUP_BTN']; ?></span>
                 </div>
                 <div class="col-xs-12 topup" style="margin-top: -1px">
                     <img src="https://img.tim.it:443/sdr/icone/icona_wcb_schede_offerta.png" class="img-tab" style="margin-top: 7.5%; margin-left: 24%">
                     <h1 style="color: black; text-align: left; margin-left: 10%"><font size="4"><?php echo $lang['NEWCUST_HEAD']; ?></font></h1>
                     <p  style="color: black; text-align: left; margin-left: 12%"><font size="3"><?php echo $lang['NEWCUST_BODY']; ?></font></p>
-                    <span class="btn btn-topup" style="color: white;"><?php echo $lang['NEWCUST_BTN']; ?></span>
+                    <span class="btn btn-topup" style="color: black;"><?php echo $lang['NEWCUST_BTN']; ?></span>
                 </div>
             </div>
         </div>

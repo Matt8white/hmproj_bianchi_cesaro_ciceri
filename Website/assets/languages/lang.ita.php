@@ -30,8 +30,8 @@
     $lang['SHOW_DEVICE'] = "Novità sui prodotti";
     $lang['SHOW_SL'] = "Smart Life";
 
-    $lang['SHOW_PROM_HEAD'] = "TIM Young Junior";
-    $lang['SHOW_PROM_DESC'] = "A soli 8 €/4 sett. tuo figlio parla, naviga e gioca con TIMgames Junior e tu sei tranquillo grazie al servizio TIM Protect.";
+    $lang['SHOW_PROM_HEAD'] = "TIM Transport";
+    $lang['SHOW_PROM_DESC'] = "Compra il biglietto dei mezzi pubblici e paga il parcheggio con il tuo credito telefonico tramite SMS o APP";
     $lang['SHOW_PROM_BTN'] = "Scopri l'offerta";
     $lang['SHOW_DEV_HEAD'] = "Samsung Galaxy S7 edge";
     $lang['SHOW_DEV_DESC'] = "Molto più di uno smartphone. <br> A 749,90 € invece di 829,90 € in 36 rate da 20,83 €/mese se hai una linea di casa TIM";

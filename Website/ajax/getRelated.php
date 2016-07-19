@@ -1,4 +1,5 @@
 <?php
+	header("Access-Control-Allow-Origin: *");
     $q = $_POST['id'];
     $t = $_POST['type'];
     $langs = $_POST['lang'];
@@ -18,7 +19,7 @@
     if($t=='as')
         $sql = $sqldevas;
 
-    $con = mysqli_connect('localhost','hyper','hyper123','TimHypProj');
+    $con = mysqli_connect('localhost','hmproj2','fovpopikke55','my_hmproj2');
     $con -> query("SET NAMES 'utf8'");
     if (!$con) {
         die('Could not connect: ' . mysqli_error($con));
